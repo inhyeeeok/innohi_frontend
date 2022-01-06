@@ -70,7 +70,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+[git 설정]
+
+$cd 폴더
+
 $git init
 
 $git remote add origin https://github.com/inhyeeeok/innohi_frontend-react.git
-
