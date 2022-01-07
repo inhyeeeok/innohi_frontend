@@ -77,3 +77,8 @@ $cd 폴더
 $git init
 
 $git remote add origin https://github.com/inhyeeeok/innohi_frontend-react.git
+
+[]
+
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+npm install react-router-dom --save
