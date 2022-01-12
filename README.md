@@ -55,11 +55,12 @@ $ npm run build
 ```
 $ cd 폴더
 $ git init
-$git remote add origin https://github.com/inhyeeeok/innohi_frontend-react.git
+$ git remote add origin https://github.com/inhyeeeok/innohi_frontend-react.git
 ```
 
 ### 2. 라이브러리 load
 ```
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 npm install react-router-dom --save
+
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 ```
