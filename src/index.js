@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Routes  } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
  import Main from './views/main/Main';
-// import Board from './views/community/Board';
-// import Intro from './views/intro/Intro';
+ import Board from './views/community/Board';
+ import Intro from './views/intro/Intro';
 // import Header from './components/headers/Header'
 // import Footer from './components/footers/Footer';
 
@@ -19,9 +19,9 @@ ReactDOM.render(
       {/* <Header /> */}
         <Routes>
           <Route path='/' element={<Main />}></Route>
-          {/* <Route path='/board' element={<Board />}></Route>
+          <Route path='/board' element={<Board />}></Route>
           <Route path='/intro' element={<Intro />}></Route>
-          <Route path="/*" element={<Main />} /> */}
+          <Route path="/*" element={<Main />} />
         </Routes>
       {/* <Footer /> */}
       {/* <Navigate from='*' to='/' /> */}

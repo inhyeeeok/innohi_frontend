@@ -1,9 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import '../../assets/style/style.css'
-import '../../assets/style/custom.css'
-
 import SwiperComponents from '../../components/swipers/Swiper';
 import test from "../../components/Test";
 
@@ -55,26 +52,12 @@ const headerElements =
   </header>;
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: true };
-
-    // 콜백에서 `this`가 작동하려면 아래와 같이 바인딩 해주어야 합니다.
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }));
-  }
 
   componentDidMount() {
     SwiperComponents();
     test();
   }
   
-
   render() {
     return (
       <>
