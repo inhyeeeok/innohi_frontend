@@ -1,31 +1,32 @@
-# 이노하이 리액트 버전 
+# innohi-front-end-react
 
-## Available Scripts
+[개발스택]
 
-In the project directory, you can run:
+|컴포넌트|적용기술|날짜|작성자|버전|비고|
+|---|---|------|---|---|-----|
+||20211220|권인혁|2.5.0|spring-boot-starter-data-jpa|
+||20211220|권인혁|2.5+||
+||20211220|권인혁|1.18.20|org.projectlombok:lombok|
+||20211227|권인혁|2.9.2|springfox-swagger2|
+||20211227|권인혁|2.9.2|springfox-swagger-ui|
+||20220103|권인혁|4.13|junit:4|
+||20220104|권인혁|||
+||20220104|권인혁|||
 
-### `npm start`
+[API Documents]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[코드실행]
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. 개발 모드에서 앱을 실행합니다. 
+브라우저에서 보려면 http://localhost:3000 을
+엽니다 .
+수정하면 페이지가 새로고침됩니다.
+또한 콘솔에 린트 오류가 표시됩니다.
+```
+$ cd <프로젝트 디렉터리>/innohi_front-end
+$ npm start
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 [git 설정]
 
