@@ -1,10 +1,15 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 import '../../assets/style/style.css'
 import '../../assets/style/custom.css'
 
+import SwiperComponents from '../../components/swipers/Swiper';
+import test from "../../components/Test";
+
 const headerElements =
 
-  <header id='header' className='fixed-top'>
+  <header id='header' className='fixed-top header-inner-pages'>
     <div className='container d-flex align-items-center'>
       <h1 className='logo me-auto'>
         <span>innohi</span>
@@ -12,9 +17,9 @@ const headerElements =
       </h1>
       <nav id='navbar' className='navbar'>
         <ul>
-          <li className='dropdown'><div>소개<i className='bi bi-chevron-down'></i></div>
+        <li className='nav-link scrollto'><Link to='/'><div>HOME</div></Link></li>
+          <li className='dropdown'><Link to='/intro'><div>소개<i className='bi bi-chevron-down'></i></div></Link>
             <ul>
-              <li><div>HOME</div></li>
               <li><div>innoHI 소개</div></li>
               <li><div>발자취</div></li>
               <li><div>스타트업 생태계</div></li>
@@ -35,7 +40,7 @@ const headerElements =
             </ul>
           </li>
           <li className='nav-link scrollto'><div>이벤트</div></li>
-          <li className='dropdown'><div>커뮤니티<i className='bi bi-chevron-down'></i></div>
+          <li className='dropdown'><Link to='/board'><div>커뮤니티<i className='bi bi-chevron-down'></i></div></Link>
             <ul>
               <li><div>OI 뉴스레터</div></li>
               <li><div>문의 및 제안하기</div></li>
@@ -62,6 +67,11 @@ class Header extends React.Component {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
+  }
+
+  componentDidMount() {
+    SwiperComponents();
+    test();
   }
   
 

@@ -95,7 +95,7 @@ export const clientsElements =
         <div className="col-lg-12">
             <h4>관심 분야의 행사소식을 가장 먼저 접하세요.</h4>
             <p>기술혁신의 인사이트를 얻을 수 있는 innoH.I. 정기레터를 무료로 구독 할 수 있으며 비지니스에 부합하는 컨설팅, 교육프로그램을 운영할 수 있습니다.</p>
-              <a href="/" className="btn-get-started scrollto"><strong>지난 뉴스레터 보기</strong></a>
+              <a href="/board" className="btn-get-started scrollto"><strong>지난 뉴스레터 보기</strong></a>
           </div>
         </div>
       </div>
