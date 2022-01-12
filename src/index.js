@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 // import Main from './views/main/Main';
 // import Board from './views/community/Board';
 // import Intro from './views/intro/Intro';
-// import Header from './components/headers/Header'
+ import Header from './components/headers/Header'
 // import Footer from './components/footers/Footer';
 
 import './assets/style/style.css';
@@ -16,7 +16,7 @@ import './assets/style/custom.css';
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
-      {/* <Header /> */}
+      <Header />
         <Routes>
           {/* <Route path='/' element={<Main />}></Route>
           <Route path='/board' element={<Board />}></Route>
