@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
  import Board from './views/community/Board';
  import Intro from './views/intro/Intro';
  import Header from './components/header/Header'
-// import Footer from './components/footers/Footer';
+ import Footer from './components/footer/Footer';
 
 import './assets/style/style.css';
 import './assets/style/custom.css';
@@ -23,7 +23,7 @@ ReactDOM.render(
           <Route path='/intro' element={<Intro />}></Route>
           <Route path="/*" element={<Main />} />
         </Routes>
-      {/* <Footer /> */}
+      <Footer />
       {/* <Navigate from='*' to='/' /> */}
     </React.StrictMode>
   </BrowserRouter>,
