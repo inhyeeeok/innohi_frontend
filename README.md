@@ -47,6 +47,8 @@ build폴더 에 프로덕션용 앱을 빌드 합니다.
 ```
 $ cd <프로젝트 디렉터리>/innohi_front-end
 $ npm run build
+-- 실행
+$ serve -s build
 ```
 
 ## [배포 및 운영]
