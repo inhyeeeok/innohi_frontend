@@ -7,24 +7,24 @@ const DataTableComponent = (props) => {
     console.log('data: ' + JSON.stringify(props.data));
     console.log('columns: ' + JSON.stringify(props.columns));
 
-    const conditionalRowStyles = [
-        {
-          when: columns => columns,
-          style: {
-            backgroundColor: 'green',
-            color: 'white',
-            '&:hover': {
-              cursor: 'pointer',
-            },
-          },
-        },
+    // const conditionalRowStyles = [
+    //     {
+    //       when: columns => columns,
+    //       style: {
+    //         backgroundColor: 'green',
+    //         color: 'white',
+    //         '&:hover': {
+    //           cursor: 'pointer',
+    //         },
+    //       },
+    //     },
 
-        // You can also pass a callback to style for additional customization
-        {
-          when: row => row.calories < 400,
-          style: row => ({ backgroundColor: row.isSpecial ? 'pink' : 'inerit' }),
-        },
-      ];
+    //     // You can also pass a callback to style for additional customization
+    //     {
+    //       when: row => row.calories < 400,
+    //       style: row => ({ backgroundColor: row.isSpecial ? 'pink' : 'inerit' }),
+    //     },
+    //   ];
 
     return (
         <>
