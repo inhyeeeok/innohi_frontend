@@ -7,15 +7,14 @@ import DataTableComponent from '../../components/dataTable/DataTable'
 import { BoardMainElements } from './BoardElements';
 
 const Board = () =>  {
-
+  
   const callSelectBoardData = () => {
- //   axios.get(`${process.env.REACT_APP_BACK_END_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
-    axios.get(`http://test-env-1.eba-kpdvwiie.ap-northeast-2.elasticbeanstalk.com/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
+    axios.get(`${process.env.REACT_APP_API_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
       .then((Response) => {
         //       console.log(Response.data);
         makeDataTable(Response);
       })
-      .catch((Error) => console.log(Error))
+      .catch((Error) =>  console.log(Error))
   }
 
   const makeDataTable = (Response) => {
