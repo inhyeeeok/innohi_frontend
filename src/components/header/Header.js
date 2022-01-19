@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import SwiperComponents from '../../components/swipers/Swiper';
 import test from "../../components/Test";
 
 const headerElements =
@@ -54,7 +53,6 @@ const headerElements =
 class Header extends React.Component {
 
   componentDidMount() {
-    SwiperComponents();
     test();
   }
   

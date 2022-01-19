@@ -1,4 +1,3 @@
-import hero from '../../assets/img/hero-img.png';
 import kal from '../../assets/img/clients/kal.png';
 
 export const heroElements =
@@ -14,7 +13,7 @@ export const heroElements =
           </div>
         </div>
         <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
-          <img src={hero} className='img-fluid animated' alt=''></img>
+          <img src={require('../../assets/img/sample.jpg').default} className='img-fluid animated' alt=''></img>
         </div>
       </div>
     </div>
