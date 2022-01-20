@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import * as common from '../../components/common/BreadCrumbs'
 
 const StartupArchive = () => {
 
@@ -8,7 +9,9 @@ const StartupArchive = () => {
 
   return (
     <>
-
+      <main id="main">
+        {common.BreadCrumbsElements}
+      </main>
     </>
   ); 
 
