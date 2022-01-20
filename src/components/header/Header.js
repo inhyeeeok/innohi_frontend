@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 import test from "../../components/Test";
 
@@ -13,8 +12,8 @@ const headerElements =
       </h1>
       <nav id='navbar' className='navbar'>
         <ul>
-        <li className='nav-link scrollto'><Link to='/'><div>HOME</div></Link></li>
-          <li className='dropdown'><Link to='/intro'><div>소개<i className='bi bi-chevron-down'></i></div></Link>
+        <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li>
+          <li className='dropdown'><a href='/intro'><div>소개<i className='bi bi-chevron-down'></i></div></a>
             <ul>
               <li><div>innoHI 소개</div></li>
               <li><div>발자취</div></li>
@@ -24,7 +23,7 @@ const headerElements =
           </li>
           <li className='dropdown'><div>프로그램<i className='bi bi-chevron-down'></i></div>
             <ul>
-              <li><div>DFS(Deal Flow Session)</div></li>
+              <li><a href='/dfs'><div>DFS(Deal Flow Session)</div></a></li>
               <li><div>스타트업 아카이브</div></li>
               {/* <li className='dropdown'><div>DFS(Deal Flow Session)<i className='bi bi-chevron-down'></i></div>
       <ul>
@@ -35,8 +34,8 @@ const headerElements =
     </li> */}
             </ul>
           </li>
-          <li className='nav-link scrollto'><div>이벤트</div></li>
-          <li className='dropdown'><Link to='/board'><div>커뮤니티<i className='bi bi-chevron-down'></i></div></Link>
+          <li className='nav-link scrollto'><a href='/event'><div>이벤트</div></a></li>
+          <li className='dropdown'><a href='/board'><div>커뮤니티<i className='bi bi-chevron-down'></i></div></a>
             <ul>
               <li><div>OI 뉴스레터</div></li>
               <li><div>문의 및 제안하기</div></li>

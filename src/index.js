@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
  import Main from './views/main/Main';
  import Board from './views/community/Board';
  import Intro from './views/intro/Intro';
+ import Event from './views/event/Event';
  import Header from './components/header/Header'
  import Footer from './components/footer/Footer';
 
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route path='/' element={<Main />}></Route>
           <Route path='/board' element={<Board />}></Route>
           <Route path='/intro' element={<Intro />}></Route>
+          <Route path='/event' element={<Event />}></Route>
           <Route path="/*" element={<Main />} />
         </Routes>
       <Footer />
