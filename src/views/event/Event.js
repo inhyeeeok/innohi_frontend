@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import SwiperComponents from '../../components/swipers/Swiper';
 
 import * as event from '../event/EventElements';
+import * as breadcrumbs from '../../components/common/BreadCrumbs';
 
 const Event = () => {
 
@@ -14,7 +15,7 @@ const Event = () => {
     return (
         <>
             <main id="main">
-                {event.BreadCrumbsElements}
+                {breadcrumbs.BreadCrumbsElements}
                 {event.PortfolioElements}
             </main>
         </>

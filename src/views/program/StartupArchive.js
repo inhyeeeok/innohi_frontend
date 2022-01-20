@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Dfs = () => {
+const StartupArchive = () => {
 
   useEffect(() => {
 
@@ -14,4 +14,4 @@ const Dfs = () => {
 
 }
 
-export default Dfs;
+export default StartupArchive;

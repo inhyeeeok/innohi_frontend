@@ -16,6 +16,7 @@ const Intro = () => {
     return (
         <>
             <main id="main">
+                {intro.BreadCrumbsElements}
                 {intro.IntroElements}
                 {intro.testimonialElements}
                 {intro.ecoElements}

@@ -9,7 +9,7 @@ export const heroElements =
           <h1><span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight</h1>
           <h2>HIST에서는 신기술 도입과 혁신 성장을 위한 <br />오픈 이노베이션 프로그램 'inno H.I' 를 운영하고 있습니다</h2>
           <div className='d-flex justify-content-center justify-content-lg-start'>
-            <div href='' className='btn-get-started scrollto'>협의체공간</div>
+            <a href='/council'><div className='btn-get-started scrollto'>협의체공간</div></a>
           </div>
         </div>
         <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
@@ -18,6 +18,27 @@ export const heroElements =
       </div>
     </div>
   </section>
+  ;
+
+export const refElements =
+  <>
+    <section id='hero' className='d-flex align-items-center' style={{ backgroundColor: '#f3f5fa' }}>
+      <div className='container'>
+        <div className='row'>
+        <div className='col-lg-6  hero-img' data-aos="zoom-in" data-aos-delay="200">
+            <img src={require('../../assets/img/tour_DFS.jpg').default} className='img-fluid animated' alt=''></img>
+          </div>
+          <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 ' data-aos="fade-up" data-aos-delay="200">
+            <h1><span style={{ color: '#37517e'}}>The HIST group company DFS was held</span></h1>
+            <h2><span style={{ color: '#37517e'}}>디지털솔루션팀 솔루션사업그룹에서는 11월 17일 본사 5층 대회의실에서 ‘여행 플랫폼과 에듀테크 분야’ 스타트업 발굴을 주제로 PnP DFS(Deal Flow Session)를 개최했습니다.</span></h2>
+            <div className='d-flex justify-content-center justify-content-lg-end'>
+              <div href='' className='btn-get-started scrollto'>자세히 알아보기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </>
   ;
 
 export const cliensElements =

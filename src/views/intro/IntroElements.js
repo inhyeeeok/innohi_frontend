@@ -1,10 +1,15 @@
-export const IntroElements =
+export const BreadCrumbsElements =
     <>
         <section id="breadcrumbs" className="breadcrumbs" style={{ background: "#ffffff" }}>
             <div className="container">
-
+                
             </div>
         </section>
+    </>
+    ;
+
+export const IntroElements =
+    <>
         <section id="about" className="about">
             <div className="container" data-aos="fade-up">
                 <div className="section-title">

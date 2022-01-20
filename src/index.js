@@ -7,6 +7,10 @@ import reportWebVitals from "./reportWebVitals";
  import Board from './views/community/Board';
  import Intro from './views/intro/Intro';
  import Event from './views/event/Event';
+ import Dfs from './views/program/Dfs';
+ import Startup from './views/program/StartupArchive';
+ import ErrorPage from './views/common/ErrorPage';
+
  import Header from './components/header/Header'
  import Footer from './components/footer/Footer';
 
@@ -21,10 +25,12 @@ ReactDOM.render(
       <Header />
         <Routes>
           <Route path='/' element={<Main />}></Route>
-          <Route path='/board' element={<Board />}></Route>
-          <Route path='/intro' element={<Intro />}></Route>
-          <Route path='/event' element={<Event />}></Route>
-          <Route path="/*" element={<Main />} />
+          <Route exact path='/board' element={<Board />}></Route>
+          <Route exact path='/intro' element={<Intro />}></Route>
+          <Route exact path='/event' element={<Event />}></Route>
+          <Route exact path='/dfs' element={<Dfs />}></Route>
+          <Route exact path='/startup' element={<Startup />}></Route>
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
       <Footer />
       {/* <Navigate from='*' to='/' /> */}

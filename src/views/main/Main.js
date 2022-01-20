@@ -1,34 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { heroElements, cliensElements, clientsElements, joinNewsletterElements } from './MainElements';
+import * as main from './MainElements';
 
 import SwiperComponents from '../../components/swipers/Swiper';
 
-class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { item: props.item, readOnly: true };
-    this.delete = props.delete;
-  }
+const Main = () => {
 
-  componentDidMount() {
-        SwiperComponents();
-  }
+  useEffect(() => {
+    SwiperComponents();
+})
 
-  render() {
-    return (
-      <>
-        {heroElements}
-        <main id='main'>
-          {cliensElements}
-          {clientsElements}
-          {clientsElements}
-          {joinNewsletterElements}
-        </main>
+  return (
+    <>
+      {main.heroElements}
+      <main id='main'>
+        {/* {main.cliensElements} */}
+        {main.refElements}
+        {main.clientsElements}
+        {main.clientsElements}
+        {main.joinNewsletterElements}
+      </main>
 
-      </>
-    );
-  }
+    </>
+  ); 
+
 }
 
 export default Main;
