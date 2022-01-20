@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import * as common from '../../components/common/BreadCrumbs'
+import * as startup from '../program/StartupArchiveElements'
 
 const StartupArchive = () => {
 
@@ -11,6 +12,7 @@ const StartupArchive = () => {
     <>
       <main id="main">
         {common.BreadCrumbsElements}
+        {startup.BlogElements}
       </main>
     </>
   ); 
