@@ -12,6 +12,7 @@ import reportWebVitals from "./reportWebVitals";
 import './assets/style/style.css';
 import './assets/style/custom.css';
 
+import 'bootstrap/dist/js/bootstrap.js'
 
 ReactDOM.render(
   <BrowserRouter>

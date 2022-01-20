@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 
-import {IntroElements, testimonialElements, ecoElements} from '../intro/IntroElements';
+import * as intro from '../intro/IntroElements';
 import SwiperComponents from '../../components/swipers/Swiper';
+
 
 // import test from "../../components/Test";
 
@@ -15,9 +16,10 @@ const Intro = () => {
     return (
         <>
             <main id="main">
-                {IntroElements}
-                {testimonialElements}
-                {ecoElements}
+                {intro.IntroElements}
+                {intro.testimonialElements}
+                {intro.ecoElements}
+                {intro.faqElements}
             </main>
         </>
     );
