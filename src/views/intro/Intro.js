@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import * as intro from '../intro/IntroElements';
+import * as common from '../../components/common/BreadCrumbs'
 import SwiperComponents from '../../components/swipers/Swiper';
 
 
@@ -16,7 +17,7 @@ const Intro = () => {
     return (
         <>
             <main id="main">
-                {intro.BreadCrumbsElements}
+                {common.BreadCrumbsElements}
                 {intro.IntroElements}
                 {intro.testimonialElements}
                 {intro.ecoElements}
