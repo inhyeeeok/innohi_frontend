@@ -12,6 +12,7 @@
     "bootstrap-icons": "^1.7.2",
     "glightbox": "^3.1.0",
     "react": "^17.0.1",
+    "react-app-polyfill": "^3.0.0",
     "react-bootstrap-icons": "^1.7.2",
     "react-data-table-component": "^7.4.6",
     "react-dom": "^17.0.1",
@@ -35,14 +36,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      "defaults",
       "not dead",
-      "not op_mini all"
+      "> 1% in KR",
+      "ie 9-10"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "ie 9-10"
     ]
   }
 }
