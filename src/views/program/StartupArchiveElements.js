@@ -103,9 +103,9 @@ export const BlogElements =
                         <h3 className="sidebar-title">검색</h3>
                         <div className="sidebar-item search-form">
                             <form action="">
-                                <input type="text">
+                                <div type="text">
                                     <button type="submit"><i className="bi bi-search"></i></button>
-                                </input>
+                                </div>
                             </form>
                         </div>
 
