@@ -19,9 +19,10 @@ const Intro = () => {
             <main id="main">
                 {common.BreadCrumbsElements}
                 {intro.IntroElements}
-                {intro.testimonialElements}
-                {intro.ecoElements}
-                {intro.faqElements}
+                {intro.TestimonialElements}
+                {intro.TrinityElements}
+                {/* {intro.EcoElements} */}
+                {intro.FaqElements}
             </main>
         </>
     );

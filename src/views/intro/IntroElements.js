@@ -39,7 +39,7 @@ export const IntroElements =
     </>
     ;
 
-export const testimonialElements =
+export const TestimonialElements =
 
     <section id="testimonials" className="testimonials section-bg">
         <div className="container" data-aos="fade-up">
@@ -109,7 +109,23 @@ export const testimonialElements =
     </section>
     ;
 
-export const ecoElements =
+export const TrinityElements = 
+    <section id="eco" className="team">
+        <div className="container" data-aos="fade-up">
+
+            <div className="section-title">
+                <h2>스타트업 생태계</h2>
+                <p>스타트업 생태계는 크게 혁신 역량을 가진 주체와 혁신을 필요로 하는 주체 그리고 이들을 지원하거나 연결하는 주체로 구성돠어 있습니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
+            </div>
+
+            <div className='align-items-center justify-content-center'>
+                <img src={require('../../assets/img/TrinityElements.png').default} className='img-fluid' alt=''></img>
+            </div>
+        </div>
+    </section>
+    ;
+
+export const EcoElements =
     <section id="eco" className="team">
         <div className="container" data-aos="fade-up">
 
@@ -188,7 +204,7 @@ export const ecoElements =
     </section>
     ;
 
-export const faqElements =
+export const FaqElements =
     <section id="faq" className="faq section-bg">
         <div className="container" data-aos="fade-up">
 
