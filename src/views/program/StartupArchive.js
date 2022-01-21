@@ -16,7 +16,6 @@ const StartupArchive = () => {
   //     .catch((Error) => console.log(Error))
   // }
 
-  const make 
   
   useEffect(() => {
     reactDom.render(startup.ArticleElements(stData[0]), document.getElementById('entry'));
