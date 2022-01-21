@@ -23,6 +23,9 @@ import './assets/style/style.css';
 import './assets/style/custom.css';
 
 import 'bootstrap/dist/js/bootstrap.js'
+import 'jquery/dist/jquery.min.js';
+import "datatables.net-dt/js/dataTables.dataTables";
+import "datatables.net-dt/css/jquery.dataTables.min.css";
 
 ReactDOM.render(
   <BrowserRouter>
