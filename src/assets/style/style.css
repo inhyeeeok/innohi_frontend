@@ -1888,7 +1888,7 @@ section {
   margin-right: 8px;
   line-height: 0;
 }
-.blog .entry .entry-meta a {
+.blog .entry .entry-meta div {
   color: #777777;
   font-size: 14px;
   display: inline-block;
