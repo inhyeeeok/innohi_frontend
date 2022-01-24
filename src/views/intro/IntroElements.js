@@ -119,7 +119,7 @@ export const TrinityElements =
             </div>
 
             <div className='align-items-center justify-content-center'>
-                <img src={require('../../assets/img/TrinityElements.png').default} className='img-fluid' alt=''></img>
+                <img src={require('../../assets/img/TrinityElements.png').default} className='img-fluid' alt='스타트업 생태계'></img>
             </div>
         </div>
     </section>

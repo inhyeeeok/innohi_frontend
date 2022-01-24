@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 
 //import axios from 'axios';
-import {DataTableComponent} from '../../components/dataTable/DataTable'
+import DataTableComponent from '../../components/dataTable/DataTable'
 import * as jsondata from '../../components/JsonData'
 
-import { BoardMainElements } from './BoardElements';
+import * as board from './BoardElements';
+import * as common from '../../components/common/BreadCrumbs'
 
 const Board = () =>  {
   
   const callSelectBoardData = () => {
-    makeDataTable(jsondata.newsletter2TestData);
+    makeDataTable(jsondata.newsletterTestData);
     // axios.get(`${process.env.REACT_APP_API_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
     //   .then((Response) => {
     //     //       console.log(Response.data);
@@ -23,11 +24,11 @@ const Board = () =>  {
 
   const makeDataTable = (Response) => {
     const columns = [
-      { title: '순번', width: "5%" },
-      { title: '내용', width: "70%", },
-      { title: '날짜', width: "10%" },
-      { title: '작성자', width: "10%" },
-      { title: '조회수', width: "5%" },
+      { data: 'bno', width: "5%" },
+      { data: 'title', width: "70%", },
+      { data: 'updtDate', width: "10%" },
+      { data: 'regUser', width: "10%" },
+      { data: 'viewCnt', width: "5%" },
     ]
 
     DataTableComponent(Response, columns);
@@ -39,7 +40,10 @@ const Board = () =>  {
 
   return (
     <>
-      {BoardMainElements}
+      <main id="main">
+        {common.BreadCrumbsElements}
+        {board.BoardMainElements}
+      </main>
     </>
   );
 
