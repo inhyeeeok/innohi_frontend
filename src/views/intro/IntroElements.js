@@ -29,9 +29,6 @@ export const IntroElements =
                                 </span>
                             </strong>
                         </p>
-                        <p>
-                            프로그램명 : inno H.I.<br />의미 : 새로운 시각과 발상으로 차세대 디지털 사회에 대비하기 위한 한진 미래 혁신 프로그램<br />로고 : 번뜩이는 아이디어 기획/발굴을 착안, 도식화
-                        </p>
                     </div>
                 </div>
             </div>
@@ -114,8 +111,8 @@ export const TrinityElements =
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-                <h2>스타트업 생태계</h2>
-                <p>스타트업 생태계는 크게 혁신 역량을 가진 주체와 혁신을 필요로 하는 주체 그리고 이들을 지원하거나 연결하는 주체로 구성돠어 있습니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
+                <h2>INNOH.I Vision</h2>
+                <p>innoHI의 비전은 한진정보통신의 IT 전문가 역량을 활용해 고객과 스타트업 그리고 한진정보통신 모두가 더 나은 미래를 향해 나아갈 수 있는 오픈이노베이션을 만들어 내는것입니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
             </div>
 
             <div className='align-items-center justify-content-center'>
