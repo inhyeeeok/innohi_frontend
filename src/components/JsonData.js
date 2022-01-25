@@ -1697,53 +1697,5 @@ export const StartupTestData = [
           "S_SERVICE_DETL": "",
           "S_SPECIAL_FEATURE": "",
           "S_RESEARCHED_TIME": "2020 DFS"
-        },
-        {
-          "S_NO": 141,
-          "S_NAME": "string",
-          "S_CATEGORY": "string",
-          "S_TECH_TYPE": "string",
-          "S_MAIN_SERVICE": "string",
-          "S_EMPLOYEE_NUM": "string",
-          "S_LOCATION": "string",
-          "S_SERVICE_DETL": "string",
-          "S_SPECIAL_FEATURE": "string",
-          "S_RESEARCHED_TIME": "string"
-        },
-        {
-          "S_NO": 142,
-          "S_NAME": "string",
-          "S_CATEGORY": "",
-          "S_TECH_TYPE": "string",
-          "S_MAIN_SERVICE": "string",
-          "S_EMPLOYEE_NUM": "",
-          "S_LOCATION": "string",
-          "S_SERVICE_DETL": "string",
-          "S_SPECIAL_FEATURE": "string",
-          "S_RESEARCHED_TIME": "string"
-        },
-        {
-          "S_NO": 143,
-          "S_NAME": "string",
-          "S_CATEGORY": "",
-          "S_TECH_TYPE": "string",
-          "S_MAIN_SERVICE": "string",
-          "S_EMPLOYEE_NUM": null,
-          "S_LOCATION": "string",
-          "S_SERVICE_DETL": "string",
-          "S_SPECIAL_FEATURE": "string",
-          "S_RESEARCHED_TIME": "string"
-        },
-        {
-          "S_NO": 144,
-          "S_NAME": "string",
-          "S_CATEGORY": "",
-          "S_TECH_TYPE": "string",
-          "S_MAIN_SERVICE": "string",
-          "S_EMPLOYEE_NUM": null,
-          "S_LOCATION": "string",
-          "S_SERVICE_DETL": "string",
-          "S_SPECIAL_FEATURE": "string",
-          "S_RESEARCHED_TIME": "string"
         }
       ];
