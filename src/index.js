@@ -11,9 +11,10 @@ import reportWebVitals from "./reportWebVitals";
 import Main from './views/main/Main';
 import Board from './views/community/Board';
 import Intro from './views/intro/Intro';
-import Event from './views/event/Event';
+import OIEvent from './views/event/OIEvent';
 import Dfs from './views/program/Dfs';
-import Startup from './views/program/StartupArchive';
+import StartupSourcing from './views/program/StartupSourcing';
+import StartupArchive from './views/community/StartupArchive';
 import ErrorPage from './views/common/ErrorPage';
 
 import Header from './components/header/Header'
@@ -34,10 +35,11 @@ ReactDOM.render(
         <Routes>
           <Route path='/' element={<Main />}></Route>
           <Route exact path='/intro' element={<Intro />}></Route>
+          <Route exact path='/program/startup' element={<StartupSourcing />}></Route>
           <Route exact path='/dfs' element={<Dfs />}></Route>
-          <Route exact path='/event' element={<Event />}></Route>
-          <Route exact path='/board' element={<Board />}></Route>
-          <Route exact path='/startup' element={<Startup />}></Route>
+          <Route exact path='/event/oi' element={<OIEvent />}></Route>
+          <Route exact path='/community/board' element={<Board />}></Route>
+          <Route exact path='/community/startup' element={<StartupArchive />}></Route>
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
       <Footer />
