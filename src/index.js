@@ -12,6 +12,7 @@ import Main from './views/main/Main';
 import Board from './views/community/Board';
 import Intro from './views/intro/Intro';
 import OIEvent from './views/event/OIEvent';
+import Contest from './views/event/Contest';
 import Dfs from './views/program/Dfs';
 import StartupSourcing from './views/program/StartupSourcing';
 import StartupArchive from './views/community/StartupArchive';
@@ -38,6 +39,7 @@ ReactDOM.render(
           <Route exact path='/program/startup' element={<StartupSourcing />}></Route>
           <Route exact path='/dfs' element={<Dfs />}></Route>
           <Route exact path='/event/oi' element={<OIEvent />}></Route>
+          <Route exact path='/event/contest' element={<Contest />}></Route>
           <Route exact path='/community/board' element={<Board />}></Route>
           <Route exact path='/community/startup' element={<StartupArchive />}></Route>
           <Route path="/*" element={<ErrorPage />} />
