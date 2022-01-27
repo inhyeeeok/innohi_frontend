@@ -38,13 +38,15 @@ const Suggestion = () => {
               </div>
             </div>
 
-            <div>
-              <iframe
-                src='https://forms.gle/bm1Cniym3XFxSuzD9'
-                style={{ height: '1000px', width: '100%' }} title="oi-newsletter">
-              </iframe>
-            </div>
+          </div>
+        </section>
 
+        <section id="services" className="services section">
+          <div className="container" data-aos="fade-up">
+            <iframe
+              src='https://forms.gle/bm1Cniym3XFxSuzD9'
+              style={{ height: '1000px', width: '100%' }} title="oi-newsletter">
+            </iframe>
           </div>
         </section>
     </>
