@@ -13,8 +13,11 @@ import Board from './views/community/Board';
 import Intro from './views/intro/Intro';
 import OIEvent from './views/event/OIEvent';
 import Contest from './views/event/Contest';
+
 import StartupSourcing from './views/program/StartupSourcing';
 import ExternalCooperation from './views/program/ExternalCooperation';
+import Suggestion from './views/program/Suggestion';
+
 import StartupArchive from './views/community/StartupArchive';
 import ErrorPage from './views/common/ErrorPage';
 
@@ -38,6 +41,7 @@ ReactDOM.render(
           <Route exact path='/intro' element={<Intro />}></Route>
           <Route exact path='/program/startup' element={<StartupSourcing />}></Route>
           <Route exact path='/program/external' element={<ExternalCooperation />}></Route>
+          <Route exact path='/program/suggest' element={<Suggestion />}></Route>
           <Route exact path='/event/oi' element={<OIEvent />}></Route>
           <Route exact path='/event/contest' element={<Contest />}></Route>
           <Route exact path='/community/board' element={<Board />}></Route>

@@ -27,8 +27,8 @@ const headerElements =
             <ul>
               <li><a href='/program/startup'><div>스타트업 소싱</div></a></li>
               <li><a href='/program/external'><div>대외협력</div></a></li>
-              <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdHnXT1VGX3OWoH8K1slTlkIWtLNIpNShk5k-8fBI-CxO6yow/viewform'><div>협업 제안</div></a></li>
-              {/* <li><a href='/dfs'><div>DFS(Deal Flow Session)</div></a></li> */}
+              {/* <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdHnXT1VGX3OWoH8K1slTlkIWtLNIpNShk5k-8fBI-CxO6yow/viewform'><div>협업 제안</div></a></li> */}
+              <li><a href='/program/suggest'><div>협업제안</div></a></li>
             </ul>
           </li>
           <li className='dropdown'><a href='/event/oi'><div>Insight<i className='bi bi-chevron-down'></i></div></a>
