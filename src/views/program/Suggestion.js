@@ -40,7 +40,7 @@ const Suggestion = () => {
 
             <div>
               <iframe
-                src='https://docs.google.com/forms/d/e/1FAIpQLSdHnXT1VGX3OWoH8K1slTlkIWtLNIpNShk5k-8fBI-CxO6yow/viewform'
+                src='https://forms.gle/dvi1XspLhntRUNna9'
                 style={{ height: '1000px', width: '100%' }} title="oi-newsletter">
               </iframe>
             </div>
