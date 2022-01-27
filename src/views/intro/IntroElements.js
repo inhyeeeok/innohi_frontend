@@ -13,23 +13,32 @@ export const IntroElements =
         <section id="about" className="about">
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
-                    <h2>Inno H.I.</h2>
+                    <h2>이노하이 소개</h2>
                 </div>
                 <div className="row content">
-                    <div className="col-lg-3" style={{ textAlign: "center" }} >
-                        <img src={require('../../assets/img/clients/kal.png').default} className="img-fluid" style={{ width: "150px", border: "1px solid rgb(219, 219, 219)" }} alt=""></img>
+                    <div className="section-title">
+                        <p>innoH.I.는 Innovation for Hanjin's future Insight 의 줄임말로 한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 한진정보통신의 오픈 이노베이션 프로그램 입니다.</p>
                     </div>
 
-                    <div className="col-lg-8 pt-4 pt-lg-0" >
-                        <p>
-                            <strong>innoH.I.는
+                    <div className='align-items-center justify-content-center' style={{ textAlign: "center" }} >
+                        <img src={require('../../assets/img/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
+                    </div>
+                    {/* <div  style={{ textAlign: "center" }} >
+                        <span>
+                        <img src={require('../../assets/img/logo/innoHI_Logo_type2.png').default} className="img-fluid" style={{ width: "200px" }} alt=""></img>
+                        </span>
+                        <strong>innoH.I.는
                                 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span><span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight 의 줄임말로 한진 그룹과 검증된 기술혁신
                                     전문가가 만나
                                     비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 한진정보통신의 오픈 이노베이션 프로그램 입니다.
                                 </span>
                             </strong>
-                        </p>
                     </div>
+
+                    <div className="col-lg-8 pt-4 pt-lg-0" >
+                        <p>
+                        </p>
+                    </div> */}
                 </div>
             </div>
         </section>
@@ -41,7 +50,7 @@ export const TestimonialElements =
     <section id="testimonials" className="testimonials section-bg">
         <div className="container" data-aos="fade-up">
             <div className="section-title">
-                <h2>이노하이 발자취</h2>
+                <h2>연혁</h2>
                 <p>이노하이는 디지털전환 시대에 맞춰 내외부 기술과 아이디어 등 자원을 적극 활용하여 내부혁신을 가속화하고 이를 통해 시장진출 기회를 확대하고 있어요! 🚶‍♂️</p>
             </div>
 
@@ -56,7 +65,7 @@ export const TestimonialElements =
                                 <h4>2020년 1월</h4>
                             </div>
                             <p>
-                                한진 KAL을 중심으로 글로벌 액셀러레이터(PnP)와 전력적 파트너쉽 채결.
+                                액셀러레이터(PnP)와 전력적 파트너쉽 채결.
                             </p>
                         </div>
                     </div>
@@ -111,12 +120,12 @@ export const TrinityElements =
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-                <h2>INNOH.I Vision</h2>
+                <h2>추진체계</h2>
                 <p>innoHI의 비전은 한진정보통신의 IT 전문가 역량을 활용해 고객과 스타트업 그리고 한진정보통신 모두가 더 나은 미래를 향해 나아갈 수 있는 오픈이노베이션을 만들어 내는것입니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
             </div>
 
             <div className='align-items-center justify-content-center'>
-                <img src={require('../../assets/img/TrinityElements.png').default} className='img-fluid' alt='스타트업 생태계'></img>
+                <img src={require('../../assets/img/TrinityElements_discription_b.png').default} className='img-fluid' alt='스타트업 생태계'></img>
             </div>
         </div>
     </section>
