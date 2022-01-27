@@ -9,16 +9,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 import Main from './views/main/Main';
-import Board from './views/community/Board';
+
 import Intro from './views/intro/Intro';
-import OIEvent from './views/event/OIEvent';
+
+
+import Board from './views/community/Board';
 import Contest from './views/event/Contest';
+import StartupArchive from './views/community/StartupArchive';
+
 
 import StartupSourcing from './views/program/StartupSourcing';
 import ExternalCooperation from './views/program/ExternalCooperation';
 import Suggestion from './views/program/Suggestion';
 
-import StartupArchive from './views/community/StartupArchive';
+import Member from './views/contact/Member'
+
 import ErrorPage from './views/common/ErrorPage';
 
 import Header from './components/header/Header'
@@ -38,15 +43,22 @@ ReactDOM.render(
       <Header />
         <Routes>
           <Route path='/' element={<Main />}></Route>
+
           <Route exact path='/intro' element={<Intro />}></Route>
+
           <Route exact path='/program/startup' element={<StartupSourcing />}></Route>
           <Route exact path='/program/external' element={<ExternalCooperation />}></Route>
           <Route exact path='/program/suggest' element={<Suggestion />}></Route>
-          <Route exact path='/event/oi' element={<OIEvent />}></Route>
-          <Route exact path='/event/contest' element={<Contest />}></Route>
-          <Route exact path='/community/board' element={<Board />}></Route>
-          <Route exact path='/community/startup' element={<StartupArchive />}></Route>
+
+          <Route exact path='/insight/biz' element={<Board />}></Route>
+          <Route exact path='/insight/tech' element={<Board />}></Route>
+          <Route exact path='/insight/contest' element={<Contest />}></Route>
+
+          <Route exact path='/contact/member' element={<Member />}></Route>
+          <Route exact path='/contact/question' element={<StartupArchive />}></Route>
+
           <Route path="/*" element={<ErrorPage />} />
+
         </Routes>
       <Footer />
       {/* <Navigate from='*' to='/' /> */}

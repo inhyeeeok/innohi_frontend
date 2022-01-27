@@ -27,22 +27,21 @@ const headerElements =
             <ul>
               <li><a href='/program/startup'><div>스타트업 소싱</div></a></li>
               <li><a href='/program/external'><div>대외협력</div></a></li>
-              {/* <li><a href='https://docs.google.com/forms/d/e/1FAIpQLSdHnXT1VGX3OWoH8K1slTlkIWtLNIpNShk5k-8fBI-CxO6yow/viewform'><div>협업 제안</div></a></li> */}
               <li><a href='/program/suggest'><div>협업제안</div></a></li>
             </ul>
           </li>
-          <li className='dropdown'><a href='/event/oi'><div>Insight<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/insight/contest'><div>Insight<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><a href='/event/oi'><div>Biz Pick</div></a></li>
-              <li><a href='/event/contest'><div>Tech Pick</div></a></li>
-              <li><a href='/event/contest'><div>Event</div></a></li>
+              <li><a href='/insight/biz'><div>Biz Pick</div></a></li>
+              <li><a href='/insight/tech'><div>Tech Pick</div></a></li>
+              <li><a href='/insight/contest'><div>Event</div></a></li>
             </ul>
           </li>
-          <li className='dropdown'><a href='/community/board'><div>Contact<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/contact/member'><div>Contact<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><a href='/community/board'><div>구성원 소개</div></a></li>
-              <li><a href='/community/startup'><div>문의하기</div></a></li>
-              {/* <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'><div>문의 및 제안하기</div></a></li> */}
+              <li><a href='/contact/member'><div>구성원 소개</div></a></li>
+              {/* <li><a href='/contact/question'><div>문의하기</div></a></li> */}
+              <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'><div>문의하기</div></a></li>
             </ul>
           </li>
           <li><a href='/council'><div className='getstarted'>협의체공간</div></a>
