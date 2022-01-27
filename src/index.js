@@ -14,7 +14,7 @@ import Intro from './views/intro/Intro';
 
 
 import Board from './views/community/Board';
-import Contest from './views/event/Contest';
+import Contest from './views/insight/Contest';
 import StartupArchive from './views/community/StartupArchive';
 
 
