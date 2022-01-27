@@ -121,3 +121,38 @@ export const clientsElements =
       </div>
     </div>
   ;
+
+  export const serviceElements =
+    <>
+      <section id="services" className="services section-bg">
+        <div className="container" data-aos="fade-up">
+
+          <div className="row">
+            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div className="icon-box">
+                <img src={require('../../assets/img/intro/innoHI소개_1.png').default} className="img-fluid" alt=""></img>
+                <h4 style={{ textAlign:'center', fontSize:'2vw', fontWeight:'bold' }}>미래성장동력 확보</h4>
+                <p style={{ textAlign:'center', fontSize:'1vw' }}>최신 산업동향과 생태계 분석을 통해 아이디어를 도출하고 미래 성장동력을 확보합니다</p>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div className="icon-box">
+                <img src={require('../../assets/img/intro/innoHI소개_2.png').default} className="img-fluid" alt=""></img>
+                <h4 style={{ textAlign:'center', fontSize:'2vw', fontWeight:'bold' }}>차세대 기술 선도</h4>
+                <p style={{ textAlign:'center', fontSize:'1vw' }}>디지털전환에 대비하여 최신 ICT 기술을 확보하고 차세대 기술을 선도합니다</p>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+              <div className="icon-box">
+                <img src={require('../../assets/img/intro/innoHI소개_3.png').default} className="img-fluid" alt=""></img>
+                <h4 style={{ textAlign:'center', fontSize:'2vw', fontWeight:'bold' }}>글로벌 혁신</h4>
+                <p style={{ textAlign:'center', fontSize:'1vw' }}>글로벌 파트너십을 통해 변화와 혁신하며 신규시장진출의 기반을 마련합니다</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+    ;

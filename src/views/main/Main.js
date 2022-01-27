@@ -15,7 +15,8 @@ const Main = () => {
       {main.heroElements}
       <main id='main'>
         {/* {main.cliensElements} */}
-        {main.refElements}
+        {/* {main.refElements} */}
+        {main.serviceElements}
         {main.clientsElements}
         {main.clientsElements}
         {main.joinNewsletterElements}
