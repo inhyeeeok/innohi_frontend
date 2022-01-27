@@ -60,7 +60,7 @@ export const TestimonialElements =
                     <div className="swiper-slide">
                         <div className="testimonial-item">
                             <div className="profile my-auto">
-                                <img src="../assets/img/clients/pnp.png" className="testimonial-img" alt=""></img>
+                                <img src={require('../../assets/img/intro/histroy/pnp.jpg').default} className="testimonial-img" alt=""></img>
                                 <h3>PnP 파트너쉽 체결</h3>
                                 <h4>2020년 1월</h4>
                             </div>
@@ -73,7 +73,7 @@ export const TestimonialElements =
                     <div className="swiper-slide">
                         <div className="testimonial-item">
                             <div className="profile my-auto">
-                                <img src="../assets/img/clients/inha.png" className="testimonial-img" alt=""></img>
+                                <img src={require('../../assets/img/intro/histroy/medic.jpg').default} className="testimonial-img" alt=""></img>
                                 <h3>의료 부문 DFS 완료</h3>
                                 <h4>2021년 2월</h4>
                             </div>
@@ -86,7 +86,7 @@ export const TestimonialElements =
                     <div className="swiper-slide">
                         <div className="testimonial-item">
                             <div className="profile my-auto">
-                                <img src="../assets/img/clients/hanjin.png" className="testimonial-img" alt=""></img>
+                                <img src={require('../../assets/img/intro/histroy/logic.jpg').default} className="testimonial-img" alt=""></img>
                                 <h3>물류 부문 DFS 진행</h3>
                                 <h4>Store Owner</h4>
                             </div>
@@ -99,7 +99,7 @@ export const TestimonialElements =
                     <div className="swiper-slide">
                         <div className="testimonial-item">
                             <div className="profile my-auto">
-                                <img src="../assets/img/clients/topas.png" className="testimonial-img" alt=""></img>
+                                <img src={require('../../assets/img/intro/histroy/travel.jpg').default} className="testimonial-img" alt=""></img>
                                 <h3>여행 부문 DFS 진행</h3>
                                 <h4>2021년 11월</h4>
                             </div>
