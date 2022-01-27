@@ -3,7 +3,7 @@ import AOS from "aos";
 import Isotope from 'isotope-layout'
 
 
-import * as event from '../event/EventElements';
+import * as event from './EventElements';
 import * as common from '../../components/common/BreadCrumbs';
 
 const Contest = () => {
@@ -57,6 +57,7 @@ const Contest = () => {
             }
         }
     }
+    
 
     useEffect(() => {
     });
