@@ -22,6 +22,10 @@ import StartupSourcing from './views/program/StartupSourcing';
 import ExternalCooperation from './views/program/ExternalCooperation';
 import Suggestion from './views/program/Suggestion';
 
+import BizPick from './views/insight/BizPick'
+import TechPick from './views/insight/TechPick';
+
+
 import Member from './views/contact/Member'
 
 import ErrorPage from './views/common/ErrorPage';
@@ -50,8 +54,8 @@ ReactDOM.render(
           <Route exact path='/program/external' element={<ExternalCooperation />}></Route>
           <Route exact path='/program/suggest' element={<Suggestion />}></Route>
 
-          <Route exact path='/insight/biz' element={<Board />}></Route>
-          <Route exact path='/insight/tech' element={<Board />}></Route>
+          <Route exact path='/insight/biz' element={<BizPick />}></Route>
+          <Route exact path='/insight/tech' element={<TechPick />}></Route>
           <Route exact path='/insight/contest' element={<Contest />}></Route>
 
           <Route exact path='/contact/member' element={<Member />}></Route>
