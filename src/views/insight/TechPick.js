@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 
 //import axios from 'axios';
-import DataTableComponent from '../../components/dataTable/DataTable'
-import * as jsondata from '../../components/JsonData'
+import * as  DT from '../../components/dataTable/DataTable';
+import * as jsondata from '../../components/JsonData';
+
+import $ from 'jquery';
+import reactDom from "react-dom";
 
 import * as common from '../../components/common/BreadCrumbs'
 
@@ -30,16 +33,52 @@ const TechPick = () => {
             { data: 'viewCnt', width: "5%" },
         ]
 
-        DataTableComponent(Response, columns);
+        syncTable(Response, columns);
     }
 
- const BoardMainElements =
+    const syncTable = (orginData, columns) => {
+
+        $('#dataTable').DataTable({
+            data: orginData,
+            columns: columns,
+            createdRow: function (row, data, dataIndex) {
+                row.addEventListener('click', function () {
+                    // return (
+                    //    //  window.location.href = '/boardDetail?' + "bno="+orginData[dataIndex].bno
+                    //      window.location.href = '/boardDetail?' + JSON.stringify(orginData[dataIndex])
+                    // );
+                    const elements = <TechDetailElements data={orginData[dataIndex]} />
+                    reactDom.render(elements, document.getElementById("dataTable2"));
+                    document.getElementById("dataTable_wrapper").style.display = "none"
+                })
+            },
+
+            drawCallback: function () {
+                document.getElementById('dataTable').firstElementChild.style.backgroundColor = '#f1f1f1b4';
+            },
+
+            language: DT.lang_kor,
+            responsive: DT.defaultResponsive,
+            lengthChange: DT.defaultLengthChange,
+            searching: DT.defaultSearching,
+            ordering: DT.defaultOrdering,
+            info: DT.defaultInfo,
+            // 페이징 기능 숨기기
+            //paging: false,
+            // 2번째 항목을 오름 차순 
+            // order : [ [ 열 번호, 정렬 순서 ], ... ]
+            pageLength: 5,
+            order: [[0, "asc"]]
+        });
+    };
+
+    const TechMainElements =
         <section id="about" className="about">
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Tech Pick</h2>
-                    <p>행사에 대한 고민은 많지만, 오늘도 바쁜 당신을 위해 오픈이노베이션 분야별 행사와 모임을 한 눈에 모아 봤습니다. 놓쳐선 안 될 행사와 함께 여러분의 메일함을 살며시 두드릴게요.
-                        <br />우리, 한 주의 문을 활짝 여는 격주 금요일 아침에 만나요 🙋‍♀️
+                    <p>
+                        TechPick 소제목
                     </p>
                 </div>
                 <table id="dataTable" className="type04" width="100%">
@@ -60,7 +99,7 @@ const TechPick = () => {
         </section>
         ;
 
- const BoardDetailElements = (props) => {
+    const TechDetailElements = (props) => {
         console.log(JSON.stringify(props.data));
         const param = props.data;
         return (
@@ -100,9 +139,11 @@ const TechPick = () => {
                             <thead>
                                 <tr>
                                     {/* <td style={{ float: 'right' }}> */}
-                                    {/* <button type="button" id="delete" className="btn btn-primary disabled">이전</button> */}<a href='/board'>
+                                    {/* <button type="button" id="delete" className="btn btn-primary disabled">이전</button> */}
+                                    <a href='/board'>
                                         <button type="button" id="list" className="btn btn-primary" style={{ float: 'right' }}>목록</button>
-                                        {/* <button type="button" id="write" className="btn btn-primary active">다음</button> */}</a>
+                                    </a>
+                                    {/* <button type="button" id="write" className="btn btn-primary active">다음</button> */}
                                     {/* </td> */}
                                 </tr>
                             </thead>
@@ -112,22 +153,22 @@ const TechPick = () => {
             </>
 
         )
-    }
-        ;
+    };
 
 
-  useEffect(() => {
-    callSelectBoardData();
-  })
+    useEffect(() => {
+        callSelectBoardData();
+    })
 
-  return (
-    <>
-      <main id="main">
-        {common.BreadCrumbsElements}
-        {BoardMainElements}
-      </main>
-    </>
-  );
+    return (
+        <>
+            <main id="main">
+                {common.BreadCrumbsElements}
+                {TechMainElements}
+            </main>
+        </>
+    );
+
 
 }
 
