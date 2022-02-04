@@ -59,11 +59,12 @@ class Header extends React.Component {
   }
   
   render() {
-    return (
-      <>
-        {headerElements}
-      </>
-    );
+    if(window.location.pathname.split('/')[1] === 'council') return null;
+      return (
+        <>
+          {headerElements}
+        </>
+      );
   }
 
 }
