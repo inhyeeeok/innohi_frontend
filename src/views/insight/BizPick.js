@@ -7,7 +7,6 @@ import * as jsondata from '../../components/JsonData';
 import $ from 'jquery';
 import reactDom from "react-dom";
 
-import * as common from '../../components/common/BreadCrumbs'
 
 const BizPick = () => {
 
@@ -67,13 +66,13 @@ const BizPick = () => {
             //paging: false,
             // 2번째 항목을 오름 차순 
             // order : [ [ 열 번호, 정렬 순서 ], ... ]
-            pageLength: 5,
+            pageLength: 10,
             order: [[0, "asc"]]
         });
     };
 
     const BizMainElements =
-        <section id="about" className="about">
+        <section id="about" className="about section-bg" style={{ marginTop: '61px' }}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Biz Pick</h2>
@@ -158,7 +157,6 @@ const BizPick = () => {
     return (
         <>
             <main id="main">
-                {common.BreadCrumbsElements}
                 {BizMainElements}
             </main>
         </>

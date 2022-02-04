@@ -10,38 +10,22 @@ export const BreadCrumbsElements =
 
 export const IntroElements =
     <>
-        <section id="about" className="about">
+        <section id="about" className="about section-bg" style={{ marginTop: '72px' }}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2>이노하이 소개</h2>
                 </div>
+                <div className='align-items-center justify-content-center' style={{ textAlign: "center" }} >
+                    <img src={require('../../assets/img/intro/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
+                </div>
                 <div className="row content">
                     <div className="section-title">
                         <p>
-                            <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight
+                            <br /><br /><span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight
                             의 줄임말로
-                            <br />한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 <br />한진정보통신의 오픈 이노베이션 프로그램 입니다.</p>
-                    </div>
-
-                    <div className='align-items-center justify-content-center' style={{ textAlign: "center" }} >
-                        <img src={require('../../assets/img/intro/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
-                    </div>
-                    {/* <div  style={{ textAlign: "center" }} >
-                        <span>
-                        <img src={require('../../assets/img/logo/innoHI_Logo_type2.png').default} className="img-fluid" style={{ width: "200px" }} alt=""></img>
-                        </span>
-                        <strong>innoH.I.는
-                                <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span><span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight 의 줄임말로 한진 그룹과 검증된 기술혁신
-                                    전문가가 만나
-                                    비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 한진정보통신의 오픈 이노베이션 프로그램 입니다.
-                                </span>
-                            </strong>
-                    </div>
-
-                    <div className="col-lg-8 pt-4 pt-lg-0" >
-                        <p>
+                            <br />한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 <br />한진정보통신의 오픈 이노베이션 프로그램 입니다.
                         </p>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,7 +34,7 @@ export const IntroElements =
 
 export const TestimonialElements =
 
-    <section id="testimonials" className="testimonials section-bg">
+    <section id="testimonials" className="testimonials section-bg" style={{ marginTop: '61px' }}>
         <div className="container" data-aos="fade-up">
             <div className="section-title">
                 <h2>연혁</h2>
@@ -119,16 +103,16 @@ export const TestimonialElements =
     ;
 
 export const TrinityElements = 
-    <section id="eco" className="team">
+    <section id="eco" className="team section-bg"  style={{ marginTop: '61px' }}>
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
                 <h2>추진체계</h2>
-                <p>innoHI의 비전은 한진정보통신의 IT 전문가 역량을 활용해 고객과 스타트업 그리고 한진정보통신 모두가 더 나은 미래를 향해 나아갈 수 있는 오픈이노베이션을 만들어 내는것입니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
+                <p>innoHI의 비전은 한진정보통신의 IT 전문가 역량을 활용해 <br />고객과 스타트업 그리고 한진정보통신 모두가 더 나은 미래를 향해 나아갈 수 있는 오픈이노베이션을 만들어 내는것입니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
             </div>
 
-            <div className='align-items-center justify-content-center'>
-                <img src={require('../../assets/img/intro/trinity/TrinityElements.png').default} className='img-fluid' alt='스타트업 생태계'></img>
+            <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
+                <img src={require('../../assets/img/intro/trinity/TrinityElements.png').default} className='img-fluid' style={{ width: '70%'}} alt='스타트업 생태계'></img>
             </div>
         </div>
     </section>

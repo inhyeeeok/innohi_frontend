@@ -7,12 +7,11 @@ import * as jsondata from '../../components/JsonData';
 import $ from 'jquery';
 import reactDom from "react-dom";
 
-import * as common from '../../components/common/BreadCrumbs'
 
 const TechPick = () => {
 
     const callSelectBoardData = () => {
-        makeDataTable(jsondata.newsletterTestData);
+        makeDataTable(jsondata.techPickTestData);
         // axios.get(`${process.env.REACT_APP_API_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
         //   .then((Response) => {
         //     //       console.log(Response.data);
@@ -67,18 +66,18 @@ const TechPick = () => {
             //paging: false,
             // 2번째 항목을 오름 차순 
             // order : [ [ 열 번호, 정렬 순서 ], ... ]
-            pageLength: 5,
+            pageLength: 10,
             order: [[0, "asc"]]
         });
     };
 
     const TechMainElements =
-        <section id="about" className="about">
+        <section id="about" className="about section-bg" style={{ marginTop: '61px' }}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Tech Pick</h2>
                     <p>
-                        TechPick 소제목
+                    최신 기술 트렌드를 확인 할 수 있는 페이지로 게시판 형식으로 구성
                     </p>
                 </div>
                 <table id="dataTable" className="type04" width="100%">
@@ -163,7 +162,6 @@ const TechPick = () => {
     return (
         <>
             <main id="main">
-                {common.BreadCrumbsElements}
                 {TechMainElements}
             </main>
         </>

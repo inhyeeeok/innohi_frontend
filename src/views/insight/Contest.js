@@ -4,7 +4,6 @@ import Isotope from 'isotope-layout'
 
 
 import * as event from './EventElements';
-import * as common from '../../components/common/BreadCrumbs';
 
 const Contest = () => {
 
@@ -65,7 +64,6 @@ const Contest = () => {
     return (
         <>
             <main id="main">
-                {common.BreadCrumbsElements}
                 {event.PortfolioElements}
             </main>
         </>

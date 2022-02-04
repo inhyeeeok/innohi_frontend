@@ -11,7 +11,7 @@ export const BreadCrumbsElements =
     ;
 
 export const PortfolioElements =
-    <section id="portfolio" className="portfolio">
+    <section id="portfolio" className="portfolio section-bg" style={{ marginTop: '61px' }}>
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
