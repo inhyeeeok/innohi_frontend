@@ -13,6 +13,33 @@ export const newsletter2TestData =   [
         ["1", "[이노하이레터#4] 11월1주차 뉴스레터 📭", "2021-11-06", "admin", "1"],
 ];
 
+export const techPickTestData = [
+  {
+    "bno": 2,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "테스트 제목2",
+    "content": "https://hanway.hist.co.kr/HanJin/general/GroupNews/SelectNews.aspx?entrypoint=1&BulletinID=1489&MenuID=64&Type=news",
+    "regUser": "\t작성자2",
+    "regDate": "2021-10-20 04:50:01",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
+    "bno": 1,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "테스트 제목1",
+    "content": "https://hanway.hist.co.kr/HanJin/general/GroupNews/SelectNews.aspx?entrypoint=1&BulletinID=1468&MenuID=64&Type=news",
+    "regUser": "\t작성자1",
+    "regDate": "2021-10-20 04:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  }
+];
+
 export const newsletterTestData = [
   {
     "bno": 6,
@@ -89,7 +116,7 @@ export const newsletterTestData = [
 ];
 
 
-export const StartupTestData = [
+export const startupTestData = [
         {
           "S_NO": 1,
           "S_NAME": "Neteera",
