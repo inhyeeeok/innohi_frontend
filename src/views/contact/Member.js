@@ -33,19 +33,21 @@ const Member = () => {
                                 <p>디지털 아키텍트</p>
                                 <p>전략사업부 디지털솔루션팀 대리</p>
                                 <p>스타트업 DFS, PnP 담당</p>
-                                <p>2222222222</p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <h5>js.kang@hist.co.kr</h5>
                         </div>
                     </div>
 
                     <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                         <div className="icon-box">
-                        <img src={require('../../assets/img/program/DFS_4.png').default} className="img-fluid" alt=""></img>
+                        <img src={require('../../assets/img/contact/member/test.jpg').default} className="img-fluid" alt=""></img>
                                 <h4>권인혁</h4>
                                 <p>디지털 아키텍트</p>
                                 <p>전략사업부 디지털솔루션팀 대리</p>
-                                <p>111111111111</p>
-                                <p>2222222222</p>
+                                <p><br /></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <h5>ikwon@hist.co.kr</h5>
                         </div>
                     </div>
@@ -57,7 +59,8 @@ const Member = () => {
                                 <p>디지털 아키텍트</p>
                                 <p>전략사업부 디지털솔루션팀 사원</p>
                                 <p>오픈 이노베이션 협의체 담당</p>
-                                <p>2222</p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <h5>than@hist.co.kr</h5>
                         </div>
                     </div>

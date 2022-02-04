@@ -31,10 +31,6 @@ import "bootstrap-icons/font/bootstrap-icons.css"; //npm i bootstrap-icons
       window.addEventListener('load', headerScrolled)
       onscroll(document, headerScrolled)
     }
-
-
-
-
   }
 
 
