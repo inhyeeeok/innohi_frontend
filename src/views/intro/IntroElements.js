@@ -10,7 +10,7 @@ export const BreadCrumbsElements =
 
 export const IntroElements =
     <>
-        <section id="about" className="about section-bg" style={{ marginTop: '72px' }}>
+        <section id="about" className="about section-bg" style={{ marginTop: '62px' }}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2>이노하이 소개</h2>
