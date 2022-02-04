@@ -1,6 +1,7 @@
 import React from 'react';
 
 import test from "../../components/Test";
+import { Link } from "react-router-dom";
 
 const headerElements =
 
@@ -15,31 +16,30 @@ const headerElements =
       <nav id='navbar' className='navbar'>
         <ul>
         {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
-          <li className='dropdown'><a href='/intro'><div>Introduce<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/intro/introduction'><div>Introduce<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><div>소개</div></li>
-              <li><div>추진체계</div></li>
-              <li><div>연혁</div></li>
-              {/* <li><div>자주묻는 질문</div></li> */}
+              <li><Link to='/intro/introduction'><div>소개</div></Link></li>
+              <li><Link to='/intro/propel'><div>추진체계</div></Link></li>
+              <li><Link to='/intro/history'><div>연혁</div></Link></li>
             </ul>
           </li>
           <li className='dropdown'><a href='/program/startup'><div>Program<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><a href='/program/startup'><div>스타트업 소싱</div></a></li>
-              <li><a href='/program/external'><div>대외협력</div></a></li>
-              <li><a href='/program/suggest'><div>협업제안</div></a></li>
+              <li><Link to='/program/startup'><div>스타트업 소싱</div></Link></li>
+              <li><Link to='/program/external'><div>대외협력</div></Link></li>
+              <li><Link to='/program/suggest'><div>협업제안</div></Link></li>
             </ul>
           </li>
           <li className='dropdown'><a href='/insight/contest'><div>Insight<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><a href='/insight/biz'><div>Biz Pick</div></a></li>
-              <li><a href='/insight/tech'><div>Tech Pick</div></a></li>
+              <li><Link to='/insight/biz'><div>Biz Pick</div></Link></li>
+              <li><Link to='/insight/tech'><div>Tech Pick</div></Link></li>
               <li><a href='/insight/contest'><div>Event</div></a></li>
             </ul>
           </li>
           <li className='dropdown'><a href='/contact/member'><div>Contact<i className='bi bi-chevron-down'></i></div></a>
             <ul>
-              <li><a href='/contact/member'><div>구성원 소개</div></a></li>
+              <li><Link to='/contact/member'><div>구성원 소개</div></Link></li>
               {/* <li><a href='/contact/question'><div>문의하기</div></a></li> */}
               <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'><div>문의하기</div></a></li>
             </ul>
