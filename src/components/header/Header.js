@@ -44,7 +44,7 @@ const headerElements =
               <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'>문의하기</a></li>
             </ul>
           </li>
-          <li><a href='/council'><div className='getstarted'>협의체공간</div></a>
+          <li><a href='/council' className='getstarted'>협의체공간</a>
           </li>
         </ul>
         <i className='bi bi-list mobile-nav-toggle'></i>
