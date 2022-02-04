@@ -6,7 +6,7 @@ import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
 
 const StartupArchive = () => {
-  const firstData = jsondata.StartupTestData.slice(jsondata.StartupTestData.length - 50, jsondata.StartupTestData.length); //최초 진입시 가장 최신 50개 렌더링
+  const firstData = jsondata.startupTestData.slice(jsondata.startupTestData.length - 50, jsondata.startupTestData.length); //최초 진입시 가장 최신 50개 렌더링
   const [stData, setStData] = useState(firstData);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(5);
@@ -20,9 +20,9 @@ const StartupArchive = () => {
   const changeStData = (key, value) => {
     let resData = '';
     if (key == 'S_TECH_TYPE') {
-      resData = jsondata.StartupTestData.filter(it => it.S_TECH_TYPE.includes(value));
+      resData = jsondata.startupTestData.filter(it => it.S_TECH_TYPE.includes(value));
     } else if (key == 'S_CATEGORY') {
-      resData = jsondata.StartupTestData.filter(it => it.S_CATEGORY.includes(value));
+      resData = jsondata.startupTestData.filter(it => it.S_CATEGORY.includes(value));
     }
     setStData(resData);
   }
