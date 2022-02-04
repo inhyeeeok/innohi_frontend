@@ -14,17 +14,17 @@ const footerElements =
             <p>한진정보통신 주식회사<br /> 대표자명: 박은호<br /> 사업자등록번호: 201-81-46253 <br />서울시 강서구 공항대로 453(등촌동)</p>
           </div>
           <div className='col-lg-3 col-md-6 footer-links'>
-            <h4>Useful Links</h4>
+            <h4>한진정보통신 링크</h4>
             <ul>
-              <li><i className='bx bx-chevron-right'></i><div>회사소개</div></li>
-              <li><i className='bx bx-chevron-right'></i><div>찾아오시는길</div></li>
-              <li><i className='bx bx-chevron-right'></i><div>제휴문의</div></li>
+              <li><a href='https://www.hist.co.kr/'><div>회사소개</div></a></li>
+              <li><a href='https://www.hist.co.kr/contact-us/'><div>찾아오시는 길</div></a></li>
+              <li><a href='https://www.hist.co.kr/support/'><div>제휴 문의</div></a></li>
             </ul>
           </div>
           <div className='col-lg-3 col-md-6 footer-links'>
-            <h4>Our Services</h4>
+            <h4>이노하이 프로그램</h4>
             <ul>
-              <li><i className='bx bx-chevron-right'></i><div>문의 및 제안하기</div></li>
+              <li><a href='/contact/member'><div>문의 및 제안하기</div></a></li>
             </ul>
           </div>
           <div className='col-lg-3 col-md-6 footer-links'>
