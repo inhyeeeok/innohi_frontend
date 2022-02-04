@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.navbar div, .navbar div:focus {
+.navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,13 +173,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar div i, .navbar div:focus i {
+.navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar div:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > div {
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #47b2e4;
 }
 
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 200px;
 }
 
-.navbar .dropdown ul div {
+.navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import test from "../../components/Test";
+import GlobalFunction from "../GlobalFunction";
 import { Link } from "react-router-dom";
 
 const headerElements =
@@ -16,32 +16,32 @@ const headerElements =
       <nav id='navbar' className='navbar'>
         <ul>
         {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
-          <li className='dropdown'><a href='/intro/introduction'><div>Introduce<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/intro/introduction'>Introduce<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><Link to='/intro/introduction'><div>소개</div></Link></li>
-              <li><Link to='/intro/propel'><div>추진체계</div></Link></li>
-              <li><Link to='/intro/history'><div>연혁</div></Link></li>
+              <li><a href='/intro/introduction'>소개</a></li>
+              <li><a href='/intro/propel'>추진체계</a></li>
+              <li><a href='/intro/history'>연혁</a></li>
             </ul>
           </li>
-          <li className='dropdown'><a href='/program/startup'><div>Program<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/program/startup'>Program<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><Link to='/program/startup'><div>스타트업 소싱</div></Link></li>
-              <li><Link to='/program/external'><div>대외협력</div></Link></li>
-              <li><Link to='/program/suggest'><div>협업제안</div></Link></li>
+              <li><a href='/program/startup'>스타트업 소싱</a></li>
+              <li><a href='/program/external'>대외협력</a></li>
+              <li><a href='/program/suggest'>협업제안</a></li>
             </ul>
           </li>
-          <li className='dropdown'><a href='/insight/contest'><div>Insight<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/insight/contest'>Insight<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><Link to='/insight/biz'><div>Biz Pick</div></Link></li>
-              <li><Link to='/insight/tech'><div>Tech Pick</div></Link></li>
-              <li><a href='/insight/contest'><div>Event</div></a></li>
+              <li><a href='/insight/biz'>Biz Pick</a></li>
+              <li><a href='/insight/tech'>Tech Pick</a></li>
+              <li><a href='/insight/contest'>Event</a></li>
             </ul>
           </li>
-          <li className='dropdown'><a href='/contact/member'><div>Contact<i className='bi bi-chevron-down'></i></div></a>
+          <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><Link to='/contact/member'><div>구성원 소개</div></Link></li>
+              <li><a href='/contact/member'>구성원 소개</a></li>
               {/* <li><a href='/contact/question'><div>문의하기</div></a></li> */}
-              <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'><div>문의하기</div></a></li>
+              <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'>문의하기</a></li>
             </ul>
           </li>
           <li><a href='/council'><div className='getstarted'>협의체공간</div></a>
@@ -55,7 +55,7 @@ const headerElements =
 class Header extends React.Component {
 
   componentDidMount() {
-    test();
+    GlobalFunction();
   }
   
   render() {
