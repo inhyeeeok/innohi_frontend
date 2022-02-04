@@ -5,33 +5,10 @@ import 'react-app-polyfill/stable';
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
-import Main from './views/main/Main';
-
-import Intro from './views/intro/Intro';
-
-
-import Board from './views/community/Board';
-import Contest from './views/insight/Contest';
-import StartupArchive from './views/community/StartupArchive';
-
-
-import StartupSourcing from './views/program/StartupSourcing';
-import ExternalCooperation from './views/program/ExternalCooperation';
-import Suggestion from './views/program/Suggestion';
-
-import BizPick from './views/insight/BizPick'
-import TechPick from './views/insight/TechPick';
-
-
-import Member from './views/contact/Member'
-
-import ErrorPage from './views/common/ErrorPage';
-
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer';
+import Public from './layouts/Public';
 
 import './assets/style/style.css';
 import './assets/style/custom.css';
@@ -44,28 +21,9 @@ import "datatables.net-dt/css/jquery.dataTables.min.css";
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
-      <Header />
-        <Routes>
-          <Route path='/' element={<Main />}></Route>
 
-          <Route exact path='/intro' element={<Intro />}></Route>
-
-          <Route exact path='/program/startup' element={<StartupSourcing />}></Route>
-          <Route exact path='/program/external' element={<ExternalCooperation />}></Route>
-          <Route exact path='/program/suggest' element={<Suggestion />}></Route>
-
-          <Route exact path='/insight/biz' element={<BizPick />}></Route>
-          <Route exact path='/insight/tech' element={<TechPick />}></Route>
-          <Route exact path='/insight/contest' element={<Contest />}></Route>
-
-          <Route exact path='/contact/member' element={<Member />}></Route>
-          <Route exact path='/contact/question' element={<StartupArchive />}></Route>
-
-          <Route path="/*" element={<ErrorPage />} />
-
-        </Routes>
-      <Footer />
-      {/* <Navigate from='*' to='/' /> */}
+      <Public />
+   
     </React.StrictMode>
   </BrowserRouter>,
   
