@@ -17,11 +17,14 @@ export const IntroElements =
                 </div>
                 <div className="row content">
                     <div className="section-title">
-                        <p>innoH.I.는 Innovation for Hanjin's future Insight 의 줄임말로 한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 한진정보통신의 오픈 이노베이션 프로그램 입니다.</p>
+                        <p>
+                            <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight
+                            의 줄임말로
+                            <br />한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 <br />한진정보통신의 오픈 이노베이션 프로그램 입니다.</p>
                     </div>
 
                     <div className='align-items-center justify-content-center' style={{ textAlign: "center" }} >
-                        <img src={require('../../assets/img/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
+                        <img src={require('../../assets/img/intro/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
                     </div>
                     {/* <div  style={{ textAlign: "center" }} >
                         <span>
@@ -51,7 +54,7 @@ export const TestimonialElements =
         <div className="container" data-aos="fade-up">
             <div className="section-title">
                 <h2>연혁</h2>
-                <p>이노하이는 디지털전환 시대에 맞춰 내외부 기술과 아이디어 등 자원을 적극 활용하여 내부혁신을 가속화하고 이를 통해 시장진출 기회를 확대하고 있어요! 🚶‍♂️</p>
+                <p>InnoHI는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다. 🚶‍♂️</p>
             </div>
 
             <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -125,7 +128,7 @@ export const TrinityElements =
             </div>
 
             <div className='align-items-center justify-content-center'>
-                <img src={require('../../assets/img/TrinityElements_discription_b.png').default} className='img-fluid' alt='스타트업 생태계'></img>
+                <img src={require('../../assets/img/intro/trinity/TrinityElements.png').default} className='img-fluid' alt='스타트업 생태계'></img>
             </div>
         </div>
     </section>
