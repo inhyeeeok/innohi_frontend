@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 
-const CouncilTest = () => {
+const CouncilTest = (props) => {
+    console.log('testprops{props}'+JSON.stringify(props));
+    console.log(props);
 
     useEffect(() => {
 

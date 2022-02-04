@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Amplify } from 'aws-amplify';
 import { withAuthenticator , Authenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
+import { Link } from "react-router-dom";
+import CouncilTest from './CouncilTest';
 
 Amplify.configure(
     {
@@ -39,14 +41,28 @@ Amplify.configure(
 
 // export default CouncilMain;
 
-function App({ signOut, user }) {
+function CouncilMain({ signOut, user }) {
+
+  console.log(signOut);
+  console.log(user);
+
     return (
       <>
         <h1>Hello {user.username}</h1>
         <button onClick={signOut}>Sign out</button>
-        <a href='/council/test'><div>테스트 이동</div></a>
+        <Link to={{
+          pathname: '/council/test', 
+          state : {
+            user : user.username
+          }
+        }}>
+          <button>Test</button>
+        </Link>
+
+        <Link to='/council/test' state={{ user: user.username}}><button>Test2</button></Link>
+        <a href={'/council/test'}>상세보기</a>
       </>
     );
   }
   
-  export default withAuthenticator(App);
+  export default withAuthenticator(CouncilMain);
