@@ -2,7 +2,9 @@ import { Route, Routes } from "react-router-dom";
 
 import Main from '../views/main/Main';
 
-import Intro from '../views/intro/Intro';
+import Introduction from '../views/intro/Introduction';
+import Propel from '../views/intro/Propel';
+import History from '../views/intro/History';
 
 import Contest from '../views/insight/Contest';
 import StartupArchive from '../views/community/StartupArchive';
@@ -36,7 +38,11 @@ const Public = () => {
             <Routes>
                 <Route path='/' element={<Main />}></Route>
 
-                <Route exact path='/intro' element={<Intro />}></Route>
+                <Route exact path='/intro'>
+                    <Route exact path='introduction' element={<Introduction />}></Route>
+                    <Route exact path='propel' element={<Propel />}></Route>
+                    <Route exact path='history' element={<History />}></Route>
+                </Route>
 
                 <Route exact path='/program'>
                     <Route exact path='startup' element={<StartupSourcing />}></Route>
