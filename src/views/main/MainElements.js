@@ -50,7 +50,7 @@ export const cliensElements =
           <img src={require('../../assets/img/clients/kal.png').default} className='img-fluid' alt=''></img>
         </div>
         <div className='col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center'>
-          <img src={kal} className='img-fluid' alt=''></img>
+          <img src={require('../../assets/img/clients/kal.png').default} className='img-fluid' alt=''></img>
         </div>
         <div className='col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center'>
           <img src={kal} className='img-fluid' alt=''></img>
@@ -96,9 +96,9 @@ export const clientsElements =
 
       <div className="clients-slider swiper">
         <div className="swiper-wrapper align-items-center">
-          <div className="swiper-slide"><img src={require('../../assets/img/clients/hist.png').default} className="img-fluid" style={{ width: "320px" }} alt=""></img></div>
-          <div className="swiper-slide"><img src={require('../../assets/img/clients/kal.png').default} className="img-fluid" style={{ width: "320px" }} alt=""></img></div>
-          <div className="swiper-slide"><img src={require('../../assets/img/clients/kal.png').default} className="img-fluid" style={{ width: "320px" }} alt=""></img></div>
+          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/만반잘부.jpg').default} className="img-fluid" style={{ width: "320px", height: "200px"}} alt=""></img></div>
+          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/PnP_Web3_and_Big_Data_in_Healthcare.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/APAC SUMMIT 2021.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
         </div>
         <div className="swiper-pagination"></div>
       </div>

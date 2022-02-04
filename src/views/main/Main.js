@@ -18,7 +18,6 @@ const Main = () => {
         {/* {main.refElements} */}
         {main.serviceElements}
         {main.clientsElements}
-        {main.clientsElements}
         {main.joinNewsletterElements}
       </main>
 
