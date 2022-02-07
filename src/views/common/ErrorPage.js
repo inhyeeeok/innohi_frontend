@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
-import * as common from '../../components/common/BreadCrumbs';
 
 const ErrorPage = () =>  {
   
   
     useEffect(() => {
+      document.getElementById('header').style.display = "none";
+      document.getElementById('footer').style.display = "none";
+
+
     })
   
     return (
       <>
-        {common.BreadCrumbsElements}
         <img src={require('../../assets/img/sample.jpg').default} className='img-fluid animated' alt=''></img>
       </>
     );
