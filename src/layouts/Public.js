@@ -6,7 +6,6 @@ import Introduction from '../views/intro/Introduction';
 import Propel from '../views/intro/Propel';
 import History from '../views/intro/History';
 
-import Contest from '../views/insight/Contest';
 import StartupArchive from '../views/community/StartupArchive';
 
 
@@ -16,17 +15,21 @@ import Suggestion from '../views/program/Suggestion';
 
 import BizPick from '../views/insight/BizPick'
 import TechPick from '../views/insight/TechPick';
+import Contest from '../views/insight/Contest';
 
 import Member from '../views/contact/Member'
 
-import ErrorPage from '../views/common/ErrorPage';
-
 import CouncilMain from '../views/council/CouncilMain';
+import CouncilTest from "../views/council/CouncilTest";
+import CouncilIntro from "../views/council/CouncilIntro";
+
+import ErrorPage from '../views/common/ErrorPage';
 
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer';
 
-import CouncilTest from "../views/council/CouncilTest";
+
+
 
 const Public = () => {
 
@@ -61,9 +64,10 @@ const Public = () => {
                     <Route exact path='question' element={<StartupArchive />}></Route>
                 </Route>
 
-                <Route exact path='/council' element={<CouncilMain />}>
-                </Route>
+                <Route exact path='/council/main' element={<CouncilMain />}> </Route>
                 <Route exact path='/council/test' element={<CouncilTest />}></Route>
+                <Route exact path='/council' element={<CouncilIntro />}> </Route>
+
 
                 <Route path="/*" element={<ErrorPage />} />
 

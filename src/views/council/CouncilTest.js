@@ -1,8 +1,25 @@
 import React, { useEffect } from 'react';
+import { Auth } from "aws-amplify";
+
 
 const CouncilTest = (props) => {
-    console.log('testprops{props}'+JSON.stringify(props));
-    console.log(props);
+    const login = async () => {
+        try {
+            await Auth.signIn('권인혁', 'innoHI1!');
+            alert("Logged in");
+          } catch (e) {
+            alert(e.message);
+          }
+    }
+
+    const loginOut = async () => {
+        try {
+            await Auth.signOut('권인혁', 'innoHI1!');
+            alert("Logged Out");
+          } catch (e) {
+            alert(e.message);
+          }
+    }
 
     useEffect(() => {
 
@@ -10,9 +27,8 @@ const CouncilTest = (props) => {
 
     return (
         <>
-                <div className="App">
-                    22222
-                </div>
+                <button onClick={login}>login</button>
+                <button onClick={loginOut}>loginOut</button>
         </>
        
     );
