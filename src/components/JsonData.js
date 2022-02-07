@@ -15,13 +15,61 @@ export const newsletter2TestData =   [
 
 export const techPickTestData = [
   {
+    "bno": 6,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "혁신이지33차 (D2C의 시대)",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
+    "bno": 5,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "혁신이지26차 (이케아)",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
+    "bno": 4,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "혁신이지20차 (라이다)",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg" , "11.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
+    "bno": 3,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "혁신이지17차 (금손들의 아마존)",
+    "content": ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
     "bno": 2,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목2",
-    "content": "https://hanway.hist.co.kr/HanJin/general/GroupNews/SelectNews.aspx?entrypoint=1&BulletinID=1489&MenuID=64&Type=news",
-    "regUser": "\t작성자2",
-    "regDate": "2021-10-20 04:50:01",
+    "title": "혁신이지14차 (고스트 키친)",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
     "updtUser": null,
     "updtDate": null,
     "viewCnt": 0
@@ -30,10 +78,10 @@ export const techPickTestData = [
     "bno": 1,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목1",
-    "content": "https://hanway.hist.co.kr/HanJin/general/GroupNews/SelectNews.aspx?entrypoint=1&BulletinID=1468&MenuID=64&Type=news",
-    "regUser": "\t작성자1",
-    "regDate": "2021-10-20 04:49:39",
+    "title": "혁신이지3차 (디지털 캠프파이어)",
+    "content": ["디지털-캠프파이어-1.jpg", "디지털-캠프파이어-2.jpg", "디지털-캠프파이어-3.jpg", "디지털-캠프파이어-4.jpg", "디지털-캠프파이어-5.jpg", "디지털-캠프파이어-6.jpg"],
+    "regUser": "한태준",
+    "regDate": "2022-02-07 04:49:39",
     "updtUser": null,
     "updtDate": null,
     "viewCnt": 0
@@ -41,6 +89,42 @@ export const techPickTestData = [
 ];
 
 export const newsletterTestData = [
+  {
+    "bno": 9,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "[이노하이레터#11] 12월4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
+    "regUser": "작성자6",
+    "regDate": "2022-01-13 02:09:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2021-11-06",
+    "viewCnt": 1
+  },
+  {
+    "bno": 8,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "[이노하이레터#11] 12월4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
+    "regUser": "작성자6",
+    "regDate": "2022-01-13 02:09:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2021-11-06",
+    "viewCnt": 1
+  },
+  {
+    "bno": 7,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "[이노하이레터#11] 12월4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
+    "regUser": "작성자6",
+    "regDate": "2022-01-13 02:09:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2021-11-06",
+    "viewCnt": 1
+  },
   {
     "bno": 6,
     "boardType": 1,
