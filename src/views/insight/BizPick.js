@@ -41,7 +41,11 @@ const BizPick = () => {
             data: orginData,
             columns: columns,
             createdRow: function (row, data, dataIndex) {
+                console.log(this);
+                console.log(row);
+                console.log(data);
                 row.addEventListener('click', function () {
+                    
                     // return (
                     //    //  window.location.href = '/boardDetail?' + "bno="+orginData[dataIndex].bno
                     //      window.location.href = '/boardDetail?' + JSON.stringify(orginData[dataIndex])
@@ -77,7 +81,7 @@ const BizPick = () => {
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Biz Pick</h2>
                     <p>
-                        BizPick 소제목
+                    스타트업과 관련된 소식 여기서 Pick! 해보세요.
                     </p>
                 </div>
                 <table id="dataTable" className="type04" width="100%">
@@ -85,7 +89,7 @@ const BizPick = () => {
                         <tr>
                             <th>순번</th>
                             <th>내용</th>
-                            <th>날짜</th>
+                            <th>작성일</th>
                             <th>작성자</th>
                             <th>조회수</th>
                         </tr>
@@ -136,7 +140,7 @@ const BizPick = () => {
                         <table className="table table-condensed">
                             <thead>
                                 <tr>
-                                    <a href='/board'>
+                                    <a href='/insight/biz'>
                                         <button type="button" id="list" className="btn btn-primary" style={{ float: 'right' }}>목록</button>
                                     </a>
                                 </tr>
