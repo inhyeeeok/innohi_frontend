@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 
 const StartupSourcing = () => {
-    // require('../../assets/img/sample.jpg').default
-    const Tt222 = (title, tt3, tt2) => {
+    const ProgramElements = () => {
         return (
             <>
                 <section id="services" className="services" style={{ backgroundColor: 'rgb(207 219 251)', marginTop: '61px'}}>
@@ -29,7 +28,7 @@ const StartupSourcing = () => {
 
                 <div className="section-title">
                     <h2>산업별 적용사례</h2>
-                    <p>의료, 항공, 물류, 여행 등 각 산업 별 프로그램 적용사례를 소개합니다.</p>
+                    <p>innoHI가 함께했던 산업들을 소개합니다.</p>
                 </div>
 
                 <div className="row">
@@ -84,7 +83,7 @@ const StartupSourcing = () => {
 
     return (
         <>
-            <Tt222 />
+            <ProgramElements />
             {ServiceElements}
         </>
     );

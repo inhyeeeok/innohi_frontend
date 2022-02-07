@@ -16,7 +16,7 @@ export const PortfolioElements =
 
             <div className="section-title">
                 <h2>세미나 및 컨퍼런스</h2>
-                <p>스타트업 & 지원기관의 투자라운딩 소식, 모집 소식,주요 뉴스 등 최신정보(DB)를 검색하고,구독과 알림을 통해 연결성을 강화합니다.</p>
+                <p>이런 프로그램들도 놓치지 마세요!</p>
             </div>
 
             <ul id="portfolio-flters" className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">

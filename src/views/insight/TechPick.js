@@ -7,8 +7,10 @@ import * as jsondata from '../../components/JsonData';
 import $ from 'jquery';
 import reactDom from "react-dom";
 
+import { Link } from "react-router-dom";
 
-const TechPick = () => {
+
+const TechPick = (props) => {
 
     const callSelectBoardData = () => {
         makeDataTable(jsondata.techPickTestData);
@@ -27,9 +29,9 @@ const TechPick = () => {
         const columns = [
             { data: 'bno', width: "5%" },
             { data: 'title', width: "70%", },
-            { data: 'updtDate', width: "10%" },
+            { data: 'regDate', width: "10%" },
             { data: 'regUser', width: "10%" },
-            { data: 'viewCnt', width: "5%" },
+            // { data: 'viewCnt', width: "5%" },
         ]
 
         syncTable(Response, columns);
@@ -49,6 +51,7 @@ const TechPick = () => {
                     const elements = <TechDetailElements data={orginData[dataIndex]} />
                     reactDom.render(elements, document.getElementById("dataTable2"));
                     document.getElementById("dataTable_wrapper").style.display = "none"
+                    
                 })
             },
 
@@ -72,22 +75,22 @@ const TechPick = () => {
     };
 
     const TechMainElements =
-        <section id="about" className="about section-bg" style={{ marginTop: '61px' }}>
+        <section id="about" className="about section-bg" style={{ marginTop: '61px', marginBottom: '110px'}}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Tech Pick</h2>
                     <p>
-                    최신 기술 트렌드를 확인 할 수 있는 페이지로 게시판 형식으로 구성
+                    새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.
                     </p>
                 </div>
                 <table id="dataTable" className="type04" width="100%">
                     <thead>
                         <tr>
                             <th>순번</th>
-                            <th>내용</th>
-                            <th>날짜</th>
+                            <th>제목</th>
+                            <th>작성일자</th>
                             <th>작성자</th>
-                            <th>조회수</th>
+                            {/* <th>조회수</th> */}
                         </tr>
                     </thead>
                 </table>
@@ -125,11 +128,14 @@ const TechPick = () => {
                                     <td width="10%">작성자</td>
                                     <td width="40%">{param.regUser}</td>
                                 </tr>
-                                <tr>
-                                    <td colSpan="4">
-                                        <iframe
-                                            src={param.content}
-                                            style={{ height: '2830px', width: '100%' }} title="oi-newsletter"></iframe>
+                                <tr align="center" >
+                                    <td colSpan="4" >
+                                        {(param.content).map((p, i) => {
+                                            return (
+                                                <img key={i} src={require(`../../assets/img/insight/techpick/${param.bno}/${p}`).default} className='img-fluid' alt=''></img>
+
+                                            )
+                                        })}
                                     </td>
                                 </tr>
                             </tbody>
@@ -139,7 +145,7 @@ const TechPick = () => {
                                 <tr>
                                     {/* <td style={{ float: 'right' }}> */}
                                     {/* <button type="button" id="delete" className="btn btn-primary disabled">이전</button> */}
-                                    <a href='/board'>
+                                    <a  href='/insight/tech'>
                                         <button type="button" id="list" className="btn btn-primary" style={{ float: 'right' }}>목록</button>
                                     </a>
                                     {/* <button type="button" id="write" className="btn btn-primary active">다음</button> */}

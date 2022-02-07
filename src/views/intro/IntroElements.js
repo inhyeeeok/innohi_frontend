@@ -21,9 +21,10 @@ export const IntroElements =
                 <div className="row content">
                     <div className="section-title">
                         <p>
-                            <br /><br /><span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight
-                            의 줄임말로
-                            <br />한진 그룹과 검증된 기술혁신 전문가가 만나 비즈니스에 적합한 기술혁신의 가치를 함께 만들어나가는 <br />한진정보통신의 오픈 이노베이션 프로그램 입니다.
+                            <br /><br />
+                            한진그룹의 오픈이노베이션 프로그램 Inno HI를 소개합니다.
+                            <br /> innoHI는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
+                            <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진의 미래 혁신 프로그램 입니다.
                         </p>
                     </div>
                 </div>
@@ -107,8 +108,8 @@ export const TrinityElements =
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-                <h2>추진체계</h2>
-                <p>innoHI의 비전은 한진정보통신의 IT 전문가 역량을 활용해 <br />고객과 스타트업 그리고 한진정보통신 모두가 더 나은 미래를 향해 나아갈 수 있는 오픈이노베이션을 만들어 내는것입니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
+                <h2>innoHI 비전</h2>
+                <p>“InnoHI”는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
             </div>
 
             <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
