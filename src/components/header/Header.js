@@ -1,7 +1,7 @@
 import React from 'react';
 
 import GlobalFunction from "../GlobalFunction";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const headerElements =
 
@@ -18,8 +18,8 @@ const headerElements =
         {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
           <li className='dropdown'><a href='/intro/introduction'>Introduce<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><a href='/intro/introduction'>소개</a></li>
-              <li><a href='/intro/propel'>추진체계</a></li>
+              <li><a href='/intro/introduction'>이노하이란?</a></li>
+              <li><a href='/intro/propel'>비전</a></li>
               <li><a href='/intro/history'>연혁</a></li>
             </ul>
           </li>
