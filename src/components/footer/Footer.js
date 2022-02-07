@@ -1,16 +1,15 @@
 import React from 'react';
 import '../../assets/style/style.css'
 import '../../assets/style/custom.css'
-import hist from '../../assets/img/clients/hist.png';
 
 const footerElements =
 
   <footer id='footer'>
-    <div className='footer-top'>
+    {/* <div className='footer-top'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-3 col-md-6 footer-contact'>
-            <h3><img src={hist} className='img-fluid' style={{ width: '175px' }} alt=''></img></h3>
+            <h3><img src={require('../../assets/img/clients/hist.png').default} className='img-fluid' style={{ width: '175px' }} alt=''></img></h3>
             <p>한진정보통신 주식회사<br /> 대표자명: 박은호<br /> 사업자등록번호: 201-81-46253 <br />서울시 강서구 공항대로 453(등촌동)</p>
           </div>
           <div className='col-lg-3 col-md-6 footer-links'>
@@ -36,7 +35,7 @@ const footerElements =
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className='container footer-bottom clearfix'>
       <div className='copyright'>
         Copyright &copy;2021 <strong><span>Hanjin Information Systems & Telecommunication</span></strong>. Co., Ltd. All rights Reserved.
