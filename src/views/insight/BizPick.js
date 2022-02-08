@@ -11,7 +11,7 @@ import reactDom from "react-dom";
 const BizPick = () => {
 
     const callSelectBoardData = () => {
-        makeDataTable(jsondata.newsletterTestData);
+        makeDataTable(jsondata.bizPickTestData);
         // axios.get(`${process.env.REACT_APP_API_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
         //   .then((Response) => {
         //     //       console.log(Response.data);
@@ -130,9 +130,8 @@ const BizPick = () => {
                                 </tr>
                                 <tr>
                                     <td colSpan="4">
-                                        <iframe
-                                            src={param.content}
-                                            style={{ height: '2830px', width: '100%' }} title="oi-newsletter"></iframe>
+                                        <img src={require(`../../assets/img/insight/bizpick/${param.bno}/${param.img}`).default} className='img-fluid' alt=''></img>
+                                        <div>{param.content}</div>
                                     </td>
                                 </tr>
                             </tbody>
