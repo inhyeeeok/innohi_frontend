@@ -68,7 +68,7 @@ export const PortfolioElements =
                     <div className="portfolio-info">
                         <h4>Comeup</h4>
                         <p>2021.11.01~2021.12.31</p>
-                        <a href="https://www.kcomeup.com/part/part_sign.jsp" className="details-link" title="More Details"><BiLink /></a>
+                        <a href="https://www.kcomeup.com/" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
 
