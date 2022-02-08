@@ -38,7 +38,7 @@ const footerElements =
     </div> */}
     <div className='container footer-bottom clearfix'>
       <div className='copyright'>
-        Copyright &copy;2021 <strong><span>Hanjin Information Systems & Telecommunication</span></strong>. Co., Ltd. All rights Reserved.
+        Copyright &copy;2022 <strong><span>Hanjin Information Systems & Telecommunication</span></strong>. Co., Ltd. All rights Reserved.
       </div>
       <div className='credits'>문의하기 : SELHTDB@hist.co.kr</div>
     </div>
