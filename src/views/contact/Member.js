@@ -22,7 +22,7 @@ const Member = () => {
                                 <p>디지털 아키텍트</p>
                                 <p>디지털솔루션팀 솔루션사업그룹장</p>
                                 <p>HIST C&D 엔지니어</p>
-                                <p>AWS S.A</p>
+                                <p></p>
                                 <h5>ehkim@hist.co.kr</h5>
                             </div>
                         </div>
