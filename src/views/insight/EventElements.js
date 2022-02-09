@@ -59,7 +59,7 @@ export const PortfolioElements =
                     <div className="portfolio-info">
                         <h4>APAC SUMMIT 2021</h4>
                         <p>2021.11.01~2021.12.31</p>
-                        <a href="portfolio-details.html" className="details-link" title="More Details"><BiLink /></a>
+                        <a href="https://www.plugandplayapac.com/apac-summit" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@ export const PortfolioElements =
                     <div className="portfolio-info">
                         <h4>nextrise 2021</h4>
                         <p>2021.11.01~2021.12.31</p>
-                        <a href="portfolio-details.html" className="details-link" title="More Details"><BiLink /></a>
+                        <a href="https://www.nextrise.co.kr/" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@ export const PortfolioElements =
                     <div className="portfolio-info">
                         <h4>SUMMER SUMMIT</h4>
                         <p>2021.11.01~2021.12.31</p>
-                        <a href="portfolio-details.html" className="details-link" title="More Details"><BiLink /></a>
+                        <a href="https://www.plugandplaytechcenter.com/summer-2021/" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ export const PortfolioElements =
                     <div className="portfolio-info">
                         <h4>WINTER SUMMIT</h4>
                         <p>2021.11.01~2021.12.31</p>
-                        <a href="portfolio-details.html" className="details-link" title="More Details"><BiLink /></a>
+                        <a href="https://www.plugandplaytechcenter.com/events/winter-summit-2021/" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
 
