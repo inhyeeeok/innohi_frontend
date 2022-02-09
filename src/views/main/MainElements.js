@@ -13,7 +13,7 @@ export const heroElements =
           </div>
         </div>
         <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
-          <img src={require('../../assets/img/sample.jpg').default} className='img-fluid animated' alt=''></img>
+          <img src={require('../../assets/img/intro/trinity/TrinityElements.png').default} className='img-fluid animated' alt=''></img>
         </div>
       </div>
     </div>
