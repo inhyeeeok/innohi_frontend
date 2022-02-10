@@ -45,7 +45,7 @@ const BizPick = () => {
                 console.log(row);
                 console.log(data);
                 row.addEventListener('click', function () {
-                    
+
                     // return (
                     //    //  window.location.href = '/boardDetail?' + "bno="+orginData[dataIndex].bno
                     //      window.location.href = '/boardDetail?' + JSON.stringify(orginData[dataIndex])
@@ -81,7 +81,7 @@ const BizPick = () => {
                 <div className="section-title">
                     <h2 style={{ textTransform: 'capitalize' }}>Biz Pick</h2>
                     <p>
-                    스타트업과 관련된 소식 여기서 Pick! 해보세요.
+                        스타트업과 관련된 소식 여기서 Pick! 해보세요.
                     </p>
                 </div>
                 <table id="dataTable" className="type04" width="100%">
@@ -129,9 +129,14 @@ const BizPick = () => {
                                     <td width="40%">{param.regUser}</td>
                                 </tr>
                                 <tr>
-                                    <td colSpan="4" style={{ backgroundColor:'#ffffff'}}>
-                                        <img src={require(`../../assets/img/insight/bizpick/${param.bno}/${param.img}`).default} className='img-fluid' style={{ textAlign:'center'}} alt=''></img>
-                                        <div>{param.content}</div>
+                                    <td colSpan="4" style={{ backgroundColor: '#ffffff' , textAlign: 'center'}}>
+                                        <img src={require(`../../assets/img/insight/bizpick/${param.bno}/${param.img}`).default} className='img-fluid' alt=''></img>
+
+                                        <div style={{ textAlign: 'left'}}>
+                                            {param.content.split('\n').map(d => {
+                                                return (<span>{d}<br /></span>)
+                                            })}
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
