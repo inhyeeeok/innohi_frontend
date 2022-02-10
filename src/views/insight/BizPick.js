@@ -129,8 +129,8 @@ const BizPick = () => {
                                     <td width="40%">{param.regUser}</td>
                                 </tr>
                                 <tr>
-                                    <td colSpan="4">
-                                        <img src={require(`../../assets/img/insight/bizpick/${param.bno}/${param.img}`).default} className='img-fluid' alt=''></img>
+                                    <td colSpan="4" style={{ backgroundColor:'#ffffff'}}>
+                                        <img src={require(`../../assets/img/insight/bizpick/${param.bno}/${param.img}`).default} className='img-fluid' style={{ textAlign:'center'}} alt=''></img>
                                         <div>{param.content}</div>
                                     </td>
                                 </tr>
