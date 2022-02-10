@@ -8,6 +8,17 @@ export const BreadCrumbsElements =
     </>
     ;
 
+export  const IntroDetailElements =
+<>
+        <section id="services" className="services section-bg" style={{ marginTop: '61px' }}>
+            <div className="container" data-aos="fade-up">
+
+                
+            </div>
+        </section>
+</>
+;
+
 export const IntroElements =
     <>
         <section id="about" className="about section-bg" style={{ marginTop: '62px' }}>
@@ -26,6 +37,23 @@ export const IntroElements =
                             <br /> innoHI는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
                             <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진의 미래 혁신 프로그램 입니다.
                         </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div className="icon-box" style={{ textAlign: 'center' }}>
+                            <img src={require('../../assets/img/program/DFS_5.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                            <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>스타트업 소싱</h4>
+                            <p style={{ textAlign: 'center'}}>한진과 함께 미래로 도약하고자 하는 스타트업을 찾기위한 프로그램을 운영중입니다</p>
+                        </div>
+                    </div>
+
+                    <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                        <div className="icon-box" style={{ textAlign: 'center' }}>
+                            <img src={require('../../assets/img/program/DFS_5.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                            <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>대외 활동</h4>
+                            <p style={{ textAlign: 'center' }}>정부부처, 기관, 투자자등 스타트업 생태계 관계자들과 네트워크를 형성하여 스타트업 생태계 활성화를 위해 노력하고 있습니다</p>
+                        </div>
                     </div>
                 </div>
             </div>
