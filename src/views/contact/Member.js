@@ -23,6 +23,7 @@ const Member = () => {
                                 <p>HIST C&D 엔지니어</p>
                                 <p>디지털 아키텍트</p>
                                 <p><br /></p>
+                                <p><br /></p>
                                 <h5>ehkim@hist.co.kr</h5>
                             </div>
                         </div>
@@ -32,7 +33,7 @@ const Member = () => {
                                 <img src={require('../../assets/img/program/DFS_4.png').default} className="img-fluid" alt=""></img>
                                 <p><br /></p>
                                 <h4>강준수</h4>
-                                <p>전디지털솔루션팀 대리</p>
+                                <p>디지털솔루션팀 대리</p>
                                 <p>스타트업 DFS, PnP 담당</p>
                                 <p><br /></p>
                                 <p><br /></p>
