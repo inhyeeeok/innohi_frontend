@@ -20,7 +20,7 @@ const Member = () => {
                                 <p><br /></p>
                                 <h4>김은희</h4>
                                 <p>Digital Architect</p>
-                                <p>디지털솔루션팀 솔루션사업그룹장</p>
+                                <p>솔루션사업그룹 그룹장/차장</p>
                                 <p>HIST C&D 엔지니어</p>
                                 <p><br /></p>
                                 <p><br /></p>
@@ -34,7 +34,7 @@ const Member = () => {
                                 <p><br /></p>
                                 <h4>강준수</h4>
                                 <p>Facilitator</p>
-                                <p>디지털솔루션팀 대리</p>
+                                <p>솔루션사업그룹 대리</p>
                                 <p>스타트업 DFS, PnP 담당</p>
                                 <p><br /></p>
                                 <p><br /></p>
@@ -48,7 +48,7 @@ const Member = () => {
                                 <p><br /></p>
                                 <h4>권인혁</h4>
                                 <p>Developer</p>
-                                <p>디지털솔루션팀 대리</p>
+                                <p>솔루션사업그룹 대리</p>
                                 <p>개발 및 PoC 수행 담당</p>
                                 <p><br /></p>
                                 <p><br /></p>
@@ -62,7 +62,7 @@ const Member = () => {
                                 <p><br /></p>
                                 <h4>한태준</h4>
                                 <p>Cordinator</p>
-                                <p>디지털솔루션팀 사원</p>
+                                <p>솔루션사업그룹 사원</p>
                                 <p>오픈 이노베이션 협의체 담당</p>
                                 <p><br /></p>
                                 <p><br /></p>
