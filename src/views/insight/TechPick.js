@@ -7,10 +7,7 @@ import * as jsondata from '../../components/JsonData';
 import $ from 'jquery';
 import reactDom from "react-dom";
 
-import { Link } from "react-router-dom";
-
-
-const TechPick = (props) => {
+const TechPick = () => {
 
     const callSelectBoardData = () => {
         makeDataTable(jsondata.techPickTestData);
