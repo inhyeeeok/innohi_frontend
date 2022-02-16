@@ -46,41 +46,37 @@ export const IntroElements =
                     <div className="section-title">
                         <h2>innoHI는 여러분의 오픈 이노베이션을 지원합니다</h2>
                     </div>
-                    <div className="container" data-aos="fade-up">
+                    <div className="container" data-aos="fade-up" style={{ textAlign : 'center'}}>
                         <div className="row">
                             <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <div className="icon-box" style={{ padding: '10px' }}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_1.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
 
                             <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <div className="icon-box" style={{ padding: '10px' }}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_2.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
 
                             <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <div className="icon-box" style={{ padding: '10px' }}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_3.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <br />
-                    <div className="container" data-aos="fade-up">
-                        <div className="row">
+
                             <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                             </div>
 
                             <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <div className="icon-box" style={{ padding: '10px' }}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_4.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
 
                             <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <div className="icon-box" style={{ padding: '10px' }}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_5.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
