@@ -48,13 +48,13 @@ export const IntroElements =
                     </div>
                     <div className="container" data-aos="fade-up">
                         <div className="row">
-                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box" style={{ textAlign : 'center'}}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_1.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
 
-                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box" style={{ textAlign : 'center'}}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_2.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
@@ -70,36 +70,23 @@ export const IntroElements =
                     <br />
                     <div className="container" data-aos="fade-up">
                         <div className="row">
-                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            </div>
+
+                            <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box" style={{ textAlign : 'center'}}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_4.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
 
-                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box" style={{ textAlign : 'center'}}>
                                 <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_5.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <hr></hr>
-                </div>
-                <div className="row" style={{ marginTop: '61px'}}>
-                    <div className="section-title">
-                        <h2>운영 프로그램</h2>
-                    </div>
-                    <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div className="icon-box" style={{ textAlign: 'center' }}>
-                            <img src={require('../../assets/img/program/startup_sourcing_resize.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>    
-                        </div>
-                    </div>
 
-                    <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-                        <div className="icon-box" style={{ textAlign: 'center' }}>
-                            <img src={require('../../assets/img/program/networking_resize.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
+                            <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            </div>
                         </div>
                     </div>
                 </div>
