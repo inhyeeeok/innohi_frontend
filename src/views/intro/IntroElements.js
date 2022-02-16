@@ -24,35 +24,82 @@ export const IntroElements =
         <section id="about" className="about section-bg" style={{ marginTop: '62px' }}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
-                    <h2>이노하이 소개</h2>
+                    <h2>innoHI 소개</h2>
                 </div>
                 <div className='align-items-center justify-content-center' style={{ textAlign: "center" }} >
                     <img src={require('../../assets/img/intro/logo/innoHI_Logo_type2.png').default} className='img-fluid' alt=''></img>
                 </div>
                 <div className="row content">
                     <div className="section-title">
-                        <p>
-                            <br /><br />
-                            한진그룹의 오픈이노베이션 프로그램 Inno HI를 소개합니다.
-                            <br /> innoHI는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
-                            <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진의 미래 혁신 프로그램 입니다.
-                        </p>
+                        <p style={{fontSize:'0.7vw'}}>
+                            <br />
+                            한진정보통신의 오픈이노베이션 프로그램 Inno HI를 소개합니다.
+                            <br />innoHI는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
+                            <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진정보통신의 미래 혁신 프로그램 입니다.
+                        </p>   
                     </div>
                 </div>
-                <div className="row">
+                <div>
+                    <hr></hr>
+                </div>
+                <div className="container" style={{ marginTop: '61px'}}>
+                    <div className="section-title">
+                        <h2>innoHI는 여러분의 오픈 이노베이션을 지원합니다</h2>
+                    </div>
+                    <div className="container" data-aos="fade-up">
+                        <div className="row">
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_1.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_2.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_3.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div className="container" data-aos="fade-up">
+                        <div className="row">
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_4.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ textAlign : 'center'}}>
+                                <img src={require('../../assets/img/intro/introduction/intro_1st_div_block_5.png').default} className="img-fluid" style={{ width: '70%'}} alt=""></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <hr></hr>
+                </div>
+                <div className="row" style={{ marginTop: '61px'}}>
+                    <div className="section-title">
+                        <h2>운영 프로그램</h2>
+                    </div>
                     <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box" style={{ textAlign: 'center' }}>
-                            <img src={require('../../assets/img/program/DFS_5.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                            <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>스타트업 소싱</h4>
-                            <p style={{ textAlign: 'center'}}>한진과 함께 미래로 도약하고자 하는 스타트업을 찾기위한 프로그램을 운영중입니다</p>
+                            <img src={require('../../assets/img/program/startup_sourcing_resize.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>    
                         </div>
                     </div>
 
                     <div className="col-xl col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                         <div className="icon-box" style={{ textAlign: 'center' }}>
-                            <img src={require('../../assets/img/program/DFS_5.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                            <h4 style={{ textAlign: 'center', fontWeight: 'bold' }}>대외 활동</h4>
-                            <p style={{ textAlign: 'center' }}>정부부처, 기관, 투자자등 스타트업 생태계 관계자들과 네트워크를 형성하여 스타트업 생태계 활성화를 위해 노력하고 있습니다</p>
+                            <img src={require('../../assets/img/program/networking_resize.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
                         </div>
                     </div>
                 </div>
@@ -67,7 +114,7 @@ export const TestimonialElements =
         <div className="container" data-aos="fade-up">
             <div className="section-title">
                 <h2>연혁</h2>
-                <p>InnoHI는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다. 🚶‍♂️</p>
+                <p style={{fontSize:'0.7vw'}}>InnoHI는 오픈 이노베이션이라는 목표를 위해 꾸준히 달려가고 있습니다 🚶‍♂️</p>
             </div>
 
             <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -137,7 +184,7 @@ export const TrinityElements =
 
             <div className="section-title">
                 <h2>innoHI 비전</h2>
-                <p>“InnoHI”는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
+                <p style={{fontSize:'0.7vw'}}>“InnoHI”는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
             </div>
 
             <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
@@ -153,7 +200,7 @@ export const EcoElements =
 
             <div className="section-title">
                 <h2>스타트업 생태계</h2>
-                <p>스타트업 생태계는 크게 혁신 역량을 가진 주체와 혁신을 필요로 하는 주체 그리고 이들을 지원하거나 연결하는 주체로 구성돠어 있습니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
+                <p >스타트업 생태계는 크게 혁신 역량을 가진 주체와 혁신을 필요로 하는 주체 그리고 이들을 지원하거나 연결하는 주체로 구성돠어 있습니다.<br />생태계를 구성하는 주요 주체와 우리나라 스타트업 환경의 특징에 대해 살펴봅시다.</p>
             </div>
 
             <div className="row">

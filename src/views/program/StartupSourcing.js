@@ -4,7 +4,7 @@ const StartupSourcing = () => {
     const ProgramElements = () => {
         return (
             <>
-                <section id="services" className="services" style={{ backgroundColor: 'rgb(207 219 251)', marginTop: '61px'}}>
+                <section id="services" className="services section-bg" style={{ marginTop: '61px'}}>
                     <div className='container'>
                         <div className="section-title">
                             <h2>스타트업 소싱</h2>
@@ -12,7 +12,7 @@ const StartupSourcing = () => {
                         </div>
                         <div className='row'>
                             <div className='col-lg  hero-img' data-aos="zoom-in" data-aos-delay="200">
-                                <img src={require('../../assets/img/program/프로그램 인포그래픽 시안_b_text.png').default} className='img-fluid' alt=''></img>
+                                <img src={require('../../assets/img/program/Startup_Sourcing_Infographic_2nd_Resize.png').default} className='img-fluid' alt=''></img>
                             </div>
                         </div>
                     </div>
