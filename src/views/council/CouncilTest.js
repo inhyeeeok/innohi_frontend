@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import { Auth } from "aws-amplify";
+import { useLocation } from 'react-router-dom';
 
 
-const CouncilTest = (props) => {
+const CouncilTest = () => {
+
+  const param = useLocation();
+
     const login = async () => {
         try {
             await Auth.signIn('권인혁', 'innoHI1!');
@@ -21,9 +25,9 @@ const CouncilTest = (props) => {
           }
     }
 
-    useEffect(() => {
-
-    })
+  useEffect(() => {
+    console.log(param.state)
+  })
 
     return (
         <>

@@ -61,7 +61,7 @@ class Footer extends React.Component {
   // }
 
   render() {
-    if(window.location.pathname.split('/')[1] === 'council') return null;
+    // if(window.location.pathname.split('/')[1] === 'council') return null;
     return (
       <>
         {footerElements}

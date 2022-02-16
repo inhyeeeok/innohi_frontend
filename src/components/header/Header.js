@@ -46,6 +46,11 @@ const headerElements =
           </li>
           <li><a href='/council' className='getstarted'>협의체공간</a>
           </li>
+          <li className='dropdown'><a href='/council'>권인혁 님<i className='bi bi-chevron-down'></i></a>
+            <ul>
+              <li><a href='/'>Log Out</a></li>
+            </ul>
+          </li>
         </ul>
         <i className='bi bi-list mobile-nav-toggle'></i>
       </nav>
@@ -59,7 +64,7 @@ class Header extends React.Component {
   }
   
   render() {
-    if(window.location.pathname.split('/')[1] === 'council') return null;
+    // if(window.location.pathname.split('/')[1] === 'council') return null;
       return (
         <>
           {headerElements}

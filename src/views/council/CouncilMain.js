@@ -4,6 +4,8 @@ import { withAuthenticator , Authenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
 import { Link } from "react-router-dom";
 import CouncilTest from './CouncilTest';
+import * as council from './CouncilMainElements'
+import SwiperComponents from '../../components/swipers/Swiper';
 
 Amplify.configure(
     {
@@ -46,21 +48,21 @@ function CouncilMain({ signOut, user }) {
   console.log(signOut);
   console.log(user);
 
+  useEffect(() => {
+    SwiperComponents();
+
+})
+
     return (
       <>
-        <h1>Hello {user.username}</h1>
+      {council.heroElements}
+      {council.CouncilMainElements}
+      {council.clientsElements}
+        <p>{user.username} 님 환영합니다</p>
         <button onClick={signOut}>Sign out</button>
-        <Link to={{
-          pathname: '/council/test', 
-          state : {
-            user : user.username
-          }
-        }}>
-          <button>Test</button>
-        </Link>
 
-        <Link to='/council/test' state={{ user: user.username}}><button>Test2</button></Link>
-        <a href={'/council/test'}>상세보기</a>
+        {/* <Link to='/council/test' state={{ user: user.username}}><button>Test2</button></Link>
+        <a href={'/council/test'}>상세보기</a> */}
       </>
     );
   }

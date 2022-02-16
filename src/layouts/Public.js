@@ -66,7 +66,8 @@ const Public = () => {
 
                 <Route exact path='/council/main' element={<CouncilMain />}> </Route>
                 <Route exact path='/council/test' element={<CouncilTest />}></Route>
-                <Route exact path='/council' element={<CouncilIntro />}> </Route>
+                {/* <Route exact path='/council' element={<CouncilIntro />}> </Route> */}
+                <Route exact path='/council' element={<CouncilMain />}> </Route>
 
 
                 <Route path="/*" element={<ErrorPage />} />
