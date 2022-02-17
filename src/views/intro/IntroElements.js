@@ -1,3 +1,14 @@
+export const contourElements =
+    <section id="about" className="about section-bg"  style={{ padding: '0px' }}>
+        <div className="container" data-aos="fade-up" >
+            <div>
+                <hr></hr>
+            </div>
+        </div>
+    </section>
+    ;
+
+
 export const IntroElements =
     <>
         <section id="about" className="about section-bg" style={{ marginTop: '62px' }}>
@@ -18,9 +29,6 @@ export const IntroElements =
                         </p>   
                     </div>
                 </div>
-                {/* <div>
-                    <hr></hr>
-                </div> */}
             </div>
         </section>
     </>
@@ -28,7 +36,7 @@ export const IntroElements =
 
 export const IntroAddElements =
 
-    <section id="about" className="about section">
+    <section id="about" className="about section-bg">
 
         <div className="container" style={{ marginTop: '61px' }}>
             <div className="section-title">
@@ -149,7 +157,7 @@ export const TestimonialElements =
     ;
 
 export const TrinityElements = 
-    <section id="eco" className="team section">
+    <section id="eco" className="team section-bg">
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">

@@ -15,8 +15,11 @@ const Introduction = () => {
         <>
             <main id="main">
                 {intro.IntroElements}
+                 {intro.contourElements}
                 {intro.IntroAddElements}
+                 {intro.contourElements}
                 {intro.TestimonialElements}
+                 {intro.contourElements}
                 {intro.TrinityElements}
             </main>
         </>
