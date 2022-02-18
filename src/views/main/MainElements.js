@@ -7,7 +7,7 @@ export const heroElements =
       <div className='row'>
         <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
           <h1><span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight</h1>
-          <h2>HIST에서는 신기술 도입과 혁신 성장을 위한 <br />오픈 이노베이션 프로그램 'inno H.I' 를 운영하고 있습니다</h2>
+          <h2>HIST에서는 신기술 도입과 혁신 성장을 위한 <br />오픈 이노베이션 프로그램 '<span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span>' 를 운영하고 있습니다</h2>
           <div className='d-flex justify-content-center justify-content-lg-start'>
             <a href='/council'><div className='btn-get-started scrollto'>협의체공간</div></a>
           </div>
@@ -131,24 +131,24 @@ export const serviceElements =
           <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div className="icon-box" style={{ textAlign: 'center' }}>
               <img src={require('../../assets/img/main/intro/innoHI소개_1.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-              <h4 style={{ textAlign: 'center', fontSize: '1.3vw', fontWeight: 'bold' }}>미래성장동력 확보</h4>
-              <p style={{ textAlign: 'center', fontSize: '0.8vw'}}>최신 산업동향과 생태계 분석을 통해 아이디어를 도출하고 미래 성장동력을 확보합니다</p>
+              <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold' }}>미래성장동력 확보</h4>
+              <p style={{ textAlign: 'center', fontSize: '16px'}}>최신 산업동향과 생태계 분석을 통해<br />아이디어를 도출하고 미래 성장동력을 확보합니다</p>
             </div>
           </div>
 
           <div className="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div className="icon-box" style={{ textAlign: 'center' }}>
               <img src={require('../../assets/img/main/intro/innoHI소개_2.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-              <h4 style={{ textAlign: 'center', fontSize: '1.3vw', fontWeight: 'bold' }}>차세대 기술 선도</h4>
-              <p style={{ textAlign: 'center', fontSize: '0.8vw'}}>디지털전환에 대비하여 최신 ICT 기술을 확보하고 차세대 기술을 선도합니다</p>
+              <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold' }}>차세대 기술 선도</h4>
+              <p style={{ textAlign: 'center', fontSize: '16px'}}>디지털전환에 대비하여 최신 ICT 기술을<br />확보하고 차세대 기술을 선도합니다</p>
             </div>
           </div>
 
           <div className="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div className="icon-box" style={{ textAlign: 'center' }}>
               <img src={require('../../assets/img/main/intro/innoHI소개_3.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-              <h4 style={{ textAlign: 'center', fontSize: '1.3vw', fontWeight: 'bold' }}>글로벌 혁신</h4>
-              <p style={{ textAlign: 'center', fontSize: '0.8vw'}}>글로벌 파트너십을 통해 변화와 혁신하며 신규시장진출의 기반을 마련합니다</p>
+              <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold' }}>글로벌 혁신</h4>
+              <p style={{ textAlign: 'center', fontSize: '16px'}}>글로벌 파트너십을 통해 변화와 혁신하며<br />신규시장 진출의 기반을 마련합니다</p>
             </div>
           </div>
         </div>

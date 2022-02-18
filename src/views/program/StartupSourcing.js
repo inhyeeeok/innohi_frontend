@@ -28,46 +28,49 @@ const StartupSourcing = () => {
 
                 <div className="section-title">
                     <h2>산업별 적용사례</h2>
-                    <p>innoHI가 함께했던 산업들을 소개합니다.</p>
                 </div>
 
                 <div className="row">
                     <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-                            <img src={require('../../assets/img/program/startup-archive_3.png').default} className="img-fluid" alt=""></img>
-                                <h4><a href="/1">의료</a></h4>
-                                <p>Contactless service (비접촉 생체 신호 감지 기술)</p>
-                                <p>VR service (가상 현실 교육 서비스)</p>
+                            <img src={require('../../assets/img/program/startup-archive_3_bg.png').default} className="img-fluid" alt=""></img>
+                                <br />
+                                <h4 style={{fontSize: '22px', fontWeight: 'bold'}}><a href="/1">의료</a></h4>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Contactless service (비접촉 생체 신호 감지 기술)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>VR service (가상 현실 교육 서비스)</p>
                         </div>
                     </div>
 
                     <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                         <div className="icon-box">
-                            <img src={require('../../assets/img/program/startup-archive_1.png').default} className="img-fluid" alt=""></img>
-                                <h4><a href="/2">항공</a></h4>
-                                <p>Data Analysis (영업 / 마케팅)</p>
-                                <p>VR Service (승무원 훈련)</p>
+                            <img src={require('../../assets/img/program/startup-archive_1_bg.png').default} className="img-fluid" alt=""></img>
+                                <br />
+                                <h4 style={{fontSize: '22px', fontWeight: 'bold'}}><a href="/2">항공</a></h4>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Data Analysis (영업 / 마케팅)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>VR Service (승무원 훈련)</p>
                         </div>
                     </div>
 
                     <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                         <div className="icon-box">
-                            <img src={require('../../assets/img/program/startup-archive_2.png').default} className="img-fluid" alt=""></img>
-                                <h4><a href="/3">물류</a></h4>
-                                <p>Fulfillment (물류 자동화)</p>
-                                <p>Last Mile Delivery( 배송 최적화)</p>
-                                <p>Data Recognition (이미지 처리)</p>
-                                <p>Big Data / AI (빅데이터 및 인공지능)</p>
-                                <p>Data Access / Processing (물류 데이터 처리 및 가공)</p>
+                            <img src={require('../../assets/img/program/startup-archive_2_bg.png').default} className="img-fluid" alt=""></img>
+                                <br />
+                                <h4 style={{fontSize: '22px', fontWeight: 'bold'}}><a href="/3">물류</a></h4>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Fulfillment (물류 자동화)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Last Mile Delivery( 배송 최적화)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Data Recognition (이미지 처리)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Big Data / AI (빅데이터 및 인공지능)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Data Access / Processing (물류 데이터 처리 및 가공)</p>
                         </div>
                     </div>
 
                     <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
                         <div className="icon-box">
-                            <img src={require('../../assets/img/program/startup-archive_6.png').default} className="img-fluid" alt=""></img>
-                                <h4><a href="/4">여행</a></h4>
-                                <p>Commerce Tour (소비자 경험 향상)</p>
-                                <p>Mobility Service (여행 모빌리티 서비스)</p>
+                            <img src={require('../../assets/img/program/startup-archive_6_bg.png').default} className="img-fluid" alt=""></img>
+                                <br />
+                                <h4 style={{fontSize: '22px', fontWeight: 'bold'}}><a href="/4">여행</a></h4>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Commerce Tour (소비자 경험 향상)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Mobility Service (여행 모빌리티 서비스)</p>
                         </div>
                     </div>
                 </div>
