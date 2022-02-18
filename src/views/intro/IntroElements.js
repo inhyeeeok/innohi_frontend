@@ -164,9 +164,30 @@ export const TrinityElements =
                 <h2>innoHI 비전</h2>
                 <p style={{fontSize:'0.7vw'}}>“InnoHI”는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
             </div>
-
             <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
-                <img src={require('../../assets/img/intro/trinity/TrinityElements.png').default} className='img-fluid' style={{ width: '70%'}} alt='스타트업 생태계'></img>
+                <img src={require('../../assets/img/main/intro/TrinityElements_resize.png').default} className='img-fluid' style={{ width: '70%'}} alt='스타트업 생태계'></img>
+            </div>            
+        </div>        
+        <br />        
+        <div className="container" data-aos="fade-up" style={{ textAlign: 'center', marginTop: '61px' }}>
+            <div className="row">
+                <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="icon-box" style={{ padding: '10px' }}>
+                        <img src={require('../../assets/img/intro/trinity/council.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                    </div>
+                </div>
+
+                <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="icon-box" style={{ padding: '10px' }}>
+                        <img src={require('../../assets/img/intro/trinity/HIST.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                    </div>
+                </div>
+
+                <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="icon-box" style={{ padding: '10px' }}>
+                        <img src={require('../../assets/img/intro/trinity/startups.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
