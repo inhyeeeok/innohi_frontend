@@ -21,11 +21,9 @@ export const IntroElements =
                 </div>
                 <div className="row content">
                     <div className="section-title">
-                        <p style={{fontSize:'0.7vw'}}>
-                            <br />
-                            한진정보통신의 오픈이노베이션 프로그램 Inno HI를 소개합니다.
-                            <br />innoHI는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
-                            <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진정보통신의 미래 혁신 프로그램 입니다.
+                        <p style={{fontSize:'20px'}}>
+                            <br /><span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span>는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
+                            <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진정보통신의 미래 혁신 프로그램입니다.
                         </p>   
                     </div>
                 </div>
@@ -92,7 +90,6 @@ export const TestimonialElements =
         <div className="container" data-aos="fade-up">
             <div className="section-title">
                 <h2>연혁</h2>
-                <p style={{fontSize:'0.7vw'}}>InnoHI는 오픈 이노베이션이라는 목표를 위해 꾸준히 달려가고 있습니다 🚶‍♂️</p>
             </div>
 
             <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -162,10 +159,10 @@ export const TrinityElements =
 
             <div className="section-title">
                 <h2>innoHI 비전</h2>
-                <p style={{fontSize:'0.7vw'}}>“InnoHI”는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
+                <p style={{fontSize:'20px'}}><span style={{fontFamily:'Jost', textTransform:'uppercase', fontWeight:'bold'}}>InnoHI</span>는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
             </div>
             <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
-                <img src={require('../../assets/img/main/intro/TrinityElements_resize.png').default} className='img-fluid' style={{ width: '70%'}} alt='스타트업 생태계'></img>
+                <img src={require('../../assets/img/main/intro/TrinityElements_resize.png').default} className='img-fluid' style={{ width: '60%'}} alt='스타트업 생태계'></img>
             </div>            
         </div>        
         <br />        
