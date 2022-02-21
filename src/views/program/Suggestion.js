@@ -9,12 +9,15 @@ const Suggestion = () => {
       <div className='row'>
         <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
           <h1><span style={{ color: 'rgb(253, 142, 77)' }}>협업제안</span></h1>
-          <h2>한진그룹과 협업하고 싶은 분야/주제에<br />대해 자유롭게 제안하실 수 있습니다</h2>
+          <h2 style={{marginTop:'15px'}}>
+          <span style={{fontFamily:'Jost', textTransform:'uppercase', fontWeight:'bold'}}>InnoHI</span>는 새로운 도전을 환영합니다<br /><br />
+            한진그룹과 협업하고 싶은 분야/주제에<br />대해 자유롭게 제안해 주세요
+          </h2>
           <div className='d-flex justify-content-center justify-content-lg-start'>
           </div>
         </div>
         <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
-          <img src={require('../../assets/img/intro/histroy/travel.jpg').default} className='img-fluid animated' alt=''></img>
+          <img src={require('../../assets/img/intro/histroy/suggestion.png').default} className='img-fluid animated' alt=''></img>
         </div>
       </div>
     </div>
@@ -27,8 +30,7 @@ const Suggestion = () => {
           <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-              <h2>협업제안</h2>
-              <p style={{ fontSize: '18px'}}>한진그룹과 협업하고 싶은 분야/주제에 대해 자유롭게 제안하실 수 있습니다</p>
+              <h2>innoHI가 도와드려요</h2>
             </div>
 
             <div className="row">
