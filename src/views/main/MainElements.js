@@ -10,7 +10,7 @@ export const heroElements =
           <h2 style={{marginTop:'15px'}}>HIST에서는 신기술 도입과 혁신 성장을 위한 <br />오픈 이노베이션 프로그램 '<span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span>' 를 운영하고 있습니다</h2>
         </div>
         <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
-          <img src={require('../../assets/img/main/intro/TrinityElements_innoHI_White.png').default} className='img-fluid animated' style={{ width: '70%' }} alt=''></img>
+          <img src={require('../../assets/img/main/intro/TrinityElements_innoHI_White.png').default} className='img-fluid animated' style={{ width: '70%'  , margin : '0 20%'}} alt=''></img>
         </div>
       </div>
     </div>
