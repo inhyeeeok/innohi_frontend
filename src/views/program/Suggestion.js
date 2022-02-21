@@ -23,7 +23,7 @@ const Suggestion = () => {
 
     const serviceElements =
     <>
-        <section id="services" className="services section-bg" style={{ marginTop: '61px' }}>
+        <section id="services" className="services section-bg">
           <div className="container" data-aos="fade-up">
 
             <div className="section-title">
