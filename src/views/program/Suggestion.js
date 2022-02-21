@@ -2,6 +2,25 @@ import React, { useEffect } from 'react';
 
 const Suggestion = () => {
 
+  const heroElements =
+
+  <section id='hero' className='d-flex align-items-center' style={{height: '70vh' }}>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
+          <h1><span style={{ color: 'rgb(253, 142, 77)' }}>협업제안</span></h1>
+          <h2>한진그룹과 협업하고 싶은 분야/주제에<br />대해 자유롭게 제안하실 수 있습니다</h2>
+          <div className='d-flex justify-content-center justify-content-lg-start'>
+          </div>
+        </div>
+        <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
+          <img src={require('../../assets/img/intro/histroy/travel.jpg').default} className='img-fluid animated' alt=''></img>
+        </div>
+      </div>
+    </div>
+  </section>
+  ;
+
     const serviceElements =
     <>
         <section id="services" className="services section-bg" style={{ marginTop: '61px' }}>
@@ -63,6 +82,7 @@ const Suggestion = () => {
 
     return (
         <>
+        {heroElements}
         {serviceElements}
         </>
     );
