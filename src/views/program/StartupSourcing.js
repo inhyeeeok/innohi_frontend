@@ -8,13 +8,38 @@ const StartupSourcing = () => {
                     <div className='container'>
                         <div className="section-title">
                             <h2>스타트업 소싱</h2>
-                            <p>체계적이고 명확한 프로세스를 통해 최적의 스타트업을 소싱하실 수 있도록 돕습니다.</p>
+                            <p style={{fontSize:'18px', textAlign : 'center'}}>체계적이고 명확한 프로세스를 통해 최적의 스타트업을 소싱하실 수 있도록 돕습니다.</p>
                         </div>
-                        <div className='row'>
+                        <div className="row">
+                            <div className="col-xl-3 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ padding: '10px' }}>
+                                    <img src={require('../../assets/img/program/Startup_Sourcing_1.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ padding: '10px' }}>
+                                    <img src={require('../../assets/img/program/Startup_Sourcing_2.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ padding: '10px' }}>
+                                    <img src={require('../../assets/img/program/Startup_Sourcing_3.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                                </div>
+                            </div>
+
+                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="icon-box" style={{ padding: '10px' }}>
+                                    <img src={require('../../assets/img/program/Startup_Sourcing_4.png').default} className="img-fluid" style={{ width: '100%' }} alt=""></img>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className='row'>
                             <div className='col-lg  hero-img' data-aos="zoom-in" data-aos-delay="200">
                                 <img src={require('../../assets/img/program/Startup_Sourcing_Infographic_2nd_Resize.png').default} className='img-fluid' alt=''></img>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             </>

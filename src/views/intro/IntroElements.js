@@ -21,7 +21,7 @@ export const IntroElements =
                 </div>
                 <div className="row content">
                     <div className="section-title">
-                        <p style={{fontSize:'20px'}}>
+                        <p style={{fontSize:'18px'}}>
                             <br /><span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span>는 <span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight의 줄임말로
                             <br />새로운 시각으로 디지털 사회를 대비하기 위한 한진정보통신의 미래 혁신 프로그램입니다.
                         </p>   
@@ -158,15 +158,15 @@ export const TrinityElements =
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-                <h2>innoHI 비전</h2>
-                <p style={{fontSize:'20px'}}><span style={{fontFamily:'Jost', textTransform:'uppercase', fontWeight:'bold'}}>InnoHI</span>는 한진정보통신을 중심으로 그룹사협의체, 스타트업이 3자 협력체계를 구축하고, 협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>
+                <h2>innoHI 비전</h2>               
             </div>
-            <div className='align-items-center justify-content-center' style={{ textAlign : 'center'}}>
+            <div className='align-items-center justify-content-center' style={{ textAlign : 'center', marginBottom: '80px' }}>
                 <img src={require('../../assets/img/main/intro/TrinityElements_resize.png').default} className='img-fluid' style={{ width: '60%'}} alt='스타트업 생태계'></img>
-            </div>            
+            </div>
+            <p style={{fontSize:'18px', textAlign : 'center'}}><span style={{fontFamily:'Jost', textTransform:'uppercase', fontWeight:'bold'}}>InnoHI</span>는 한진정보통신을 중심으로 그룹사 협의체, 스타트업이 3자 협력체계를 구축하고<br />협력, 연계하여 새로운 비즈니스 발굴의 기회를 창출하고 있습니다.</p>            
         </div>        
         <br />        
-        <div className="container" data-aos="fade-up" style={{ textAlign: 'center', marginTop: '61px' }}>
+        <div className="container" data-aos="fade-up" style={{ textAlign: 'center'}}>
             <div className="row">
                 <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div className="icon-box" style={{ padding: '10px' }}>
