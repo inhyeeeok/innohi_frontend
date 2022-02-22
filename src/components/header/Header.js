@@ -4,8 +4,8 @@ import GlobalFunction from "../GlobalFunction";
 // import { Link } from "react-router-dom";
 
 const headerElements =
-
-  <header id='header' className='fixed-top header-inner-pages'>
+   <header id='header' className='fixed-top header-inner-pages'>
+  {/* <header id='header' className=' header-inner-pages'> */}
     <div className='container d-flex align-items-center'>
       <h1 className='logo me-auto'>
         <a href='/'>
@@ -15,9 +15,9 @@ const headerElements =
       </h1>
       <nav id='navbar' className='navbar'>
         <ul>
-        {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
+          {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
           <li className='dropdown'><a href='/intro/introduction'>Introduce
-          {/* <i className='bi bi-chevron-down'></i> */}
+            {/* <i className='bi bi-chevron-down'></i> */}
           </a>
             {/* <ul>
               <li><a href='/intro/introduction'>이노하이란?</a></li>
@@ -46,11 +46,37 @@ const headerElements =
               <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'>문의하기</a></li>
             </ul>
           </li>
-          <li><a href='/council' className='getstarted'>협의체공간</a>
+          <li><a href='/council/main' className='getstarted'>협의체공간</a>
           </li>
-          <li className='dropdown'><a href='/council'>권인혁 님<i className='bi bi-chevron-down'></i></a>
+        </ul>
+        <i className='bi bi-list mobile-nav-toggle'></i>
+      </nav>
+    </div>
+  </header>;
+
+const headerCouncilElements =
+//  <header id='header' className='fixed-top header-inner-pages' style={{display:'none'}}>
+  <header id='header' className='header-inner-pages' style={{display:'none'}}>
+    <div className='container d-flex align-items-center'>
+      <h1 className='logo me-auto'>
+        <a href='/council/main'>
+          <span>협의체공간</span>
+          <span></span>
+        </a>
+      </h1>
+      <nav id='navbar' className='navbar'>
+        <ul>
+          <li className='dropdown'><a href='/council/announce'>알려드려요</a>
+          </li>
+          <li className='dropdown'><a href='/council/oi'>오픈 이노베이션 레터</a>
+          </li>
+          <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
+          </li>
+          <li><a href='/' className='getstarted'>INNOHI</a>
+          </li>
+          <li className='dropdown' ><a id='user_name' href='/'>로그인이 필요합니다.</a>
             <ul>
-              <li><a href='/'>Log Out</a></li>
+              <li id="LogOut"><a>로그아웃</a></li>
             </ul>
           </li>
         </ul>
@@ -59,6 +85,8 @@ const headerElements =
     </div>
   </header>;
 
+
+
 class Header extends React.Component {
 
   componentDidMount() {
@@ -66,7 +94,13 @@ class Header extends React.Component {
   }
   
   render() {
-    // if(window.location.pathname.split('/')[1] === 'council') return null;
+    if (window.location.pathname.split('/')[1] === 'council')
+      return (
+        <>
+          {headerCouncilElements}
+        </>
+      );
+    else
       return (
         <>
           {headerElements}
