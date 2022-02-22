@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Amplify, I18n  } from 'aws-amplify';
-import { withAuthenticator, translations} from "@aws-amplify/ui-react";
+import { withAuthenticator} from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
 
@@ -18,7 +18,7 @@ Amplify.configure(
     }
 );
 
-I18n.putVocabularies(translations);
+// I18n.putVocabularies(translations);
 I18n.setLanguage('kr');
 I18n.putVocabulariesForLanguage('en', {
   'Sign In': 'Login', // Tab header
