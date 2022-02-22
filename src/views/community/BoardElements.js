@@ -10,11 +10,7 @@ export const BoardMainElements =
             <table id="dataTable" className="type04" width="100%">
                 <thead>
                     <tr>
-                        <th>순번</th>
                         <th>내용</th>
-                        <th>날짜</th>
-                        <th>작성자</th>
-                        <th>조회수</th>
                     </tr>
                 </thead>
             </table>
