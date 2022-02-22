@@ -4,14 +4,18 @@ import React, { useState, useEffect } from 'react';
 import * as common from '../../components/common/BreadCrumbs'
 import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
+import * as tt from './CouncilCommon'
+import { withAuthenticator, Authenticator, translations, useAuthenticator } from "@aws-amplify/ui-react";
 
-const StartupArchive = () => {
+const StartupArchive = ({signOut, user}) => {
   const firstData = jsondata.startupTestData.slice(jsondata.startupTestData.length - 50, jsondata.startupTestData.length); //최초 진입시 가장 최신 50개 렌더링
   const [stData, setStData] = useState(firstData);
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
   const pageNumber = [];
+
+  tt.headerGrid();
 
   for (let i = 1; i <= Math.ceil(stData?.length / 5); i++) {
     pageNumber.push(i);
@@ -96,13 +100,15 @@ const StartupArchive = () => {
   const BlogElements = () => {
 
     return (
-      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
+//      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
+      <section id="blog" className="blog">
         <div className="container" data-aos="fade-up">
           <div className="section-title" style={{ marginBottom: '20px' }}>
             <h2>스타트업 찾기</h2>
-            <p>스타트업 & 지원기관의 투자라운딩 소식, 모집 소식,주요 뉴스 등 최신정보(DB)를 검색하고,구독과 알림을 통해 연결성을 강화합니다.
+            {/* <p>스타트업 & 지원기관의 투자라운딩 소식, 모집 소식,주요 뉴스 등 최신정보(DB)를 검색하고,구독과 알림을 통해 연결성을 강화합니다.
               <br />그간 Inno H.I.가 구축해 온 글로벌  Startup 정보를 확인하실 수 있습니다.
-            </p>
+            </p> */}
+            <p>가장 트렌디한 스타트업들을 innoHI와 함께 찾아보세요</p>
           </div>
 
           <div className="row">
@@ -122,7 +128,7 @@ const StartupArchive = () => {
                   </form>
                 </div>
 
-                <h3 className="sidebar-title">분류</h3>
+                <h3 className="sidebar-title">분야</h3>
                 <div className="sidebar-item categories">
                   <ul>
                     <li onClick={() => { changeStData("S_TECH_TYPE", "IoT") }}><div style={{ cursor: 'pointer' }}>IoT</div></li>
@@ -171,10 +177,13 @@ const StartupArchive = () => {
     reactDom.render(entryPage(pageNumber, currentPage), document.getElementById('entryPage'));
   }, [stData, currentPage]);
 
+  tt.eventLogOut(signOut);
+  tt.changeName(user.username);
+
   return (
     <>
       <main id="main">
-        {common.BreadCrumbsElements}
+        {/* {common.BreadCrumbsElements} */}
         <BlogElements />
       </main>
     </>
@@ -182,4 +191,13 @@ const StartupArchive = () => {
 
 }
 
-export default StartupArchive;
+// export default StartupArchive;
+
+export default  withAuthenticator(StartupArchive, {
+  socialProviders: ['google'],
+  hideSignUp : [true],
+//   loginMechanisms : ['username'],
+  loginMechanisms : ['email'],
+//  components : [components],
+  variation : ["modal"]
+});
