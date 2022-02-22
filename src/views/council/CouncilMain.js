@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Amplify, I18n  } from 'aws-amplify';
-import { withAuthenticator, translations} from "@aws-amplify/ui-react";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
 
@@ -18,15 +18,15 @@ Amplify.configure(
     }
 );
 
- I18n.putVocabularies(translations);
 I18n.setLanguage('kr');
-I18n.putVocabulariesForLanguage('en', {
+I18n.putVocabulariesForLanguage('kr', {
   'Sign In': 'Login', // Tab header
-  'Sign in': 'Log in', // Button label
+  'Sign in': '로그인', // Button label
   'Sign in to your account': 'Welcome Back!',
   Username: 'Enter your username', // Username label
-  Password: 'Enter your password', // Password label
-  'Forgot your password?': 'Reset Password',
+  Email   : '이메일', // Email label
+  Password: '비밀번호', // Password label
+  '비밀번호를 잊으셨나요?': 'Reset Password',
 });
 
 //     return (
