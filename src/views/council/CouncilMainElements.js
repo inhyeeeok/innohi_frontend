@@ -7,34 +7,17 @@ export const CouncilMainElements =
                     <table id="dataTable" className="type04" width="100%">
                         <thead>
                             <tr>
-                                <th>순번</th>
                                 <th>내용</th>
-                                <th>작성일</th>
-                                <th>작성자</th>
-                                <th>조회수</th>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
                             </tr>
-                           
                             
                         </thead>
                     </table>
@@ -88,8 +71,8 @@ export const heroElements =
       <div className='container'>
         <div className='row'>
           <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
-            <h1><span style={{ color: 'rgb(253, 142, 77)' }}>Inno</span>vation for <span style={{ color: 'rgb(253, 142, 77)' }}>H</span>anjin's Future <span style={{ color: 'rgb(253, 142, 77)' }}>I</span>nsight</h1>
-            <h2>HIST에서는 신기술 도입과 혁신 성장을 위한 <br />오픈 이노베이션 프로그램 'inno H.I' 를 운영하고 있습니다</h2>
+            <h1><span style={{ color: 'rgb(253, 142, 77)' }}>INNOHI </span>협의체</h1>
+            <h2>오픈이노베이션 레터와 스타트업 찾기 등 <br />INNOHI의 여러가지 소식들을 이곳에서 확인해보세요</h2>
             <div className='d-flex justify-content-center justify-content-lg-start'>
               <a href='/council'><div className='btn-get-started scrollto'>협의체공간</div></a>
             </div>
@@ -107,8 +90,7 @@ export const clientsElements =
     <section id="clients" className="clients">
       <div className="container" data-aos="fade-up">
         <header className="header-font">
-          <h4>지금, 이 행사 어때요?</h4>
-          <p>이노하이가 추천하는 놓쳐선 안 될 행사</p>
+          <h4>이번에 발굴된 스타트업을 소개합니다</h4>
         </header>
   
         <div className="clients-slider swiper">
