@@ -6,7 +6,7 @@ import Introduction from '../views/intro/Introduction';
 import Propel from '../views/intro/Propel';
 import History from '../views/intro/History';
 
-import StartupArchive from '../views/community/StartupArchive';
+import StartupArchive from '../views/council/StartupArchive';
 
 
 import StartupSourcing from '../views/program/StartupSourcing';
@@ -20,18 +20,30 @@ import Contest from '../views/insight/Contest';
 import Member from '../views/contact/Member'
 
 import CouncilMain from '../views/council/CouncilMain';
-import CouncilTest from "../views/council/CouncilTest";
-import CouncilIntro from "../views/council/CouncilIntro";
+import CouncilAnnounce from "../views/council/CouncilAnnouce";
+
+import Board from "../views/community/Board"
 
 import ErrorPage from '../views/common/ErrorPage';
 
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer';
 
+import * as tt from '../views/council/CouncilCommon'
 
+const sessionCheck = () => {
+    setTimeout(() => {
+        if (localStorage.getItem("amplify-signin-with-hostedUI")) {
+           // localStorage.clear();
+           tt.loginOut();
+          }
+    }, 3000000);
 
+}
 
 const Public = () => {
+
+    sessionCheck();
 
     return (
         <>
@@ -64,10 +76,13 @@ const Public = () => {
                     <Route exact path='question' element={<StartupArchive />}></Route>
                 </Route>
 
-                <Route exact path='/council/main' element={<CouncilMain />}> </Route>
-                <Route exact path='/council/test' element={<CouncilTest />}></Route>
-                {/* <Route exact path='/council' element={<CouncilIntro />}> </Route> */}
-                <Route exact path='/council' element={<CouncilMain />}> </Route>
+
+                <Route exact path='/council'>
+                    <Route exact path='main' element={<CouncilMain />}> </Route>
+                    <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
+                    <Route exact path='oi' element={<Board />}> </Route>
+                    <Route exact path='archive' element={<StartupArchive />}></Route>
+                </Route>
 
 
                 <Route path="/*" element={<ErrorPage />} />
