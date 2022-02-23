@@ -55,6 +55,7 @@ I18n.putVocabulariesForLanguage('kr', {
 const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
+
   const openModal = () => {
     setModalOpen(true);
   }
@@ -68,20 +69,18 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
 
   tt.headerGrid();
 
+
   useEffect(() => {
     SwiperComponents();
     tt.eventLogOut(signOut);
     tt.changeName(user.username);
-    setModalOpen(true);
-
   })
 
     return (
       <>
         <React.Fragment>
-        {/* <button onClick={openModal}>모달팝업</button> */}
+        <button id= 'modalBt'onClick={openModal} >모달팝업</button>
           <Modal open={modalOpen} close={closeModal} header="innoHI 사이트 리뉴얼에 따른 개인정보(이름, 이메일) 이용 안내">
-            <main>
               <div>
                 안녕하세요.<br />
                 한진정보통신 InnoHI 운영자입니다. <br /><br />
@@ -104,7 +103,6 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
                 <br />
                 문의처 : innoHI@hist.co.kr
               </div>
-            </main>
           </Modal>
         </React.Fragment>
         

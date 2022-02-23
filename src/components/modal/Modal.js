@@ -8,8 +8,7 @@ const Modal = (props) => {
   return (
     // 모달이 열릴때 openModal 클래스가 생성된다.
     <div className={open ? 'openModal modal' : 'modal'}>
-     
-        <section>
+        <div>
           <header>
             {header}
             <button className="close" onClick={close}>
@@ -22,8 +21,7 @@ const Modal = (props) => {
               close
             </button>
           </footer>
-        </section>
-     
+        </div>
     </div>
 
     
