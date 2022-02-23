@@ -75,7 +75,7 @@ const TechPick = () => {
         <section id="about" className="about section-bg" style={{ marginTop: '61px', marginBottom: '110px'}}>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
-                    <h2 style={{ textTransform: 'capitalize' }}>Tech Pick</h2>
+                    <h2 style={{ textTransform: 'capitalize' }}>Inno Pick</h2>
                     <p>
                     새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.
                     </p>
@@ -129,8 +129,10 @@ const TechPick = () => {
                                     <td colSpan="4" >
                                         {(param.content).map((p, i) => {
                                             return (
-                                                <img key={i} src={require(`../../assets/img/insight/techpick/${param.bno}/${p}`).default} className='img-fluid' alt=''></img>
-
+                                                <>
+                                                {/* <img key={i} src={param.boardType===1 ? require(`../../assets/img/insight/techpick/${param.bno}/${p}`).default : require(`../../assets/img/insight/bizpick/${param.bno}/${p}`).default} className='img-fluid' alt=''></img> */}
+                                                { <img key={i} src={require(`../../assets/img/insight/techpick/${param.bno}/${p}`).default} className='img-fluid' alt=''></img>}
+                                                </>
                                             )
                                         })}
                                     </td>

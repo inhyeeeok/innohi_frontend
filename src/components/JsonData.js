@@ -45,6 +45,18 @@ export const bizPickTestData = [
 
 export const techPickTestData = [
   {
+    "bno": 7,
+    "boardType": 2,
+    "noticeYn": 0,
+    "title": "[Biz Pick] 여행 전망",
+    "content": ["1.png", "2.png", "3.png", "4.png"],
+    "regUser": "관리자",
+    "regDate": "2022-02-24 08:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
     "bno": 6,
     "boardType": 1,
     "noticeYn": 0,
