@@ -16,7 +16,7 @@ const Member = () => {
                     <div className="row">
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                             <div className="icon-box">
-                                <img src={require('../../assets/img/program/DFS_4.png').default} className="img-fluid" alt=""></img>
+                                <img src={require('../../assets/img/contact/member/eh_kim.png').default} className="img-fluid" alt=""></img>
                                 <p><br /></p>
                                 <h4>김은희</h4>
                                 <p>Digital Architect</p>
@@ -30,7 +30,7 @@ const Member = () => {
 
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                             <div className="icon-box">
-                                <img src={require('../../assets/img/program/DFS_4.png').default} className="img-fluid" alt=""></img>
+                                <img src={require('../../assets/img/contact/member/js_kang.png').default} className="img-fluid" alt=""></img>
                                 <p><br /></p>
                                 <h4>강준수</h4>
                                 <p>Facilitator</p>
@@ -44,7 +44,7 @@ const Member = () => {
 
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                             <div className="icon-box">
-                                <img src={require('../../assets/img/contact/member/test.jpg').default} className="img-fluid" alt=""></img>
+                                <img src={require('../../assets/img/contact/member/ih_kwon.png').default} className="img-fluid" alt=""></img>
                                 <p><br /></p>
                                 <h4>권인혁</h4>
                                 <p>Developer</p>
@@ -58,7 +58,7 @@ const Member = () => {
 
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
                             <div className="icon-box">
-                                <img src={require('../../assets/img/program/DFS_4.png').default} className="img-fluid" alt=""></img>
+                                <img src={require('../../assets/img/contact/member/tj_han.png').default} className="img-fluid" alt=""></img>
                                 <p><br /></p>
                                 <h4>한태준</h4>
                                 <p>Cordinator</p>
