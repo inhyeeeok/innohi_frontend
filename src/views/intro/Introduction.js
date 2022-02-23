@@ -15,12 +15,12 @@ const Introduction = () => {
         <>
             <main id="main">
                 {intro.IntroElements}
-                 {intro.contourElements}
+                {intro.contourElements}
                 {intro.IntroAddElements}
-                 {intro.contourElements}
+                {intro.contourElements}
+                {intro.TrinityElements}                
+                {intro.contourElements}
                 {intro.TestimonialElements}
-                 {intro.contourElements}
-                {intro.TrinityElements}
             </main>
         </>
     );
