@@ -1,63 +1,57 @@
 export const CouncilMainElements =
-    <section id="about" className="about">
+    <section id="about" className="about" style={{ background:'#f3f5fa'}}>
         <div className="container" data-aos="fade-up">
             <div className="row">
                 <div className="section-title col-sm-6">
                     <h2 style={{ textTransform: 'capitalize' }}>운영 현황</h2>
-                    <table id="dataTable" className="type04" width="100%">
-                        <thead>
-                            <tr>
-                                <th>내용</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                            </tr>
-                            
-                        </thead>
-                    </table>
+                    <div style={{ background:'#FFFFFF'}}>
+                        <div>
+                            <div className='row'>
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/coucil/oi/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <p sytle={{fontFamily:'Jost', fontSize: '20px', marginTop:'15px'}}>이노하이 사이트 리뉴얼</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='row'>
+                                <div className="col-md-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/coucil/oi/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <p>한진, 스타트업과 함께 날아오르다! ✈️</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="section-title col-sm-6">
-                    <h2 style={{ textTransform: 'capitalize' }}>오픈 이노베이션 레터</h2>
-                    <table id="dataTable" className="type04" width="100%">
-                        <thead>
-                            <tr>
-                                <th>순번</th>
-                                <th>내용</th>
-                                <th>작성일</th>
-                                <th>작성자</th>
-                                <th>조회수</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                                <td>sds</td>
-                            </tr>
-                            
-                        </thead>
-                    </table>
+                    <h2 style={{ textTransform: 'capitalize' }}>이노하이 레터</h2>
+                    <div style={{ background:'#FFFFFF'}}>
+                        <div>
+                            <div className='row'>
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" style={{ width: '40%' }} alt=""></img>
+                                        <p sytle={{fontFamily:'Jost', fontSize: '20px', marginTop:'15px'}}>2022년 1월 4주 이노하이 레터</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='row'>
+                                <div className="col-md-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" style={{ width: '40%' }} alt=""></img>
+                                        <p>2021년 12월 4주 이노하이 레터</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -67,15 +61,12 @@ export const CouncilMainElements =
 
 export const heroElements =
 
-    <section id='hero' className='d-flex align-items-center' style={{height: '70vh' }}>
+    <section id='hero' className='d-flex align-items-center'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
             <h1><span style={{ color: 'rgb(253, 142, 77)' }}>INNOHI </span>협의체</h1>
             <h2>오픈이노베이션 레터와 스타트업 찾기 등 <br />INNOHI의 여러가지 소식들을 이곳에서 확인해보세요</h2>
-            <div className='d-flex justify-content-center justify-content-lg-start'>
-              <a href='/council'><div className='btn-get-started scrollto'>협의체공간</div></a>
-            </div>
           </div>
           <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
             <img src={require('../../assets/img/intro/histroy/travel.jpg').default} className='img-fluid animated' alt=''></img>
@@ -87,7 +78,7 @@ export const heroElements =
 
 export const clientsElements =
 
-    <section id="clients" className="clients">
+    <section id="clients" className="clients" style={{ background:'#f3f5fa'}}>
       <div className="container" data-aos="fade-up">
         <header className="header-font">
           <h4>이번에 발굴된 스타트업을 소개합니다</h4>
