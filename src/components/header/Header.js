@@ -27,8 +27,8 @@ const headerElements =
           </li>
           <li className='dropdown'><a href='/program/startup'>Program<i className='bi bi-chevron-down'></i></a>
             <ul>
-              <li><a href='/program/startup'>스타트업 소싱</a></li>
-              <li><a href='/program/external'>대외협력</a></li>
+              <li><a href='/program/startup'>프로그램 소개</a></li>
+              {/* <li><a href='/program/external'>대외협력</a></li> */}
               <li><a href='/program/suggest'>협업제안</a></li>
             </ul>
           </li>
