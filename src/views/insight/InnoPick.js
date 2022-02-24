@@ -8,7 +8,7 @@ import Isotope from 'isotope-layout'
 import reactDom from 'react-dom';
 
 
-const TechPick = () => {
+const InnoPick = () => {
 
     const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 10, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
     const [stData, setStData] = useState(firstData);
@@ -129,4 +129,4 @@ const TechPick = () => {
 
 }
 
-export default TechPick;
+export default InnoPick;
