@@ -14,15 +14,17 @@ import ExternalCooperation from '../views/program/ExternalCooperation';
 import Suggestion from '../views/program/Suggestion';
 
 import BizPick from '../views/insight/BizPick'
-import TechPick from '../views/insight/TechPick';
+import InnoPick from '../views/insight/InnoPick';
 import Contest from '../views/insight/Contest';
 
 import Member from '../views/contact/Member'
 
 import CouncilMain from '../views/council/CouncilMain';
-import CouncilAnnounce from "../views/council/CouncilAnnouce";
+//import CouncilAnnounce from "../views/council/CouncilAnnouce";
+import CouncilAnnounce from "../views/council/StartupArchive copy";
 
-import Board from "../views/community/Board"
+//import Board from "../views/community/Board"
+import Board from "../views/council/StartupArchive copy 2"
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -67,7 +69,7 @@ const Public = () => {
                 
                 <Route exact path='/insight' >
                     <Route  path='biz' element={<BizPick />}></Route>
-                    <Route  path='tech' element={<TechPick />}></Route>
+                    <Route  path='tech' element={<InnoPick />}></Route>
                     <Route  path='contest' element={<Contest />}></Route>
                 </Route>
                 
