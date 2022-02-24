@@ -4,20 +4,20 @@ export const CouncilMainElements =
             <div className="row">
                 <div className="section-title col-sm-6">
                     <h2 style={{ textTransform: 'capitalize' }}>운영 현황</h2>
-                    <div style={{ background:'#FFFFFF'}}>
-                        <div>
+                    <div>
+                        <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/coucil/oi/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                                        <p sytle={{fontFamily:'Jost', fontSize: '20px', marginTop:'15px'}}>이노하이 사이트 리뉴얼</p>
+                                        <p><span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span> 사이트 리뉴얼 안내</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
                             <div className='row'>
-                                <div className="col-md-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/coucil/oi/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>한진, 스타트업과 함께 날아오르다! ✈️</p>
@@ -30,22 +30,22 @@ export const CouncilMainElements =
 
                 <div className="section-title col-sm-6">
                     <h2 style={{ textTransform: 'capitalize' }}>이노하이 레터</h2>
-                    <div style={{ background:'#FFFFFF'}}>
-                        <div>
+                    <div>
+                        <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" style={{ width: '40%' }} alt=""></img>
-                                        <p sytle={{fontFamily:'Jost', fontSize: '20px', marginTop:'15px'}}>2022년 1월 4주 이노하이 레터</p>
+                                        <img src={require('../../assets/img/coucil/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <p>2022년 1월 4주 이노하이 레터</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
                             <div className='row'>
-                                <div className="col-md-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" style={{ width: '40%' }} alt=""></img>
+                                        <img src={require('../../assets/img/coucil/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>2021년 12월 4주 이노하이 레터</p>
                                     </div>
                                 </div>
