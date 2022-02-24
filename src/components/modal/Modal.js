@@ -11,11 +11,12 @@ const ModalComponents = (props) => {
     // </Button>
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>InnoHI 사이트 리뉴얼에 따른 개인정보(이름, 이메일) 이용 안내</Modal.Title>
+        <Modal.Title>
+          {props.title}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {props.children}
-
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
