@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
-//import axios from 'axios';
 import * as jsondata from '../../components/JsonData';
 import { BiLink } from "react-icons/bi";
 import AOS from "aos";
 import Isotope from 'isotope-layout'
-import reactDom from 'react-dom';
 
 
 const InnoPick = () => {
 
-    const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 5, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
-    const [stData, setStData] = useState(firstData);
-    const [start, setStart] = useState(0);
-    const [end, setEnd] = useState(5);
-    const [currentPage, setCurrentPage] = useState(1);
-    const pageNumber = [];
-    console.log(firstData);
-
+    const firstData = jsondata.techPickTestData.slice(jsondata.techPickTestData.length - 50, jsondata.techPickTestData.length); //최초 진입시 가장 최신 50개 렌더링
+    const [stData] = useState(firstData);
+ //   const [start, setStart] = useState(0);
+//    const [end, setEnd] = useState(5);
+ //   const [currentPage, setCurrentPage] = useState(1);
+//    const pageNumber = [];
 
     window.addEventListener('load', () => {
         let portfolioContainer = select('.portfolio-container');
@@ -65,16 +61,16 @@ const InnoPick = () => {
         }
     }
 
-    const AA = (data) => {
+    const RenderPortfolio = (data) => {
         return (
-            data.map((v, i) => {
+            data.stData.map((v, i) => {
                 return (
                     <div className={'col-lg-4 col-md-6 portfolio-item filter-' + i}>
-                        <div className="portfolio-img"><img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" alt=""></img></div>
+                        <div className="portfolio-img"><img src={require('../../assets/img/insight/techpick/'+v.bno+'/'+v.content[0]).default} className="img-fluid" alt=""></img></div>
                         <div className="portfolio-info">
-                            <h4>{i}</h4>
-                            <p>2022.05.18</p>
-                            <a href="https://www.plugandplaytechcenter.com/events/web-30-and-big-data-in-healthcare/" className="details-link" title="More Details"><BiLink /></a>
+                            <h4>{v.title}</h4>
+                            <p>{v.regDate.slice(0,10)}</p>
+                            <a href={"/insight/detail/"+v.bno+"/"+v.content} className="details-link" title="More Details"><BiLink /></a>
                         </div>
                     </div>
                 )
@@ -97,7 +93,7 @@ const InnoPick = () => {
     }
 
     useEffect(() => {
-        reactDom.render(AA(firstData), document.getElementById('entryPage'));
+
     })
 
     return (
@@ -111,7 +107,7 @@ const InnoPick = () => {
                     </div>
 
                     <div id='entryPage' className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+                        <RenderPortfolio stData={stData}/>
                     </div>
 
                     <ul id="portfolio-flters" className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
