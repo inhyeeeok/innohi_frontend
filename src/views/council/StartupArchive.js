@@ -5,7 +5,8 @@ import * as common from '../../components/common/BreadCrumbs'
 import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
 import * as tt from './CouncilCommon'
-import { withAuthenticator, Authenticator, translations, useAuthenticator } from "@aws-amplify/ui-react";
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import {Link} from "react-router-dom";
 
 const StartupArchive = ({signOut, user}) => {
   const firstData = jsondata.startupTestData.slice(jsondata.startupTestData.length - 50, jsondata.startupTestData.length); //최초 진입시 가장 최신 50개 렌더링
