@@ -34,8 +34,7 @@ const headerElements =
           </li>
           <li className='dropdown'><a href='/insight/contest'>Insight<i className='bi bi-chevron-down'></i></a>
             <ul>
-              {/* <li><a href='/insight/biz'>Biz Pick</a></li> */}
-              <li><a href='/insight/tech'>Inno Pick</a></li>
+              <li><a href='/insight/innopick'>Inno Pick</a></li>
               <li><a href='/insight/contest'>Event</a></li>
             </ul>
           </li>

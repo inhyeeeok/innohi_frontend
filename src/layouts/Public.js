@@ -22,8 +22,6 @@ import Member from '../views/contact/Member'
 import CouncilMain from '../views/council/CouncilMain';
 //import CouncilAnnounce from "../views/council/CouncilAnnouce";
 import CouncilAnnounce from "../views/council/StartupArchive copy";
-
-//import Board from "../views/community/Board"
 import OINewsletter from "../views/council/OINewsletter"
 
 import ErrorPage from '../views/common/ErrorPage';
@@ -36,9 +34,9 @@ import * as tt from '../views/council/CouncilCommon'
 const sessionCheck = () => {
     setTimeout(() => {
         if (localStorage.getItem("amplify-signin-with-hostedUI")) {
-           // localStorage.clear();
-           tt.loginOut();
-          }
+            // localStorage.clear();
+            tt.loginOut();
+        }
     }, 3000000);
 
 }
@@ -49,7 +47,6 @@ const Public = () => {
 
     return (
         <>
-
             <Header />
 
             <Routes>
@@ -66,18 +63,16 @@ const Public = () => {
                     <Route exact path='external' element={<ExternalCooperation />}></Route>
                     <Route exact path='suggest' element={<Suggestion />}></Route>
                 </Route>
-                
+
                 <Route exact path='/insight' >
-                    <Route  path='biz' element={<BizPick />}></Route>
-                    <Route  path='tech' element={<InnoPick />}></Route>
-                    <Route  path='contest' element={<Contest />}></Route>
+                    <Route path='innopick' element={<InnoPick />}></Route>
+                    <Route path='contest' element={<Contest />}></Route>
                 </Route>
-                
+
                 <Route exact path='/contact'>
                     <Route exact path='member' element={<Member />}></Route>
                     <Route exact path='question' element={<StartupArchive />}></Route>
                 </Route>
-
 
                 <Route exact path='/council'>
                     <Route exact path='main' element={<CouncilMain />}> </Route>
@@ -86,7 +81,6 @@ const Public = () => {
                     <Route exact path='archive' element={<StartupArchive />}></Route>
                 </Route>
 
-
                 <Route path="/*" element={<ErrorPage />} />
 
             </Routes>
@@ -94,8 +88,6 @@ const Public = () => {
             <Footer />
         </>
     );
-
-
 }
 
 export default Public;
