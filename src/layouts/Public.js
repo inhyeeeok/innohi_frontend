@@ -24,7 +24,7 @@ import CouncilMain from '../views/council/CouncilMain';
 import CouncilAnnounce from "../views/council/StartupArchive copy";
 
 //import Board from "../views/community/Board"
-import Board from "../views/council/StartupArchive copy 2"
+import OINewsletter from "../views/council/OINewsletter"
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -82,7 +82,7 @@ const Public = () => {
                 <Route exact path='/council'>
                     <Route exact path='main' element={<CouncilMain />}> </Route>
                     <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
-                    <Route exact path='oi' element={<Board />}> </Route>
+                    <Route exact path='oi' element={<OINewsletter />}> </Route>
                     <Route exact path='archive' element={<StartupArchive />}></Route>
                 </Route>
 
