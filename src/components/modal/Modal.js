@@ -21,9 +21,9 @@ const ModalComponents = (props) => {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleClose}>
+        {/* <Button variant="primary" onClick={handleClose}>
           Save Changes
-        </Button>
+        </Button> */}
       </Modal.Footer>
     </Modal>
   );
