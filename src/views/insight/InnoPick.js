@@ -10,14 +10,12 @@ import reactDom from 'react-dom';
 
 const InnoPick = () => {
 
-    const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 5, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
-    const [stData, setStData] = useState(firstData);
+    const firstData = jsondata.techPickTestData.slice(jsondata.techPickTestData.length - 5, jsondata.techPickTestData.length); //최초 진입시 가장 최신 50개 렌더링
+    const [stData, setStData] = useState(jsondata.techPickTestData);
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(5);
     const [currentPage, setCurrentPage] = useState(1);
     const pageNumber = [];
-    console.log(firstData);
-
 
     window.addEventListener('load', () => {
         let portfolioContainer = select('.portfolio-container');
@@ -68,9 +66,10 @@ const InnoPick = () => {
     const AA = (data) => {
         return (
             data.map((v, i) => {
+                console.log(v)
                 return (
                     <div className={'col-lg-4 col-md-6 portfolio-item filter-' + i}>
-                        <div className="portfolio-img"><img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" alt=""></img></div>
+                        <div className="portfolio-img"><img src={require('../../assets/img/insight/techpick/'+v.bno+'/'+v.content[0]).default} className="img-fluid" alt=""></img></div>
                         <div className="portfolio-info">
                             <h4>{i}</h4>
                             <p>2022.05.18</p>
@@ -97,7 +96,7 @@ const InnoPick = () => {
     }
 
     useEffect(() => {
-        reactDom.render(AA(firstData), document.getElementById('entryPage'));
+        reactDom.render(AA(stData), document.getElementById('entryPage'));
     })
 
     return (

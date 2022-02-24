@@ -13,7 +13,6 @@ import StartupSourcing from '../views/program/StartupSourcing';
 import ExternalCooperation from '../views/program/ExternalCooperation';
 import Suggestion from '../views/program/Suggestion';
 
-import BizPick from '../views/insight/BizPick'
 import InnoPick from '../views/insight/InnoPick';
 import Contest from '../views/insight/Contest';
 
