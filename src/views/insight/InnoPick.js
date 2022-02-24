@@ -10,7 +10,7 @@ import reactDom from 'react-dom';
 
 const InnoPick = () => {
 
-    const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 10, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
+    const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 5, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
     const [stData, setStData] = useState(firstData);
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(5);
