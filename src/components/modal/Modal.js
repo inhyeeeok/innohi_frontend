@@ -1,31 +1,32 @@
-import React from 'react';
-import '../../assets/style/modal.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Modal, Button } from 'react-bootstrap';
 
-const Modal = (props) => {
-  // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
-  const { open, close, header } = props;
+const ModalComponents = (props) => {
+  // 닫기, 열기, 모달 헤더 텍스트를 부모로부터 받아옴
+  const { show, handleShow, handleClose } = props;
 
   return (
-    // 모달이 열릴때 openModal 클래스가 생성된다.
-    <div className={open ? 'openModal modal' : 'modal'}>
-        <div>
-          <header>
-            {header}
-            <button className="close" onClick={close}>
-              &times;
-            </button>
-          </header>
-          <main>{props.children}</main>
-          <footer>
-            <button className="close" onClick={close}>
-              close
-            </button>
-          </footer>
-        </div>
-    </div>
+    //   <Button className="nextButton" onClick={handleShow}>
+    //   Open Modal
+    // </Button>
+    <Modal show={show} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>InnoHI 사이트 리뉴얼에 따른 개인정보(이름, 이메일) 이용 안내</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {props.children}
 
-    
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+        <Button variant="primary" onClick={handleClose}>
+          Save Changes
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
 };
 
-export default Modal;
+export default ModalComponents;
