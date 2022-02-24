@@ -97,7 +97,7 @@ const OINewsletter = ({signOut, user}) => {
             </div>
           </div>
 
-          <div id="entryPage" className="blog-pagination">
+          <div id="entryPage" className="blog-pagination" style={{ padding: '0px 0 30px 0' }}>
           </div>
 
         </div>

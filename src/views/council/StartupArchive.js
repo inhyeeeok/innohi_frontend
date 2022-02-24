@@ -164,8 +164,7 @@ const StartupArchive = ({signOut, user}) => {
             </div>
           </div>
 
-          <div id="entryPage" className="blog-pagination">
-          </div>
+          <div id="entryPage" className="blog-pagination" style={{ padding: '0px 0 30px 0' }}></div>
 
         </div>
       </section>
