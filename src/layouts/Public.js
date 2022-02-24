@@ -15,6 +15,8 @@ import Suggestion from '../views/program/Suggestion';
 
 import InnoPick from '../views/insight/InnoPick';
 import Contest from '../views/insight/Contest';
+import Detail from '../views/insight/InnoPickDetail';
+
 
 import Member from '../views/contact/Member'
 
@@ -36,7 +38,7 @@ const sessionCheck = () => {
             // localStorage.clear();
             tt.loginOut();
         }
-    }, 3000000);
+    }, 3000000); //페이지 진입 후 30분 세션 out
 
 }
 
@@ -65,6 +67,7 @@ const Public = () => {
 
                 <Route exact path='/insight' >
                     <Route path='innopick' element={<InnoPick />}></Route>
+                    <Route path='detail/:bno/:content' element={<Detail />}></Route>
                     <Route path='contest' element={<Contest />}></Route>
                 </Route>
 
