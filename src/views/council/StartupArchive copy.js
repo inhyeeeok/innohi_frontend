@@ -105,7 +105,7 @@ const StartupArchive = ({signOut, user}) => {
         <div className="container" data-aos="fade-up">
           <div className="section-title" style={{ marginBottom: '20px' }}>
             <h2>알려드려용</h2>
-            <p>어떤걸.. 알려드릴까용....</p>
+            {/* <p>어떤걸.. 알려드릴까용....</p> */}
           </div>
 
           <div className="row">
