@@ -81,14 +81,16 @@ export const clientsElements =
     <section id="clients" className="clients" style={{ background:'#f3f5fa'}}>
       <div className="container" data-aos="fade-up">
         <header className="header-font">
-          <h4>이번에 발굴된 스타트업을 소개합니다</h4>
+          <h4>이런 스타트업은 어때요?</h4>
         </header>
   
         <div className="clients-slider swiper">
           <div className="swiper-wrapper align-items-center">
-            <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/만반잘부.jpg').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/PnP_Web3_and_Big_Data_in_Healthcare.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/APAC SUMMIT 2021.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/frip.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/globaleur.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/pickle_robot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/dorabot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/wiser_system.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
           </div>
           <div className="swiper-pagination"></div>
         </div>

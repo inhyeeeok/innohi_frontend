@@ -1247,7 +1247,7 @@ export const startupTestData = [
           "S_NAME": "WISER Systems",
           "S_CATEGORY": "물류",
           "S_TECH_TYPE": "플랫폼 서비스",
-          "S_MAIN_SERVICE": "기업의 중요 자산을 추적 솔루션",
+          "S_MAIN_SERVICE": "기업의 중요 자산 추적 솔루션",
           "S_EMPLOYEE_NUM": "10명",
           "S_LOCATION": "미국",
           "S_SERVICE_DETL": "",
