@@ -9,7 +9,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/oi/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p><span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span> 사이트 리뉴얼 안내</p>
                                     </div>
                                 </div>
@@ -19,7 +19,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/oi/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>한진, 스타트업과 함께 날아오르다! ✈️</p>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>2022년 1월 4주 이노하이 레터</p>
                                     </div>
                                 </div>
@@ -45,7 +45,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/coucil/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>2021년 12월 4주 이노하이 레터</p>
                                     </div>
                                 </div>
@@ -86,11 +86,11 @@ export const clientsElements =
   
         <div className="clients-slider swiper">
           <div className="swiper-wrapper align-items-center">
-            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/frip.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/globaleur.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/pickle_robot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/dorabot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-            <div className="swiper-slide"><img src={require('../../assets/img/coucil/main_carousel/wiser_system.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/council/main_carousel/frip.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/council/main_carousel/globaleur.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/council/main_carousel/pickle_robot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/council/main_carousel/dorabot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+            <div className="swiper-slide"><img src={require('../../assets/img/council/main_carousel/wiser_system.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
           </div>
           <div className="swiper-pagination"></div>
         </div>
