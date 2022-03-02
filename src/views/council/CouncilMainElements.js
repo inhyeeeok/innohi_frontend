@@ -3,7 +3,7 @@ export const CouncilMainElements =
         <div className="container" data-aos="fade-up">
             <div className="row">
                 <div className="section-title col-sm-6">
-                    <h2 style={{ textTransform: 'capitalize' }}>운영 현황</h2>
+                    <h2 style={{ textTransform: 'capitalize' }}><a href='/council/announce'><span style={{color:'#37517e'}}>운영 현황</span>    <span style={{fontSize:'24px'}}>+</span></a></h2>
                     <div>
                         <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
@@ -29,7 +29,7 @@ export const CouncilMainElements =
                 </div>
 
                 <div className="section-title col-sm-6">
-                    <h2 style={{ textTransform: 'capitalize' }}>이노하이 레터</h2>
+                    <h2 style={{ textTransform: 'capitalize' }}><a href='/council/oi'><span style={{color:'#37517e'}}>이노하이 레터</span>    <span style={{fontSize:'24px'}}>+</span></a></h2>
                     <div>
                         <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
@@ -81,7 +81,7 @@ export const clientsElements =
     <section id="clients" className="clients" style={{ background:'#f3f5fa'}}>
       <div className="container" data-aos="fade-up">
         <header className="header-font">
-          <h4>이런 스타트업은 어때요?</h4>
+          <h2><a href='/council/archive'><span style={{color:'#37517e'}}>이런 스타트업은 어때요?</span>    <span style={{fontSize:'24px'}}>+</span></a></h2>
         </header>
   
         <div className="clients-slider swiper">
