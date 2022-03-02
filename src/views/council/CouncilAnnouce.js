@@ -1,149 +1,136 @@
+/* eslint-disable */
+
 import React, { useState, useEffect } from 'react';
-import { withAuthenticator } from "@aws-amplify/ui-react";
-import * as tt from './CouncilCommon';
 import * as jsondata from '../../components/JsonData'
-import { BiLink } from "react-icons/bi";
-import AOS from "aos";
-import Isotope from 'isotope-layout'
 import reactDom from 'react-dom';
+import * as tt from './CouncilCommon'
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
-const CouncilAnnouce = ({ signOut, user }) => {
+const StartupArchive = ({signOut, user}) => {
+  const firstData = jsondata.announceTestData.slice(jsondata.announceTestData.length - 50, jsondata.announceTestData.length); //최초 진입시 가장 최신 50개 렌더링
+  const [stData, setStData] = useState(firstData);
+  const [start, setStart] = useState(0);
+  const [end, setEnd] = useState(5);
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageNumber = [];
 
-    const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 10, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
-    const [stData, setStData] = useState(firstData);
-    const [start, setStart] = useState(0);
-    const [end, setEnd] = useState(5);
-    const [currentPage, setCurrentPage] = useState(1);
-    const pageNumber = [];
-    console.log(firstData);
+  tt.headerGrid();
 
-    tt.headerGrid();
-    
-    window.addEventListener('load', () => {
-        let portfolioContainer = select('.portfolio-container');
-        if (portfolioContainer) {
-            let portfolioIsotope = new Isotope(portfolioContainer, {
-                itemSelector: '.portfolio-item'
-            });
+  for (let i = 1; i <= Math.ceil(stData?.length / 5); i++) {
+    pageNumber.push(i);
+  }
 
-            let portfolioFilters = select('#portfolio-flters li', true);
+  const changeCurrentPage = (param) => {
+    setStart((param.d - 1) * 5);
+    setEnd(param.d * 5);
 
-            on('click', '#portfolio-flters li', function (e) {
-                e.preventDefault();
-                portfolioFilters.forEach(function (el) {
-                    el.classList.remove('filter-active');
-                });
-                this.classList.add('filter-active');
+    setCurrentPage(param.d);
+  }
 
-                portfolioIsotope.arrange({
-                    filter: this.getAttribute('data-filter')
-                });
-                portfolioIsotope.on('arrangeComplete', function () {
-                    AOS.refresh()
-                });
-            }, true);
-        }
+  // const callSelectStartupData = () => {
+  //   axios.get(`${process.env.REACT_APP_API_URL}/api/v1/board/selectBoard`, { params: { limit: 10, offset: 0 } })
+  //     .then((Response) => {
+  //       console.log(Response.data);
+  //     })
+  //     .catch((Error) => console.log(Error))
+  // }
 
-    });
-
-    const select = (el, all = false) => {
-        el = el.trim()
-        if (all) {
-            return [...document.querySelectorAll(el)]
-        } else {
-            return document.querySelector(el)
-        }
-    }
-
-    /**
- * Easy event listener function
- */
-    const on = (type, el, listener, all = false) => {
-        let selectEl = select(el, all)
-        if (selectEl) {
-            if (all) {
-                selectEl.forEach(e => e.addEventListener(type, listener))
+  const entryPage = (num, activeNum) => {
+    return (
+      <ul className="justify-content-center">
+        {
+          num.map(d => {
+            if (d == activeNum) {
+              return <li onClick={() => { changeCurrentPage({ d }) }} key={d} className="active"><a>{d}</a></li>
             } else {
-                selectEl.addEventListener(type, listener)
+              return <li onClick={() => { changeCurrentPage({ d }) }} key={d}><a>{d}</a></li>
             }
+          })
         }
-    }
+      </ul>
+    )
+  };
 
-    const AA = (data) => {
+  const ArticleElements = (Data) => {
+    return (
+      Data.map((v, i) => {
         return (
-            data.map((v, i) => {
-                return (
-                    <div className={'col-lg-4 col-md-6 portfolio-item filter-'+ i}>
-                        <div className="portfolio-img"><img src={require('../../assets/img/coucil/oi/newsletter.png').default} className="img-fluid" alt=""></img></div>
-                        <div className="portfolio-info">
-                            <h4>{i}</h4>
-                            <p>2022.05.18</p>
-                            <a href="https://www.plugandplaytechcenter.com/events/web-30-and-big-data-in-healthcare/" className="details-link" title="More Details"><BiLink /></a>
-                        </div>
-                    </div>
-                )
-            })
+          <>
+            <article key={v.title} className="entry">
+
+              <div className="entry-img">
+                <img src="" alt="" className="img-fluid"></img>
+              </div>
+
+              <h2 className="entry-title">
+                <a href={'/council/announce/detail/' + v.bno}>{v.title}. <br /></a>
+              </h2>
+
+              <div className="entry-meta">
+                <ul>
+                  <li className="d-flex align-items-center"> <div>{v.content}</div></li>
+                </ul>
+              </div>
+
+            </article>
+          </>
+
         )
-    }
+      })
+    )
+  };
 
-    const UU = (data) => {
-        return (
-            data.map((v, i) => {
-                return (
-                    <>
-                        {/* <li data-filter={".filter-"+ i} className="filter-active">{i}</li> */}
-                        <li data-filter={".filter-"+ i}>{i}</li>
-                    </>
-
-                )
-            })
-        )
-    }
-
-
-    useEffect(() => {
-        tt.eventLogOut(signOut);
-        tt.changeName(user.username);
-        reactDom.render(AA(firstData), document.getElementById('entryPage'));
-   //     reactDom.render(UU(firstData), document.getElementById('portfolio-flters'));
-
-    });
+  const BlogElements = () => {
 
     return (
-        <>
-            <main id="main">
-                <section id="portfolio" className="portfolio section-bg">
-                    <div className="container" data-aos="fade-up">
+//      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
+      <section id="blog" className="blog">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title" style={{ marginBottom: '20px' }}>
+            <h2>알려드려요</h2>
+            {/* <p>어떤걸.. 알려드릴까용....</p> */}
+          </div>
 
-                        <div className="section-title">
-                            <h2>알려드려용</h2>
-                            <p>어떤걸.. 알려드릴까용....</p>
-                        </div>
+          <div className="row">
+            <div id="entry" className="entries">
 
-                        <div id= 'entryPage' className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            </div>
+          </div>
 
-                        </div>
+          <div id="entryPage" className="blog-pagination" style={{ padding: '0px 0 30px 0' }}>
+          </div>
 
-                        <ul id="portfolio-flters" className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                                {/* <li data-filter="*" className="filter-active">전체</li>
-                                <li data-filter=".filter-ing">1</li>
-                                <li data-filter=".filter-come">2</li>
-                                <li data-filter=".filter-finish">3</li> */}
-                        </ul>
+        </div>
+      </section>
 
-                    </div>
-                </section>
-            </main>
-        </>
-    );
+    )
+  }
+
+  useEffect(() => {
+    reactDom.render(ArticleElements(stData?.slice(start, end)), document.getElementById('entry'));
+ //   reactDom.render(entryPage(pageNumber, currentPage), document.getElementById('entryPage'));
+  }, [stData, currentPage]);
+
+  tt.eventLogOut(signOut);
+  tt.changeName(user.username);
+
+  return (
+    <>
+      <main id="main">
+        <BlogElements />
+      </main>
+    </>
+  );
 
 }
 
-export default  withAuthenticator(CouncilAnnouce, {
-    socialProviders: ['google'],
-    hideSignUp : [true],
- //   loginMechanisms : ['username'],
-    loginMechanisms : ['email'],
-  //  components : [components],
-    variation : ["modal"]
-  });
+// export default StartupArchive;
+
+export default  withAuthenticator(StartupArchive, {
+  socialProviders: ['google'],
+  hideSignUp : [true],
+//   loginMechanisms : ['username'],
+  loginMechanisms : ['email'],
+//  components : [components],
+  variation : ["modal"]
+});
