@@ -6,9 +6,6 @@ import Introduction from '../views/intro/Introduction';
 import Propel from '../views/intro/Propel';
 import History from '../views/intro/History';
 
-import StartupArchive from '../views/council/StartupArchive';
-
-
 import StartupSourcing from '../views/program/StartupSourcing';
 import ExternalCooperation from '../views/program/ExternalCooperation';
 import Suggestion from '../views/program/Suggestion';
@@ -24,6 +21,8 @@ import CouncilMain from '../views/council/CouncilMain';
 import CouncilAnnounce from "../views/council/CouncilAnnouce";
 import AnnouceDetail from "../views/council/AnnouceDetail";
 import OINewsletter from "../views/council/OINewsletter"
+import StartupArchive from '../views/council/StartupArchive';
+import ArchiveDetail from '../views/council/ArchiveDetail';
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -82,6 +81,7 @@ const Public = () => {
                     <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
                     <Route exact path='oi' element={<OINewsletter />}> </Route>
                     <Route exact path='archive' element={<StartupArchive />}></Route>
+                    <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
                 </Route>
 
                 <Route path="/*" element={<ErrorPage />} />

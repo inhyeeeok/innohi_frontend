@@ -171,7 +171,6 @@ export const newsletterTestData = [
   }
 ];
 
-
 export const startupTestData = [
         {
           "S_NO": 1,

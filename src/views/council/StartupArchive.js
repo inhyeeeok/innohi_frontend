@@ -75,7 +75,7 @@ const StartupArchive = ({signOut, user}) => {
               </div>
 
               <h2 className="entry-title">
-                <a href={'/startupDetail?' + v.S_NO}>{v.S_MAIN_SERVICE}. <br /><span style={{ color: 'rgb(253, 142, 77)' }}>{v.S_NAME}</span></a>
+                <a href={'archive/detail/' + v.S_NO}>{v.S_MAIN_SERVICE}. <br /><span style={{ color: 'rgb(253, 142, 77)' }}>{v.S_NAME}</span></a>
               </h2>
 
               <div className="entry-meta">
