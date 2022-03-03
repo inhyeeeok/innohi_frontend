@@ -6,7 +6,7 @@ import reactDom from 'react-dom';
 import * as tt from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 
-const StartupArchive = ({signOut, user}) => {
+const StartupArchive = ({ signOut, user }) => {
   const firstData = jsondata.startupTestData.slice(jsondata.startupTestData.length - 50, jsondata.startupTestData.length); //최초 진입시 가장 최신 50개 렌더링
   const [stData, setStData] = useState(firstData);
   const [start, setStart] = useState(0);
@@ -22,8 +22,8 @@ const StartupArchive = ({signOut, user}) => {
 
   const searchData = (param) => {
     let rs = '';
-    rs = jsondata.startupTestData.filter(it => it.S_NAME.includes(param));
-    
+    rs = jsondata.startupTestData.filter(it => it.S_SERVICE_DETL.includes(param));
+
     setStData(rs);
   }
 
@@ -106,7 +106,7 @@ const StartupArchive = ({signOut, user}) => {
   const BlogElements = () => {
 
     return (
-//      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
+      //      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
       <section id="blog" className="blog">
         <div className="container" data-aos="fade-up">
           <div className="section-title" style={{ marginBottom: '20px' }}>
@@ -129,8 +129,8 @@ const StartupArchive = ({signOut, user}) => {
 
                 <div className="sidebar-item search-form">
                   <form action="">
-                    <input id="search" type="text"></input>
-                    <button type="button"><i onClick={() => { searchData(document.getElementById('search').value) }} className="bi bi-search"></i></button>
+                    <input id="search" type="text" ></input>
+                    <button type="button" onClick={() => { searchData(document.getElementById('search').value) }}><i className="bi bi-search"></i></button>
                   </form>
                 </div>
 
@@ -198,11 +198,11 @@ const StartupArchive = ({signOut, user}) => {
 
 // export default StartupArchive;
 
-export default  withAuthenticator(StartupArchive, {
+export default withAuthenticator(StartupArchive, {
   socialProviders: ['google'],
-  hideSignUp : [true],
-//   loginMechanisms : ['username'],
-  loginMechanisms : ['email'],
-//  components : [components],
-  variation : ["modal"]
+  hideSignUp: [true],
+  //   loginMechanisms : ['username'],
+  loginMechanisms: ['email'],
+  //  components : [components],
+  variation: ["modal"]
 });
