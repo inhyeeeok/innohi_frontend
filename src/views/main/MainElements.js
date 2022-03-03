@@ -93,9 +93,9 @@ export const clientsElements =
 
       <div className="clients-slider swiper">
         <div className="swiper-wrapper align-items-center">
-          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/만반잘부.jpg').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/PnP_Web3_and_Big_Data_in_Healthcare.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
-          <div className="swiper-slide"><img src={require('../../assets/img/insight/contest/APAC SUMMIT 2021.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></div>
+          <div className="swiper-slide"><a href='https://startingpoint.imweb.me/Entrepreneurvillage'><img src={require('../../assets/img/insight/contest/만반잘부.jpg').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
+          <div className="swiper-slide"><a href='http://wiznet.ai/aiexpo/index'><img src={require('../../assets/img/insight/contest/2022_ai_expo_korea.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
+          <div className="swiper-slide"><a href='https://www.youtube.com/watch?v=INK8oo-3_EQ&list=PLXtJv3Egd0bYk5tUolnu7mgSq7S8M5Ek6'><img src={require('../../assets/img/insight/contest/public_session_org.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
         </div>
         <div className="swiper-pagination"></div>
       </div>
