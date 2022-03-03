@@ -73,3 +73,5 @@ npm install react-router-dom --save
 
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 ```
+
+## [Amazon Cognito]
