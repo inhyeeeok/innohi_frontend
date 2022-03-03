@@ -9,7 +9,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/council/oi/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/announce/4/4.innoHI_renewal.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p><span style={{fontFamily:'Jost', textTransform:'uppercase'}}>InnoHI</span> 사이트 리뉴얼 안내</p>
                                     </div>
                                 </div>
@@ -19,7 +19,7 @@ export const CouncilMainElements =
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                     <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/council/oi/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <img src={require('../../assets/img/council/announce/3/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p>한진, 스타트업과 함께 날아오르다! ✈️</p>
                                     </div>
                                 </div>
