@@ -1,12 +1,10 @@
 /* eslint-disable */
 
 import React, { useState, useEffect } from 'react';
-import * as common from '../../components/common/BreadCrumbs'
 import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
 import * as tt from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import {Link} from "react-router-dom";
 
 const StartupArchive = ({signOut, user}) => {
   const firstData = jsondata.startupTestData.slice(jsondata.startupTestData.length - 50, jsondata.startupTestData.length); //최초 진입시 가장 최신 50개 렌더링
@@ -20,6 +18,13 @@ const StartupArchive = ({signOut, user}) => {
 
   for (let i = 1; i <= Math.ceil(stData?.length / 5); i++) {
     pageNumber.push(i);
+  }
+
+  const searchData = (param) => {
+    let rs = '';
+    rs = jsondata.startupTestData.filter(it => it.S_NAME.includes(param));
+    
+    setStData(rs);
   }
 
   const changeStData = (key, value) => {
@@ -124,8 +129,8 @@ const StartupArchive = ({signOut, user}) => {
 
                 <div className="sidebar-item search-form">
                   <form action="">
-                    <input type="text"></input>
-                    <button type="submit"><i className="bi bi-search"></i></button>
+                    <input id="search" type="text"></input>
+                    <button type="button"><i onClick={() => { searchData(document.getElementById('search').value) }} className="bi bi-search"></i></button>
                   </form>
                 </div>
 
