@@ -78,19 +78,19 @@ const InnoPick = () => {
         )
     }
 
-    const UU = (data) => {
-        return (
-            data.map((v, i) => {
-                return (
-                    <>
-                        {/* <li data-filter={".filter-"+ i} className="filter-active">{i}</li> */}
-                        <li data-filter={".filter-" + i}>{i}</li>
-                    </>
+    // const UU = (data) => {
+    //     return (
+    //         data.map((v, i) => {
+    //             return (
+    //                 <>
+    //                     {/* <li data-filter={".filter-"+ i} className="filter-active">{i}</li> */}
+    //                     <li data-filter={".filter-" + i}>{i}</li>
+    //                 </>
 
-                )
-            })
-        )
-    }
+    //             )
+    //         })
+    //     )
+    // }
 
     useEffect(() => {
 
