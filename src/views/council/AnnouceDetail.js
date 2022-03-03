@@ -6,8 +6,6 @@ import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const AnnouceDetail = ({signOut, user}) => {
     const params = useParams;
-    const detailData = json2data.announceTestData[params().bno];
-    console.log(json2data)
 
     tt.headerGrid();
 

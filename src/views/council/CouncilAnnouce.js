@@ -86,9 +86,8 @@ const StartupArchive = ({signOut, user}) => {
 //      <section id="blog" className="blog" style={{ padding: '60px 0 20px 0' }}>
       <section id="blog" className="blog">
         <div className="container" data-aos="fade-up">
-          <div className="section-title" style={{ marginBottom: '20px' }}>
+          <div className="section-title">
             <h2>알려드려요</h2>
-            {/* <p>어떤걸.. 알려드릴까용....</p> */}
           </div>
 
           <div className="row">

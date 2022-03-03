@@ -85,7 +85,7 @@ const OINewsletter = ({signOut, user}) => {
     return (
       <section id="blog" className="blog">
         <div className="container" data-aos="fade-up">
-          <div className="section-title" style={{ marginBottom: '20px' }}>
+          <div className="section-title">
             <h2>오픈이노베이션 레터</h2>
             {/* <p>혁신에 대한 고민은 많지만, 오늘도 바쁜 당신을 위해 오픈이노베이션 분야별 행사와 모임을 한 눈에 모아 봤습니다. 놓쳐선 안 될 행사와 함께 여러분의 메일함을 살며시 두드릴게요.
                     <br />우리, 한 주의 문을 활짝 여는 격주 금요일 아침에 만나요 🙋‍♀️
