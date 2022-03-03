@@ -122,112 +122,52 @@ export const techPickTestData = [
 
 export const newsletterTestData = [
   {
-    "bno": 9,
-    "boardType": 1,
-    "noticeYn": 0,
-    "title": "[이노하이레터#14] 01월3주차 뉴스레터 📭",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "작성자6",
-    "regDate": "2022-01-13 02:09:39",
-    "updtUser": "inhyeok",
-    "updtDate": "2021-11-06",
-    "viewCnt": 1
-  },
-  {
-    "bno": 8,
-    "boardType": 1,
-    "noticeYn": 0,
-    "title": "[이노하이레터#13] 01월2주차 뉴스레터 📭",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "작성자6",
-    "regDate": "2022-01-13 02:09:39",
-    "updtUser": "inhyeok",
-    "updtDate": "2021-11-06",
-    "viewCnt": 1
-  },
-  {
-    "bno": 7,
-    "boardType": 1,
-    "noticeYn": 0,
-    "title": "[이노하이레터#12] 01월1주차 뉴스레터 📭",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "작성자6",
-    "regDate": "2022-01-13 02:09:39",
-    "updtUser": "inhyeok",
-    "updtDate": "2021-11-06",
-    "viewCnt": 1
-  },
-  {
-    "bno": 6,
-    "boardType": 1,
-    "noticeYn": 0,
-    "title": "[이노하이레터#11] 12월4주차 뉴스레터 📭",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "작성자6",
-    "regDate": "2022-01-13 02:09:39",
-    "updtUser": "inhyeok",
-    "updtDate": "2021-11-06",
-    "viewCnt": 1
-  },
-  {
-    "bno": 5,
-    "boardType": 1,
-    "noticeYn": 0,
-    "title": "[이노하이레터#10] 12월2주차 뉴스레터 📭",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "\t작성자5",
-    "regDate": "2021-10-20 04:50:01",
-    "updtUser": null,
-    "updtDate": null,
-    "viewCnt": 0
-  },
-  {
     "bno": 4,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목4",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "\t작성자4",
-    "regDate": "2021-10-20 04:50:01",
-    "updtUser": null,
-    "updtDate": null,
-    "viewCnt": 0
+    "title": "[이노하이레터#4] 02월 4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220226/(%234)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+2%EC%9B%94+4%EC%A3%BC.html",
+    "regUser": "작성자6",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
+    "viewCnt": 1
   },
   {
     "bno": 3,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목3",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "\t작성자3",
-    "regDate": "2021-10-20 04:50:01",
-    "updtUser": null,
-    "updtDate": null,
-    "viewCnt": 0
+    "title": "[이노하이레터#3] 01월 4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220128/(%233)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+1%EC%9B%94+4%EC%A3%BC.html",
+    "regUser": "작성자6",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
+    "viewCnt": 1
   },
   {
     "bno": 2,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목2",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "\t작성자2",
-    "regDate": "2021-10-20 04:50:01",
-    "updtUser": null,
-    "updtDate": null,
-    "viewCnt": 0
+    "title": "[이노하이레터#2] 12월 4주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211224/(%232)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+12%EC%9B%94+4%EC%A3%BC.html",
+    "regUser": "작성자6",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
+    "viewCnt": 1
   },
   {
     "bno": 1,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "테스트 제목1",
-    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(211210)+OI+%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EC%B5%9C%EC%A2%85%EB%B3%B8.html",
-    "regUser": "\t작성자1",
-    "regDate": "2021-10-20 04:49:39",
-    "updtUser": null,
-    "updtDate": null,
-    "viewCnt": 0
+    "title": "[이노하이레터#1] 12월 2주차 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211210/(%231)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+12%EC%9B%94+2%EC%A3%BC.html",
+    "regUser": "이노하이",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
+    "viewCnt": 1
   }
 ];
 
