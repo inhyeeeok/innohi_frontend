@@ -37,10 +37,26 @@ export const PortfolioElements =
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-come">
+                    <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/2022_ai_expo_korea.png').default} className="img-fluid" alt=""></img></div>
+                    <div className="portfolio-info">
+                        <h4>AI EXPO KOREA 2.0</h4>
+                        <p>2022.04.13 ~ 15</p>
+                        <a href="http://wiznet.ai/aiexpo/index/" className="details-link" title="More Details"><BiLink /></a>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-come">
+                    <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/public_session_org.png').default} className="img-fluid" alt=""></img></div>
+                    <div className="portfolio-info">
+                        <h4>ICT분야 창업·벤처 지원사업 통합설명회</h4>
+                        <p>2022.02.14</p>
+                        <a href="https://www.youtube.com/watch?v=INK8oo-3_EQ&list=PLXtJv3Egd0bYk5tUolnu7mgSq7S8M5Ek6/" className="details-link" title="More Details"><BiLink /></a>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-come">
                     <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/만반잘부.jpg').default} className="img-fluid" alt=""></img></div>
                     <div className="portfolio-info">
                         <h4>만반잘부 창업촌</h4>
-                        <p>2021.02.10</p>
+                        <p>2022.03.10</p>
                         <a href="https://startingpoint.imweb.me/Entrepreneurvillage" className="details-link" title="More Details"><BiLink /></a>
                     </div>
                 </div>
