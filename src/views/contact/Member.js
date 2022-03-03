@@ -35,7 +35,7 @@ const Member = () => {
                                 <h4>강준수</h4>
                                 <p>Facilitator</p>
                                 <p>솔루션사업그룹 대리</p>
-                                <p>스타트업 DFS, PnP 담당</p>
+                                <p>스타트업 협업 담당</p>
                                 <p><br /></p>
                                 <p><br /></p>
                                 <h5>js.kang@hist.co.kr</h5>
