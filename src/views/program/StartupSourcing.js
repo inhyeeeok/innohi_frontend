@@ -52,7 +52,7 @@ const StartupSourcing = () => {
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">
-                    <h2>산업별 적용사례</h2>
+                    <h2>산업별 사례</h2>
                 </div>
 
                 <div className="row">
