@@ -131,11 +131,9 @@ export const ServiceElements =
                         <div className="icon-box">
                             <img src="../assets/img/icon/startup-archive_2.png" className="img-fluid" alt=""></img>
                                 <h4><a href="/3">물류</a></h4>
-                                <p>Fulfillment</p>
-                                <p>Last Mile Delivery</p>
-                                <p>Data Recognition</p>
-                                <p>Big Data / AI</p>
-                                <p>Data Access / Processing</p>
+                                <p>Fulfillment (물류 자동화)</p>
+                                <p>Last Mile Delivery (배송 최적화)</p>
+                                <p>Smart Logistics (차세대 물류 서비스)</p>
                         </div>
                     </div>
 
@@ -143,8 +141,8 @@ export const ServiceElements =
                         <div className="icon-box">
                             <img src="../assets/img/icon/startup-archive_6.png" className="img-fluid" alt=""></img>
                                 <h4><a href="/4">여행</a></h4>
-                                <p>Commerce Tour</p>
-                                <p>Mobility Service</p>
+                                <p>Commerce Tour (소비자 경험 향상)</p>
+                                <p>Mobility Service (여행 모빌리티)</p>
                         </div>
                     </div>
                 </div>

@@ -83,7 +83,7 @@ const StartupSourcing = () => {
                                 <h4 style={{fontSize: '22px', fontWeight: 'bold'}}><a href="/3">물류</a></h4>
                                 <p style={{fontSize: '16px', marginTop : ' 5px'}}>Fulfillment (물류 자동화)</p>
                                 <p style={{fontSize: '16px', marginTop : ' 5px'}}>Last Mile Delivery( 배송 최적화)</p>
-                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Data Access / Processing (물류 데이터 처리 및 가공)</p>
+                                <p style={{fontSize: '16px', marginTop : ' 5px'}}>Smart Logistics (차세대 물류 기술)</p>
                         </div>
                     </div>
 

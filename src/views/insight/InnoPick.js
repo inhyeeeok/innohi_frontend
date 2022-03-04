@@ -66,12 +66,14 @@ const InnoPick = () => {
             data.stData.map((v, i) => {
                 return (
                     <div className={'col-lg-4 col-md-6 portfolio-item filter-' + i}>
+                        <a href={"/insight/detail/"+v.bno+"/"+v.content}>
                         <div className="portfolio-img"><img src={require('../../assets/img/insight/techpick/'+v.bno+'/'+v.content[0]).default} className="img-fluid" alt=""></img></div>
                         <div className="portfolio-info">
                             <h4>{v.title}</h4>
                             <p>{v.regDate.slice(0,10)}</p>
                             <a href={"/insight/detail/"+v.bno+"/"+v.content} className="details-link" title="More Details"><BiLink /></a>
                         </div>
+                        </a>
                     </div>
                 )
             })
