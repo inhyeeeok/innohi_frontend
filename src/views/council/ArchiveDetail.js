@@ -22,10 +22,10 @@ const ArchiveDetail = ({ signOut, user }) => {
             <>
                 <div className="container">
                     <div className="table-responsive-md" >
-                        <table className="table table-bordered">
+                        <table className="table table-bordered" style={{fontFamily:'Jost'}}>
                             <thead style={{ backgroundColor: 'rgba(242, 242, 242, 0.706)' }}>
-                                <tr align="center" >
-                                    <th colSpan="4">{data.data.S_NAME}</th>
+                                <tr align="center">
+                                    <th colSpan="4"><span style={{fontSize:'24px'}}>{data.data.S_NAME}</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -34,7 +34,7 @@ const ArchiveDetail = ({ signOut, user }) => {
                                     <td width="40%">{data.data.S_NO}</td>
                                     <td width="10%">카테고리</td>
                                     <td width="40%">{data.data.S_CATEGORY}</td> */}
-                                    <td align="center" colSpan="1">카테고리</td>
+                                    <td align="center" width="30%">카테고리</td>
                                     <td colSpan="3">{data.data.S_CATEGORY}</td>
                                 </tr>
                                 <tr>
