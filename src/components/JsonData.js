@@ -1779,5 +1779,29 @@ export const startupTestData = [
           "S_SERVICE_DETL": "",
           "S_SPECIAL_FEATURE": "",
           "S_RESEARCHED_TIME": "2020 DFS"
+        },
+        {
+          "S_NO": 135,
+          "S_NAME": "Globaleur",
+          "S_CATEGORY": "여행",
+          "S_TECH_TYPE": "데이터 분석",
+          "S_MAIN_SERVICE": "여행자의 취향에 맞는 실시간 여행일정 추천 플랫폼",
+          "S_EMPLOYEE_NUM": "10명 이상",
+          "S_LOCATION": "미국",
+          "S_SERVICE_DETL": "",
+          "S_SPECIAL_FEATURE": "",
+          "S_RESEARCHED_TIME": "2021 DFS"
+        },
+        {
+          "S_NO": 136,
+          "S_NAME": "Frip",
+          "S_CATEGORY": "여행",
+          "S_TECH_TYPE": "플랫폼 서비스",
+          "S_MAIN_SERVICE": "재능공유 플랫폼",
+          "S_EMPLOYEE_NUM": "50명",
+          "S_LOCATION": "대한민국",
+          "S_SERVICE_DETL": "",
+          "S_SPECIAL_FEATURE": "",
+          "S_RESEARCHED_TIME": "2021 DFS"
         }
       ];

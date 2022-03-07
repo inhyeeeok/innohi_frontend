@@ -29,11 +29,13 @@ const ArchiveDetail = ({ signOut, user }) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr align="center">
-                                    <td width="10%">번호</td>
+                                <tr>
+                                    {/* <td width="10%">번호</td>
                                     <td width="40%">{data.data.S_NO}</td>
                                     <td width="10%">카테고리</td>
-                                    <td width="40%">{data.data.S_CATEGORY}</td>
+                                    <td width="40%">{data.data.S_CATEGORY}</td> */}
+                                    <td align="center" colSpan="1">카테고리</td>
+                                    <td colSpan="3">{data.data.S_CATEGORY}</td>
                                 </tr>
                                 <tr>
                                      <td align="center" colSpan="1">테크 타입</td>
