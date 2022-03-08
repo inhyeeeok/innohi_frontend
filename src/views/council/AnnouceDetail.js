@@ -15,22 +15,27 @@ const AnnouceDetail = ({ signOut, user }) => {
         return (
             <div className="container">
                 <div className="table-responsive-md" >
-                    <table className="table table-bordered">
-                        <thead style={{ backgroundColor: 'rgba(242, 242, 242, 0.706)' }}>
+                    <table className="table table-bordered" style={{ backgroundColor: 'white' }}>
+                        <thead>
                             <tr align="center" >
                                 <th colSpan="4" style={{fontSize:'24px'}}>{rdData.title}</th>
                             </tr>
                         </thead>
                     </table>
-                    <table className="table table-bordered">
+                    <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
                         <tbody>
                             <tr>
-                                <td>
+                                <td >
                                     <img src={require('../../assets/img/council/announce/' + Number(rdData.bno) + '/' + rdData.img).default} className="img-fluid" alt=""></img>
                                 </td>
                             </tr>
-                            <tr align="left" >
-                                <td colSpan="2" style={{'white-space': 'pre-wrap'}}>{rdData.content}</td>
+                        </tbody>
+                    </table>
+
+                    <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
+                        <tbody>
+                            <tr align="left">
+                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{rdData.content}</td>
                             </tr>
                         </tbody>
                     </table>
