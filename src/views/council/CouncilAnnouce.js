@@ -66,6 +66,14 @@ const StartupArchive = ({signOut, user}) => {
                 <a href={'/council/announce/detail/' + v.bno}>{v.title}. <br /></a>
               </h2>
 
+              <div className="entry-meta">
+                <ul>
+                  <li className="d-flex align-items-center"><i className="bi bi-person"></i> <div>{v.regUser}</div></li>
+                  <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <div>{v.regDate}</div></li>
+                  <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <div>{v.bno}</div></li>
+                </ul>
+              </div>
+
             </article>
           </>
 

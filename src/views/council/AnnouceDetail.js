@@ -10,7 +10,7 @@ const AnnouceDetail = ({ signOut, user }) => {
     tt.headerGrid();
 
     const RenderImg = (data) => {
-        const rdData = data.data.announceTestData[Number(params().bno) - 1];
+        const returnValue = (data.data.announceTestData).find(function (jsonData) { return jsonData.bno === Number(params().bno) })
 
         return (
             <div className="container">
@@ -18,7 +18,7 @@ const AnnouceDetail = ({ signOut, user }) => {
                     <table className="table table-bordered" style={{ backgroundColor: 'white' }}>
                         <thead>
                             <tr align="center" >
-                                <th colSpan="4" style={{fontSize:'24px'}}>{rdData.title}</th>
+                                <th colSpan="4" style={{fontSize:'24px'}}>{returnValue.title}</th>
                             </tr>
                         </thead>
                     </table>
@@ -26,7 +26,7 @@ const AnnouceDetail = ({ signOut, user }) => {
                         <tbody>
                             <tr>
                                 <td >
-                                    <img src={require('../../assets/img/council/announce/' + Number(rdData.bno) + '/' + rdData.img).default} className="img-fluid" alt=""></img>
+                                    <img src={require('../../assets/img/council/announce/' + Number(returnValue.bno) + '/' + returnValue.img).default} className="img-fluid" alt=""></img>
                                 </td>
                             </tr>
                         </tbody>
@@ -35,7 +35,7 @@ const AnnouceDetail = ({ signOut, user }) => {
                     <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
                         <tbody>
                             <tr align="left">
-                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{rdData.content}</td>
+                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{returnValue.content}</td>
                             </tr>
                         </tbody>
                     </table>
