@@ -5,7 +5,11 @@ export const announceTestData = [
     "content" : "그동안 PC에서만 접속되어 많이 불편하셨죠~!😭 \n 이제 innoHI 사이트를 스마트폰으로도 접속하실 수 있도록 준비중입니다. \n 새로운 모습과 알찬 내용으로 AWS에서 다시 태어날 innoHI 사이트를 기대해주세요🥰",
     "img" : "4.innoHI_renewal.png",
     "button" : "N",
-    "link" : ""
+    "link" : "",
+    "regUser": "이노하이",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
   },
   {
     "bno" : 3,
@@ -13,7 +17,11 @@ export const announceTestData = [
     "content" : "12월 8일, 한진정보통신은 글로벌 액셀러레이터인 플러그앤플레이(Plug and Play)한국지사에서 처음 주최한 'PnP Batch 0 Expo Demoday'에 참가하여 유니콘기업으로 도약중인 국내 스타트업(물류, 메타버스, AI 분야 등 7개사)과 만남의 시간을 가졌습니다. \n 한진그룹의 오픈이노베이션 전략을 소개한 김문겸상무는'빠르게 변화하는 소비자의 요구사항과 기술의 복잡성 증가로 우수한 서비스와 기술력을 보유한 스타트업과의 협업은 디지털전환 시대에 반드시 필요하다'라고 발표하며 스타트업과의 협력으로 디지털전환 시대에 발빠르게 대비하고 혁신성장하고자 하는 의지를 밝혔습니다. \n 특히 이번 데모데이는 한진그룹 뿐만 아니라 LG, 한화그룹 등 주요 대기업이 참석하여 각 사의 주요사업과 오픈이노베이션에 대해 소개하는 자리를 통해 '오픈이노베이션'이 기업의 새로운 경영전략으로 자리매김하고 있음을 알 수 있는 시간이었습니다.",
     "img" : "3.pnp_demoday.png",
     "button" : "Y",
-    "link" : ""
+    "link" : "",
+    "regUser": "이노하이",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
   },
   {
     "bno" : 2,
@@ -21,7 +29,11 @@ export const announceTestData = [
     "content" : "11월 17일 ‘여행 플랫폼과 에듀테크 분야’ 스타트업 발굴을 주제로 PnP DFS(Deal Flow Session)를 개최했습니다. \n이번 DFS에서는 당사(박은호 대표이사, 김문겸 상무)와 그룹사 협의체 임원(토파스 곽진일 대표이사,, 한진관광 안교욱 상무)이 참석하여 스타트업과 시너지 효과를 창출하기 위한 비즈니스 협력방안에 대해 논의하는 자리를 가졌습니다. \n코로나 상황을 고래해 온라인으로 참석한 7개사는 사전 서류심사를 통해 선별된 기업으로, 새로운 소비자 경험창출, AI기반  여행일정 추천, 최적 이동경로안내, 신기술기반 교육 플랫폼 등의 비즈니스 모델을 보유한 스타트업입니다. \n심사 임원분들의 점수에 대한 최종 분석을 마친후 스타트업과 추가적인 논의를 진행할 예정이며 ,미래성장동력 확보와 차세대 기술을 선도하기 위한 오픈이노베이션 활동을 지속해 나갈 예정입니다.",
     "img" : "2.Tour_Edu_DFS.png",
     "button" : "N",
-    "link" : ""
+    "link" : "",
+    "regUser": "이노하이",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
   },
   {
     "bno" : 1,
@@ -29,7 +41,11 @@ export const announceTestData = [
     "content" : "‘여행 플랫폼과 에듀테크 분야’ 스타트업 발굴을 주제로 PnP DFS(Deal Flow Session)를 개최할 예정입니다.\n새로운 소비자 경험창출, AI기반 여행일정 추천, 최적 이동경로안내, 신기술기반 교육 플랫폼 등을 주제로 스타트업 소싱이 진행 될 예정이며 참여를 원하시는 분은 아래의 신청하기를 클릭 해 신청바랍니다.\n많은 관심 부탁드리겠습니다.\n일시 : 11월 3주차\n장소 : 화상 미팅\n참석자 : 여행 및 교육 플랫폼 관련 스타트업(약 10개)",
     "img" : "1.Travel_Edu_DFS_Notice.png",
     "button" : "Y",
-    "link" : ""
+    "link" : "",
+    "regUser": "이노하이",
+    "regDate": "2022-03-03 09:00:39",
+    "updtUser": "inhyeok",
+    "updtDate": "2022-03-03",
   }
 ];
 
@@ -127,7 +143,7 @@ export const newsletterTestData = [
     "noticeYn": 0,
     "title": "[이노하이레터#4] 02월 4주차 뉴스레터 📭",
     "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220226/(%234)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+2%EC%9B%94+4%EC%A3%BC.html",
-    "regUser": "작성자6",
+    "regUser": "이노하이",
     "regDate": "2022-03-03 09:00:39",
     "updtUser": "inhyeok",
     "updtDate": "2022-03-03",
@@ -139,7 +155,7 @@ export const newsletterTestData = [
     "noticeYn": 0,
     "title": "[이노하이레터#3] 01월 4주차 뉴스레터 📭",
     "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220128/(%233)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+1%EC%9B%94+4%EC%A3%BC.html",
-    "regUser": "작성자6",
+    "regUser": "이노하이",
     "regDate": "2022-03-03 09:00:39",
     "updtUser": "inhyeok",
     "updtDate": "2022-03-03",
@@ -151,7 +167,7 @@ export const newsletterTestData = [
     "noticeYn": 0,
     "title": "[이노하이레터#2] 12월 4주차 뉴스레터 📭",
     "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20211224/(%232)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+12%EC%9B%94+4%EC%A3%BC.html",
-    "regUser": "작성자6",
+    "regUser": "이노하이",
     "regDate": "2022-03-03 09:00:39",
     "updtUser": "inhyeok",
     "updtDate": "2022-03-03",

@@ -21,6 +21,7 @@ import CouncilMain from '../views/council/CouncilMain';
 import CouncilAnnounce from "../views/council/CouncilAnnouce";
 import AnnouceDetail from "../views/council/AnnouceDetail";
 import OINewsletter from "../views/council/OINewsletter"
+import NewsletterDetail from "../views/council/NewsletterDetail"
 import StartupArchive from '../views/council/StartupArchive';
 import ArchiveDetail from '../views/council/ArchiveDetail';
 
@@ -80,6 +81,7 @@ const Public = () => {
                     <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
                     <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
                     <Route exact path='oi' element={<OINewsletter />}> </Route>
+                    <Route exact path='oi/detail/:bno' element={<NewsletterDetail />}> </Route>
                     <Route exact path='archive' element={<StartupArchive />}></Route>
                     <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
                 </Route>

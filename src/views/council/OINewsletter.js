@@ -5,7 +5,6 @@ import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
 import * as tt from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
-import {Link} from "react-router-dom";
 
 const OINewsletter = ({signOut, user}) => {
   const firstData = jsondata.newsletterTestData.slice(jsondata.newsletterTestData.length - 50, jsondata.newsletterTestData.length); //최초 진입시 가장 최신 50개 렌더링
@@ -57,7 +56,7 @@ const OINewsletter = ({signOut, user}) => {
               </div>
 
               <h2 className="entry-title">
-                <a href={v.content}>{v.title}.</a>
+                <a href={'/council/oi/detail/' + v.bno}>{v.title}</a>
               </h2>
 
               <div className="entry-meta">
