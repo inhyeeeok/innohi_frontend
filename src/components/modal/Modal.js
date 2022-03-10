@@ -3,7 +3,8 @@ import { Modal, Button } from 'react-bootstrap';
 
 const ModalComponents = (props) => {
   // 닫기, 열기, 모달 헤더 텍스트를 부모로부터 받아옴
-  const { show, handleShow, handleClose } = props;
+//  const { show, handleShow, handleClose } = props;
+  const { show, handleClose } = props;
 
   return (
     //   <Button className="nextButton" onClick={handleShow}>
