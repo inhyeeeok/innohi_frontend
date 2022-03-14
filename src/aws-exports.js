@@ -1,5 +1,5 @@
-console.log(process.env.REACT_APP_API_URL);
-console.log(process.env.REACT_APP_REDIRECT_SIGN_IN);
+// console.log(process.env.REACT_APP_API_URL);
+// console.log(process.env.REACT_APP_REDIRECT_SIGN_IN);
 
 const awsmobile =  {
     "aws_project_region": "ap-northeast-2",
