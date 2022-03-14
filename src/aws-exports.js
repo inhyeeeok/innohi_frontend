@@ -1,3 +1,6 @@
+console.log(process.env.REACT_APP_API_URL);
+console.log(process.env.REACT_APP_REDIRECT_SIGN_IN);
+
 const awsmobile =  {
     "aws_project_region": "ap-northeast-2",
     // "aws_cognito_identity_pool_id": "ap-northeast-2:03b5526e-b84d-40d7-8d97-0d1a0e21b699",
@@ -12,8 +15,10 @@ const awsmobile =  {
             "openid",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "http://localhost:3000/council/main",
-        "redirectSignOut" : "http://localhost:3000",
+        //"redirectSignIn": {process.env.REACT_APP_REDIRECT_SIGN_IN},
+        //"redirectSignOut" : {process.env.REACT_APP_REDIRECT_SIGN_OUT},
+         "redirectSignIn": "http://localhost:3000/council/main",
+         "redirectSignOut" : "http://localhost:3000",
         "responseType" : "code"
     },
     "federationTarget" : "COGNITO_USER_POOLS"
