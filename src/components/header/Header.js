@@ -75,7 +75,7 @@ const headerCouncilElements =
           </li>
           <li className='dropdown' ><a id='user_name' href='/'>로그인이 필요합니다.</a>
             <ul>
-              <li id="LogOut"><a href='/'>로그아웃</a></li>
+              <li id="LogOut">로그아웃</li>
             </ul>
           </li>
         </ul>

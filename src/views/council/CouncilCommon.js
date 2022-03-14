@@ -27,11 +27,13 @@ export const changeName = (id) => {
 
 export const eventLogOut = (param) => {
   const el = document.getElementById("LogOut");
-//  el.addEventListener('click', param )
-  el.addEventListener('click', function(){
-    alert("Logged out");
-    param()
-  } )
+  el.addEventListener('click', param )
+  // el.addEventListener('click', function(){
+  //   alert("Logged out");
+  //   setTimeout(() => {
+  //     param()
+  //   }, 10000);
+  // } )
 }
 
 export const globalSignOut = async () => { //글로벌 로그아웃

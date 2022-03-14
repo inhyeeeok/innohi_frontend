@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Amplify, I18n } from 'aws-amplify';
+import { Amplify, I18n, Auth, Hub } from 'aws-amplify';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
+import config from '../../aws-exports';
 
 import * as council from './CouncilMainElements'
 import * as CouncilCommon from './CouncilCommon'
@@ -10,16 +11,16 @@ import SwiperComponents from '../../components/swipers/Swiper';
 
 import Modal from '../../components/modal/Modal'
 
-
-Amplify.configure(
-  {
-    Auth: {
-      region: "ap-northeast-2",
-      userPoolId: "ap-northeast-2_ziFrj5PMJ",
-      userPoolWebClientId: "1u1hslb0jutnh5g6d1o904bkib"
-    }
-  }
-);
+Amplify.configure(config)
+// Amplify.configure(
+//   {
+//     Auth: {
+//       region: "ap-northeast-2",
+//       userPoolId: "ap-northeast-2_ziFrj5PMJ",
+//       userPoolWebClientId: "1u1hslb0jutnh5g6d1o904bkib"
+//     }
+//   }
+// );
 
 I18n.setLanguage('kr');
 I18n.putVocabulariesForLanguage('kr', {
@@ -73,6 +74,17 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     CouncilCommon.eventLogOut(signOut);
     CouncilCommon.changeName(user.username);
     popUpCheck();
+
+    Hub.listen('auth', ({ payload }) => {
+      if (payload.event === 'signIn') {
+        alert('test1')
+   }
+      if (payload.event === 'signOut') {
+        alert('test2')
+        }
+   });
+
+
   })
 
   const ModalElements = () => {
@@ -139,6 +151,7 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
       {council.heroElements}
       {council.CouncilMainElements}
       {council.clientsElements}
+      <button onClick={() => Auth.federatedSignIn({ provider:"Google" })}>2222222222222</button>
     </>
   )
 
@@ -155,3 +168,4 @@ export default withAuthenticator(CouncilMain, {
 }, [
   //  <MySignIn /> 
 ]);
+
