@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Amplify, I18n, Auth } from 'aws-amplify';
+import { Amplify, I18n, Auth  } from 'aws-amplify';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -17,11 +17,12 @@ Amplify.configure(config)
 I18n.setLanguage('kr');
 I18n.putVocabulariesForLanguage('kr', {
   'Sign in': '로그인', // Button label
-  'Sign in to your account': 'Welcome Back!',
-  Username: 'Enter your username', // Username label
+  // 'Sign in to your account': 'Welcome Back!',
+  Username: '이름을 입력해주세요.', // Username label
   Email: '이메일을 입력해주세요.', // Email label
   Password: '비밀번호', // Password label
-  '비밀번호를 잊으셨나요?': 'Reset Password',
+  'Forgot your password?': '비밀번호를 잊으셨나요?',
+  'Sign In with Google': 'Hanjin SSO (한진 계열사 로그인)',
 });
 
 const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
@@ -70,8 +71,8 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     const rs = jsondata.affiliateTestData.filter(it => it.email.includes(affiliateAddress));
 
     if(rs.length===0){
-      Auth.signOut({ global: true });
       alert("그룹사 회원만 입장 가능한 공간 입니다. \n 메인 화면으로 돌아갑니다")
+      Auth.signOut({ global: true });
     }else{
       console.log(email);
     }
@@ -163,13 +164,16 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
 }
 
 export default withAuthenticator(CouncilMain, {
+  includeGreetings: true,
   socialProviders: ['google'],
   hideSignUp: [true],
   //   loginMechanisms : ['username'],
   loginMechanisms: ['email'],
-  //  components : [components],
+//  components : [components],
   variation: ["modal"]
-}, [
+}, false, [
   //  <MySignIn /> 
 ]);
+
+
 
