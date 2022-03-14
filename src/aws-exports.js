@@ -15,10 +15,10 @@ const awsmobile =  {
             "openid",
             "aws.cognito.signin.user.admin"
         ],
-        //"redirectSignIn": {process.env.REACT_APP_REDIRECT_SIGN_IN},
-        //"redirectSignOut" : {process.env.REACT_APP_REDIRECT_SIGN_OUT},
-         "redirectSignIn": "http://localhost:3000/council/main",
-         "redirectSignOut" : "http://localhost:3000",
+        "redirectSignIn": process.env.REACT_APP_REDIRECT_SIGN_IN,
+        "redirectSignOut" : process.env.REACT_APP_REDIRECT_SIGN_OUT,
+        // "redirectSignIn": "http://localhost:3000/council/main",
+        // "redirectSignOut" : "http://localhost:3000",
         "responseType" : "code"
     },
     "federationTarget" : "COGNITO_USER_POOLS"
