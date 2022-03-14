@@ -10,16 +10,16 @@ import * as CouncilCommon from './CouncilCommon'
 import SwiperComponents from '../../components/swipers/Swiper';
 
 import Modal from '../../components/modal/Modal'
+import * as jsondata from '../../components/JsonData'
 
 Amplify.configure(config)
 
 I18n.setLanguage('kr');
 I18n.putVocabulariesForLanguage('kr', {
-  'Sign In': 'Login', // Tab header
   'Sign in': '로그인', // Button label
   'Sign in to your account': 'Welcome Back!',
   Username: 'Enter your username', // Username label
-  Email: '이메일', // Email label
+  Email: '이메일을 입력해주세요.', // Email label
   Password: '비밀번호', // Password label
   '비밀번호를 잊으셨나요?': 'Reset Password',
 });
@@ -60,11 +60,35 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     }
   }
 
+  const affiliateCheck = (param) => {
+    // const user1 = await Auth.currentAuthenticatedUser()
+    // console.log('user: ', user1)
+    // console.log('email: ', user1.attributes.email)
+    // console.log('name: ', user1.attributes.name)
+    const email = param.attributes.email;
+    const affiliateAddress = email.split('@')[1]
+    const rs = jsondata.affiliateTestData.filter(it => it.email.includes(affiliateAddress));
+
+    if(rs.length===0){
+      Auth.signOut({ global: true });
+      alert("그룹사 회원만 입장 가능한 공간 입니다. \n 메인 화면으로 돌아갑니다")
+    }else{
+      console.log(email);
+    }
+  }
+
+  const usernameCheck = (param) => {
+    const name = param.attributes.name === undefined ? param.username :  param.attributes.name
+    return name;
+  }
+
+
   useEffect(() => {
     SwiperComponents();
-    CouncilCommon.eventLogOut(signOut);
-    CouncilCommon.changeName(user.username);
     popUpCheck();
+    affiliateCheck(user);
+    CouncilCommon.eventLogOut(signOut);
+    CouncilCommon.changeName(usernameCheck(user));
 
   })
 

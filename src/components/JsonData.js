@@ -1821,3 +1821,101 @@ export const startupTestData = [
           "S_RESEARCHED_TIME": "2021 DFS"
         }
       ];
+
+export const affiliateTestData = [
+  {
+    "bno": "1",
+    "company": "한진정보통신",
+    "email": "hist.co.kr",
+  },
+  {
+    "bno": "2",
+    "company": "한진칼",
+    "email": "hanjinkal.com",
+  },
+  {
+    "bno": "3",
+    "company": "대한한공",
+    "email": "koreanair.com",
+  },
+  {
+    "bno": "4",
+    "company": "(주)한진",
+    "email": "hanjin.com",
+  },
+  {
+    "bno": "5",
+    "company": "진에어",
+    "email": "jinair.com",
+  },
+  {
+    "bno": "6",
+    "company": "한국공항",
+    "email": "kas.co.kr",
+  },
+  {
+    "bno": "7",
+    "company": "칼호텔네트워크",
+    "email": "kalhotelnetwork.com",
+  },
+  {
+    "bno": "8",
+    "company": "정석기업",
+    "email": "jungseok.co.kr",
+  },
+  {
+    "bno": "9",
+    "company": "토파스여행정보",
+    "email": "topas.net",
+  },
+  {
+    "bno": "10",
+    "company": "한진관광",
+    "email": "kaltour.com",
+  },
+  {
+    "bno": "10",
+    "company": "항공종합서비스",
+    "email": "hj.airtotalsvc.com",
+  },
+  {
+    "bno": "11",
+    "company": "싸이버스카이",
+    "email": "cyberskyshop.com",
+  },
+  {
+    "bno": "12",
+    "company": "한국글로발로지스틱스시스템",
+    "email": "traxon.com",
+  },
+  {
+    "bno": "13",
+    "company": "아이에이티",
+    "email": "iaviationtech.com",
+  },
+  {
+    "bno": "14",
+    "company": "에어코리아",
+    "email": "airkorea.biz",
+  },
+  {
+    "bno": "15",
+    "company": "(주)왕산레저개발",
+    "email": "wsmarina.com",
+  },
+  {
+    "bno": "16",
+    "company": "한진부산컨테이너터미널",
+    "email": "hjnc.co.kr",
+  },
+  {
+    "bno": "17",
+    "company": "한진인천컨테이너터미널",
+    "email": "hjit.co.kr",
+  },
+  {
+    "bno": "18",
+    "company": "한진물류연구원",
+    "email": "hli.re.kr",
+  }
+];
