@@ -71,6 +71,8 @@ const Header = () => {
             </li>
             <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
             </li>
+            <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9'>스타트업 소싱 요청</a>
+            </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
             </li>
             <li className='dropdown' ><a id='user_name' href='/'>로그인이 필요합니다.</a>
