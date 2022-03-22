@@ -15,7 +15,7 @@ const StartupSourcing = () => {
                                     <span style={{ fontFamily: 'Jost', textTransform: 'uppercase', fontWeight: 'bold' }}>INNOHI</span>와 함께 오픈이노베이션을 만들어보세요<br />
                                 </h2>
                                 <div className='d-flex justify-content-center justify-content-lg-start'>
-                                    <DownloadButton filename='한진 오픈이노베이션 소개.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/oneclick-menual.pdf'/>
+                                    <DownloadButton filename='한진 오픈이노베이션 소개.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/%ED%95%9C%EC%A7%84+%EC%98%A4%ED%94%88%EC%9D%B4%EB%85%B8%EB%B2%A0%EC%9D%B4%EC%85%98+%EC%86%8C%EA%B0%9CPPT_innohi+%EC%97%85%EB%A1%9C%EB%93%9C(PDF).pdf'/>
                                 </div>
                             </div>
                             <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
