@@ -3,7 +3,7 @@ const DownloadButton = (props) => {
     const handleDownload = () => {
 
         const pdfUrl = props.url;
-        const filename = props.name;
+        const filename = props.filename;
 
         fetch(pdfUrl, { method: 'GET' })
             .then(res => {
