@@ -116,6 +116,7 @@ function GlobalFunction() {
    on('click', '.navbar .dropdown > a', function(e) {
      if (select('#navbar').classList.contains('navbar-mobile')) {
        e.preventDefault()
+       if(!(this.nextElementSibling === null)) // 모바일 토글 시 제목 클릭 이벤트 예외 처리
        this.nextElementSibling.classList.toggle('dropdown-active')
      }
    }, true)
@@ -124,6 +125,7 @@ function GlobalFunction() {
     * Scrool with ofset on links with a class name .scrollto
     */
    on('click', '.scrollto', function(e) {
+    //  if(this.hash === '') return null; // 다운로드 링크 클릭 이벤트 예외 처리
      if (select(this.hash)) {
        e.preventDefault()
  
