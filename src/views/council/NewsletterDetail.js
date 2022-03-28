@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import * as json2data from '../../components/JsonData'
 import { useParams } from 'react-router-dom';
-import * as tt from './CouncilCommon'
+import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const NewsletterDetail = ({ signOut, user }) => {
     const params = useParams;
 
-    tt.headerGrid();
+    CouncilCommon.headerGrid();
 
     const setFrameHeight = () => {
         const height = document.body.scrollHeight;
@@ -53,8 +53,8 @@ const NewsletterDetail = ({ signOut, user }) => {
     }
 
     useEffect(() => {
-        tt.eventLogOut(signOut);
-        tt.changeName(user.username);
+        CouncilCommon.eventLogOut(signOut);
+        CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
         setFrameHeight();
     })
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import * as json2data from '../../components/JsonData'
 import { useParams } from 'react-router-dom';
-import * as tt from './CouncilCommon'
+import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const ArchiveDetail = ({ signOut, user }) => {
@@ -62,11 +62,11 @@ const ArchiveDetail = ({ signOut, user }) => {
         )
     }
 
-    tt.headerGrid();
+    CouncilCommon.headerGrid();
 
     useEffect(() => {
-        tt.eventLogOut(signOut);
-        tt.changeName(user.username);
+        CouncilCommon.eventLogOut(signOut);
+        CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
     })
 
     return (

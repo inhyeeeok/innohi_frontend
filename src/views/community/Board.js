@@ -72,7 +72,7 @@ const Board = ({signOut, user}) =>  {
   useEffect(() => {
     callSelectBoardData();
     tt.eventLogOut(signOut);
-    tt.changeName(user.username);
+    tt.changeName(tt.usernameCheck(user));
   })
 
   return (

@@ -78,18 +78,12 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     }
   }
 
-  const usernameCheck = (param) => {
-    const name = param.attributes.name === undefined ? param.username :  param.attributes.name
-    return name;
-  }
-
-
   useEffect(() => {
     SwiperComponents();
     popUpCheck();
     affiliateCheck(user);
     CouncilCommon.eventLogOut(signOut);
-    CouncilCommon.changeName(usernameCheck(user));
+    CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
 
   })
 

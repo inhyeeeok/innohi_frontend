@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import * as jsondata from '../../components/JsonData'
 import reactDom from 'react-dom';
-import * as tt from './CouncilCommon'
+import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const StartupArchive = ({signOut, user}) => {
@@ -14,7 +14,7 @@ const StartupArchive = ({signOut, user}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const pageNumber = [];
 
-  tt.headerGrid();
+  CouncilCommon.headerGrid();
 
   for (let i = 1; i <= Math.ceil(stData?.length / 5); i++) {
     pageNumber.push(i);
@@ -112,8 +112,8 @@ const StartupArchive = ({signOut, user}) => {
  //   reactDom.render(entryPage(pageNumber, currentPage), document.getElementById('entryPage'));
   }, [stData, currentPage]);
 
-  tt.eventLogOut(signOut);
-  tt.changeName(user.username);
+  CouncilCommon.eventLogOut(signOut);
+  CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
 
   return (
     <>

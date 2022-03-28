@@ -36,6 +36,11 @@ export const eventLogOut = (param) => {
   // } )
 }
 
+export const usernameCheck = (param) => {
+  const name = param.attributes.name === undefined ? param.username :  param.attributes.name
+  return name;
+}
+
 export const globalSignOut = async () => { //글로벌 로그아웃
   try {
     await Auth.signOut({ global: true });
