@@ -67,9 +67,11 @@ const Header = () => {
           <ul>
             <li className='dropdown'><a href='/council/announce'>알려드려요</a>
             </li>
-            <li className='dropdown'><a href='/council/oi'>오픈 이노베이션 레터</a>
+            <li className='dropdown'><a href='/council/oi'>이노하이 레터</a>
             </li>
             <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
+            </li>
+            <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9'>스타트업 소싱 요청</a>
             </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
             </li>
