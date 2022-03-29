@@ -42,7 +42,7 @@ const Header = () => {
               <ul>
                 <li><a href='/contact/member'>구성원 소개</a></li>
                 {/* <li><a href='/contact/question'><div>문의하기</div></a></li> */}
-                <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform'>문의하기</a></li>
+                <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform' target="_blank" rel="noopener noreferrer">문의하기</a></li>
               </ul>
             </li>
             <li><a href='/council/main' className='getstarted'>협의체공간</a>
@@ -71,7 +71,7 @@ const Header = () => {
             </li>
             <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
             </li>
-            <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9'>스타트업 소싱 요청</a>
+            <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9' target="_blank" rel="noopener noreferrer">스타트업 소싱 요청</a>
             </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
             </li>

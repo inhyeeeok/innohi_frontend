@@ -38,7 +38,7 @@ export const CouncilMainElements =
                         <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <a href='https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220226/(%234)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+2%EC%9B%94+4%EC%A3%BC.html'>
+                                <a href='/council/oi/detail/4'>
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p style={{color:'#000000'}}>2022년 2월 이노하이 레터</p>
@@ -50,7 +50,7 @@ export const CouncilMainElements =
                         <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <a href='https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220128/(%233)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+1%EC%9B%94+4%EC%A3%BC.html'>
+                                <a href='/council/oi/detail/3'>
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p style={{color:'#000000'}}>2022년 1월 이노하이 레터</p>

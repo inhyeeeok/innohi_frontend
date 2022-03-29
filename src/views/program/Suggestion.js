@@ -61,7 +61,7 @@ const Suggestion = () => {
 
             <br /> <br />
             <div className='d-flex justify-content-center justify-content-start'>
-              <a href='https://forms.gle/dtmMs3cUaZiYL4CB8'><div className='btn-get-started scrollto'>협업 제안하기</div></a>
+              <a href='https://forms.gle/ouhCP4vATWWTcBN67' target="_blank" rel="noopener noreferrer"><div className='btn-get-started scrollto'>협업 제안하기</div></a>
             </div>
 
           </div>
