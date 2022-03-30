@@ -18,6 +18,10 @@ import 'jquery/dist/jquery.min.js';
 import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-1RE97QE2ZN"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
