@@ -63,7 +63,7 @@ const Member = () => {
                                 <h4>한태준</h4>
                                 <p>Cordinator</p>
                                 <p>솔루션사업그룹 사원</p>
-                                <p>오픈 이노베이션 협의체 담당</p>
+                                <p>이노하이 운영 문의</p>
                                 <p><br /></p>
                                 <p><br /></p>
                                 <h5>than@hist.co.kr</h5>
