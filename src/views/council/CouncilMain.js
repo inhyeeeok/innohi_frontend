@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Amplify, I18n, Auth  } from 'aws-amplify';
+import { Amplify, I18n, Auth } from 'aws-amplify';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -39,7 +39,7 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     return getDateStr(d)
   }
 
-  const getToday= () => {
+  const getToday = () => {
     var d = new Date()
     return getDateStr(d)
   }
@@ -55,8 +55,8 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     console.log(sevenDay);
 
     if (lastDay === sevenDay) {
-       localStorage.removeItem("innohi");
-    } else if(lastDay === null){
+      localStorage.removeItem("innohi");
+    } else if (lastDay === null) {
       localStorage.setItem("innohi", getToday());
     }
   }
@@ -70,13 +70,19 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     const affiliateAddress = email.split('@')[1]
     const rs = jsondata.affiliateTestData.filter(it => it.email.includes(affiliateAddress));
 
-    if(rs.length===0){
+    console.log(param);
+
+    if (param.attributes.email_verified) {
+      console.log('따로 등록한 email 입니다.');
+    } else if (rs.length === 0) {
       alert("그룹사 회원만 입장 가능한 공간 입니다. \n 메인 화면으로 돌아갑니다")
-      Auth.signOut({ global: true });
-    }else{
+      CouncilCommon.globalSignOut();
+      // Auth.signOut({ global: true });
+    } else {
       console.log(email);
     }
   }
+
 
   useEffect(() => {
     SwiperComponents();
@@ -103,49 +109,49 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     // 분리되어 운영될 예정이오며 
     // 기존 이노하이 웹페이지를 이용하시던 그룹사 이메일 계정에 임시 비밀번호를
     // 발급하는 방식으로 서비스 이용을 도와드릴 예정입니다.(별도 이메일 송부예정)
-    
+
     // 만약 이용을 원하지 않으시는 분은 아래의 연락처로 연락주시기 바랍니다.
-    
+
     // 이용정보 : 이름, 이메일
-    
+
     // 문의처 : innoHI@hist.co.kr`
 
     if (localStorage.getItem("innohi") == null)
-    return (
-      
-      <>
-        <Modal show={show} title={title} handleClose={handleClose} handleShow={handleShow}>
-          {/* {contents} */}
-        안녕하세요.<br />
-        한진정보통신 InnoHI 운영자입니다. <br /><br />
+      return (
 
-        저희 innohi 와 함께해주시는 여러 협의체 구성원 여러분께 진심으로 감사드리며,
-        사이트 리뉴얼에 따른 개인정보 이용에 관한 안내 말씀드립니다. <br /><br />
+        <>
+          <Modal show={show} title={title} handleClose={handleClose} handleShow={handleShow}>
+            {/* {contents} */}
+            안녕하세요.<br />
+            한진정보통신 InnoHI 운영자입니다. <br /><br />
 
-        그동안 이노하이 웹페이지는 그룹사 계정이 웹 브라우저에 로그인되어있는 상태에서
-        접근이 가능한 비공개형 사이트였습니다. <br /><br />
+            저희 innohi 와 함께해주시는 여러 협의체 구성원 여러분께 진심으로 감사드리며,
+            사이트 리뉴얼에 따른 개인정보 이용에 관한 안내 말씀드립니다. <br /><br />
 
-        이번 리뉴얼을 통해 공개 영역과 협의체 구성원 전용 비공개 영역으로
-        분리되어 운영될 예정이오며 <br /><br />
-        기존 이노하이 웹페이지를 이용하시던 그룹사 이메일 계정에 임시 비밀번호를
-        발급하는 방식으로 서비스 이용을 도와드릴 예정입니다.(별도 이메일 송부예정)
-        <br /><br />
-        만약 이용을 원하지 않으시는 분은 아래의 연락처로 연락주시기 바랍니다.
-        <br />
-        <br />
-        이용정보 : 이름, 이메일
-        <br />
-        문의처 : innoHI@hist.co.kr
-        </Modal>
-      </>
+            그동안 이노하이 웹페이지는 그룹사 계정이 웹 브라우저에 로그인되어있는 상태에서
+            접근이 가능한 비공개형 사이트였습니다. <br /><br />
+
+            이번 리뉴얼을 통해 공개 영역과 협의체 구성원 전용 비공개 영역으로
+            분리되어 운영될 예정이오며 <br /><br />
+            기존 이노하이 웹페이지를 이용하시던 그룹사 이메일 계정에 임시 비밀번호를
+            발급하는 방식으로 서비스 이용을 도와드릴 예정입니다.(별도 이메일 송부예정)
+            <br /><br />
+            만약 이용을 원하지 않으시는 분은 아래의 연락처로 연락주시기 바랍니다.
+            <br />
+            <br />
+            이용정보 : 이름, 이메일
+            <br />
+            문의처 : innoHI@hist.co.kr
+          </Modal>
+        </>
       )
-      else 
+    else
       return (
         <div></div>
       )
   }
 
-  return (  
+  return (
     <>
       <ModalElements />
       {council.heroElements}
@@ -163,7 +169,7 @@ export default withAuthenticator(CouncilMain, {
   hideSignUp: [true],
   //   loginMechanisms : ['username'],
   loginMechanisms: ['email'],
-//  components : [components],
+  //  components : [components],
   variation: ["modal"]
 }, false, [
   //  <MySignIn /> 
