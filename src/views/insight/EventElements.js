@@ -49,6 +49,16 @@ export const PortfolioElements =
                     </a>
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-come">
+                    <a href="https://japan.plugandplaytechcenter.com/summit/summit-upcoming/">
+                    <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/pnp_japan_summit_2022.jpg').default} className="img-fluid" alt=""></img></div>
+                    <div className="portfolio-info">
+                        <h4>PnP Japan Summit 2022</h4>
+                        <p>2022.03.02~2022.03.22</p>
+                        <a href="https://japan.plugandplaytechcenter.com/summit/summit-upcoming/" className="details-link" title="More Details"><BiLink /></a>
+                    </div>
+                    </a>
+                </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-come">
                     <a href="https://www.youtube.com/watch?v=INK8oo-3_EQ&list=PLXtJv3Egd0bYk5tUolnu7mgSq7S8M5Ek6/">
                     <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/public_session_org.png').default} className="img-fluid" alt=""></img></div>
                     <div className="portfolio-info">
