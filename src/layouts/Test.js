@@ -69,20 +69,22 @@ const Test = () => {
     const [createTodoMutation] = useMutation(createTodo);
     const [createStartupDataMutation] = useMutation(createStartupData);
     const { loading, error, data, refetch } = useQuery(selectTodo);
+    console.log(error)
     //https://coder-question-ko.com/cq-ko-blog/64006
 
     const handleChange = (e) => {
         const { value } = e.target
-        console.log('test :' + value);
 
         if (value === '1') {
             setFirstResults(true);
             setSecondResults(false);
         }
 
-        else {
+        else if (value === '2') {
             setFirstResults(false);
             setSecondResults(true);
+        } else {
+
         }
     }
 
@@ -165,27 +167,27 @@ const Test = () => {
 
         const columns = [
             {
-                Header: 'Last no',
+                Header: '순번',
                 accessor: 'no',
             },
             {
-                Header: 'id',
+                Header: '고유키(pk)',
                 accessor: 'id',
             },
             {
-                Header: 'category_L',
+                Header: '카테고리(L)',
                 accessor: 'category_L',
             },
             {
-                Header: 'category_S',
+                Header: '카테고리(S)',
                 accessor: 'category_S',
             },
             {
-                Header: 'city',
+                Header: '도시',
                 accessor: 'city',
             },
             {
-                Header: 'country',
+                Header: '나라',
                 accessor: 'country',
             },
             {
