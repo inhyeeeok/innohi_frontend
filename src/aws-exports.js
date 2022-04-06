@@ -1,6 +1,3 @@
-// console.log(process.env.REACT_APP_API_URL);
-// console.log(process.env.REACT_APP_REDIRECT_SIGN_IN);
-
 const awsmobile =  {
     "aws_project_region": "ap-northeast-2",
     // "aws_cognito_identity_pool_id": "ap-northeast-2:03b5526e-b84d-40d7-8d97-0d1a0e21b699",
@@ -17,12 +14,13 @@ const awsmobile =  {
         ],
         "redirectSignIn": process.env.REACT_APP_REDIRECT_SIGN_IN,
         "redirectSignOut" : process.env.REACT_APP_REDIRECT_SIGN_OUT,
-        // "redirectSignIn": "http://localhost:3000/council/main",
-        // "redirectSignOut" : "http://localhost:3000",
         "responseType" : "code"
     },
-    "federationTarget" : "COGNITO_USER_POOLS"
+    "federationTarget" : "COGNITO_USER_POOLS",
+    "aws_appsync_graphqlEndpoint": "https://nkkzctvdzfg45ds3jcxfh55wte.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+    "aws_appsync_region": "ap-northeast-2",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-tcvyntmjjvaqpfcxps5onm7bkq",
 };
-
 
 export default awsmobile;
