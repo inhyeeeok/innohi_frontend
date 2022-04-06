@@ -22,8 +22,10 @@ import CouncilAnnounce from "../views/council/CouncilAnnouce";
 import AnnouceDetail from "../views/council/AnnouceDetail";
 import OINewsletter from "../views/council/OINewsletter"
 import NewsletterDetail from "../views/council/NewsletterDetail"
-import StartupArchive from '../views/council/StartupArchive';
+import StartupArchive from '../views/council/StartupArchive copy';
 import ArchiveDetail from '../views/council/ArchiveDetail';
+
+import Login from '../views/council/LoginForm';
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -32,6 +34,12 @@ import Footer from '../components/footer/Footer';
 
 import * as tt from '../views/council/CouncilCommon'
 
+import {
+    ApolloProvider
+} from '@apollo/client';
+import Client from './Client';
+import Test from './Test';
+
 const sessionCheck = () => {
     setTimeout(() => {
         if (localStorage.getItem("amplify-signin-with-hostedUI")) {
@@ -39,7 +47,6 @@ const sessionCheck = () => {
             tt.loginOut();
         }
     }, 3000000); //페이지 진입 후 30분 세션 out
-
 }
 
 const Public = () => {
@@ -48,10 +55,14 @@ const Public = () => {
 
     return (
         <>
+        <ApolloProvider client={Client}>
+            
             <Header />
 
             <Routes>
                 <Route path='/' element={<Main />}></Route>
+
+                <Route exact path='/test' element={<Test />}></Route>
 
                 <Route exact path='/intro'>
                     <Route exact path='introduction' element={<Introduction />}></Route>
@@ -86,11 +97,15 @@ const Public = () => {
                     <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
                 </Route>
 
+                {/* <Route exact path='/login' element={<Login />}></Route> */}
+
                 <Route path="/*" element={<ErrorPage />} />
 
             </Routes>
 
             <Footer />
+        </ApolloProvider>
+
         </>
     );
 }
