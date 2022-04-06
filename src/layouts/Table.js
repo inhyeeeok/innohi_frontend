@@ -60,7 +60,7 @@ export const InputTable = (param) => {
             <tbody {...getTableBodyProps()}>
                 {rows.map((row, i) => {
                     prepareRow(row)
-                    if (i == 0)
+                    if (i === 0)
                         return (
                             <tr style={{ border: '1px solid #444444' }} {...row.getRowProps()}>
                                 {row.cells.map((cell, i) => {
