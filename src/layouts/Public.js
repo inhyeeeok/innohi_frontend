@@ -22,10 +22,10 @@ import CouncilAnnounce from "../views/council/CouncilAnnouce";
 import AnnouceDetail from "../views/council/AnnouceDetail";
 import OINewsletter from "../views/council/OINewsletter"
 import NewsletterDetail from "../views/council/NewsletterDetail"
-import StartupArchive from '../views/council/StartupArchive copy';
+import StartupArchive from '../views/council/StartupArchive';
+// import StartupArchive from '../views/council/StartupArchive copy';
 import ArchiveDetail from '../views/council/ArchiveDetail';
 
-import Login from '../views/council/LoginForm';
 
 import ErrorPage from '../views/common/ErrorPage';
 
