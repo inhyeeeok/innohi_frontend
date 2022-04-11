@@ -32,7 +32,8 @@ import ErrorPage from '../views/common/ErrorPage';
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer';
 
-import * as tt from '../views/council/CouncilCommon'
+import * as CouncilCommon from '../views/council/CouncilCommon'
+import RouteChangeTracker from '../components/common/RouteChangeTracker';
 
 import {
     ApolloProvider
@@ -44,7 +45,7 @@ const sessionCheck = () => {
     setTimeout(() => {
         if (localStorage.getItem("amplify-signin-with-hostedUI")) {
             // localStorage.clear();
-            tt.loginOut();
+            CouncilCommon.loginOut();
         }
     }, 3000000); //페이지 진입 후 30분 세션 out
 }
@@ -52,6 +53,7 @@ const sessionCheck = () => {
 const Public = () => {
 
     sessionCheck();
+    RouteChangeTracker();
 
     return (
         <>

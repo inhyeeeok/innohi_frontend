@@ -18,6 +18,10 @@ import 'jquery/dist/jquery.min.js';
 import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID; // 발급받은 추적ID를 환경 변수로 불러온다.
+ReactGA.initialize(TRACKING_ID);
+
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
