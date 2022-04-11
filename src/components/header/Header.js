@@ -72,6 +72,10 @@ const Header = () => {
             <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
             </li>
             <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9' target="_blank" rel="noopener noreferrer">스타트업 소싱 요청</a>
+              <ul>
+                <li><a href='/council/requestform'>스타트업 소싱 요청</a></li>
+                <li><a href='/insight/contest'>소싱 요청 현황</a></li>
+              </ul>
             </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
             </li>
