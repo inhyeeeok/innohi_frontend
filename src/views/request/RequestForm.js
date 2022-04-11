@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 
-const RequestForm = () => {
+const RequestForm = ({ signOut, user }) => {
 
   CouncilCommon.headerGrid();
 
@@ -64,6 +64,8 @@ const RequestForm = () => {
   }
 
   useEffect(() => {
+    CouncilCommon.eventLogOut(signOut);
+    CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
 
   })
 
