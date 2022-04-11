@@ -26,6 +26,7 @@ import StartupArchive from '../views/council/StartupArchive';
 // import StartupArchive from '../views/council/StartupArchive copy';
 import ArchiveDetail from '../views/council/ArchiveDetail';
 
+import RequestForm from '../views/request/RequestForm'
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -97,9 +98,12 @@ const Public = () => {
                     <Route exact path='oi/detail/:bno' element={<NewsletterDetail />}> </Route>
                     <Route exact path='archive' element={<StartupArchive />}></Route>
                     <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
+                    
+                    <Route exact path='requestform' element={<RequestForm />}> </Route>
                 </Route>
 
                 {/* <Route exact path='/login' element={<Login />}></Route> */}
+
 
                 <Route path="/*" element={<ErrorPage />} />
 
