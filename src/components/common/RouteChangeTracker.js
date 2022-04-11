@@ -16,6 +16,7 @@ const RouteChangeTracker = () => {
 
     useEffect(() => {
         if (initialized) {
+            ReactGA.set({ page: location.pathname })
             ReactGA.pageview(location.pathname + location.search);
         }
     }, [initialized, location]);
