@@ -36,9 +36,7 @@ import Footer from '../components/footer/Footer';
 import * as CouncilCommon from '../views/council/CouncilCommon'
 import RouteChangeTracker from '../components/common/RouteChangeTracker';
 
-import {
-    ApolloProvider
-} from '@apollo/client';
+
 import Client from './Client';
 import Test from './Test';
 
@@ -58,7 +56,7 @@ const Public = () => {
 
     return (
         <>
-        <ApolloProvider client={Client}>
+       
             
             <Header />
 
@@ -110,10 +108,11 @@ const Public = () => {
             </Routes>
 
             <Footer />
-        </ApolloProvider>
+       
 
         </>
     );
 }
 
 export default Public;
+ 

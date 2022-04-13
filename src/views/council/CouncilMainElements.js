@@ -94,8 +94,8 @@ export const clientsElements =
   
         <div className="clients-slider swiper">
           <div className="swiper-wrapper align-items-center">
-            <div className="swiper-slide">><a href='../../council/archive/detail/136'><img src={require('../../assets/img/council/main_carousel/frip.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
-            <div className="swiper-slide">><a href='../../council/archive/detail/135'><img src={require('../../assets/img/council/main_carousel/globaleur.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
+            <div className="swiper-slide"><a href='../../council/archive/detail/136'><img src={require('../../assets/img/council/main_carousel/frip.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
+            <div className="swiper-slide"><a href='../../council/archive/detail/135'><img src={require('../../assets/img/council/main_carousel/globaleur.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
             <div className="swiper-slide"><a href='../../council/archive/detail/72'><img src={require('../../assets/img/council/main_carousel/pickle_robot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
             <div className="swiper-slide"><a href='../../council/archive/detail/70'><img src={require('../../assets/img/council/main_carousel/dorabot.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
             <div className="swiper-slide"><a href='../../council/archive/detail/97'><img src={require('../../assets/img/council/main_carousel/wiser_system.png').default} className="img-fluid" style={{ width: "320px", height: "200px" }} alt=""></img></a></div>
