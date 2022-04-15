@@ -41,6 +41,10 @@ export const usernameCheck = (param) => {
   return name;
 }
 
+export const useremailCheck = (param) => {
+  return param.attributes.email;
+}
+
 export const globalSignOut = async () => { //글로벌 로그아웃
   try {
     await Auth.signOut({ global: true });
