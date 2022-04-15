@@ -6,6 +6,20 @@ const RouteChangeTracker = () => {
     const location = useLocation();
     const [initialized, setInitialized] = useState(false);
 
+
+
+
+    const test = (path) => {
+        console.log(path);
+
+        if(path === "/"){
+            return "홈";
+        }
+        return "/"; 
+
+
+    }
+
     useEffect(() => {
         if (!window.location.href.includes("localhost")) {
             // 환경 변수 사용
@@ -17,12 +31,14 @@ const RouteChangeTracker = () => {
     useEffect(() => {
         if (initialized) {
             const nowPath = location.pathname;
+           
             // ReactGA.pageview(location.pathname + location.search);
+            console.log(nowPath)
             ReactGA.pageview(nowPath);
             ReactGA.event({
                 category: nowPath,
                 action: nowPath,
-                label: nowPath,
+                label:  test(nowPath),
                 nonInteraction : true
             })
         }
