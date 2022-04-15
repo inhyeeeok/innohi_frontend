@@ -35,11 +35,12 @@ const RouteChangeTracker = () => {
             const nowPath = location.pathname;
            
             // ReactGA.pageview(location.pathname + location.search);
-            console.log(nowPath)
+            console.log(nowPath);
+            console.log(test(nowPath));
             ReactGA.pageview(nowPath);
             ReactGA.event({
                 category: nowPath,
-                action: nowPath,
+                action: test(nowPath),
                 label:  test(nowPath),
                 nonInteraction : true
             })
