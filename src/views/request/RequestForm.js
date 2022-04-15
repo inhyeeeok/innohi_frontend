@@ -81,14 +81,18 @@ const RequestForm = ({ signOut, user }) => {
           </div>
 
           <div className="row">
-            <div className="col-xl-12 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div className="col-xl-1 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+            <div className="col-xl-10 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
               <div className="icon-box" style={{ textAlign: 'center' }}>
                 <img src={require('../../assets/img/council/sourcing_request/one_img.png').default} className="img-fluid" alt=""></img>
               </div>
             </div>
+            <div className="col-xl-1 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            </div>
           </div>
 
-          <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
+          {/* <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
             <div className="row">
               <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                 <div className="icon-box" style={{ padding: '10px' }}>
@@ -131,7 +135,7 @@ const RequestForm = ({ signOut, user }) => {
               <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="row">
             <div id="entry" className="entries">

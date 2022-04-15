@@ -14,8 +14,10 @@ const RouteChangeTracker = () => {
 
         if(path === "/"){
             return "홈";
+        } else if(path === "/contact/member"){
+            return "구성원 소개";
         }
-        return "/"; 
+        return "홈"; 
 
 
     }
@@ -33,12 +35,13 @@ const RouteChangeTracker = () => {
             const nowPath = location.pathname;
            
             // ReactGA.pageview(location.pathname + location.search);
-            console.log(nowPath)
+            console.log(nowPath);
+            console.log(test(nowPath));
             ReactGA.pageview(nowPath);
             ReactGA.event({
-                category: nowPath,
-                action: nowPath,
-                label:  test(nowPath),
+                category: "홉1",
+                action: "홈2",
+                label:  "홈3",
                 nonInteraction : true
             })
         }
