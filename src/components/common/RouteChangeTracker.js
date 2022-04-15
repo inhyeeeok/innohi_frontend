@@ -42,6 +42,7 @@ const RouteChangeTracker = () => {
                 category: "홉1",
                 action: "홈2",
                 label:  "홈3",
+                title : "홈4",
                 nonInteraction : true
             })
         }
