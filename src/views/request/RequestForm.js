@@ -108,7 +108,6 @@ const RequestForm = ({ signOut, user }) => {
                 <div className="icon-box" style={{ padding: '10px' }}>
                   <img src={require('../../assets/img/council/sourcing_request/3_startups_check.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
                   <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost, sans-serif'}}>3. 스타트업 리스트 확인</p>
-                  <h3></h3>
                 </div>
               </div>
 
