@@ -14,8 +14,10 @@ const RouteChangeTracker = () => {
 
         if(path === "/"){
             return "홈";
+        } else if(path === "/contact/member"){
+            return "구성원 소개";
         }
-        return "/"; 
+        return "홈"; 
 
 
     }
