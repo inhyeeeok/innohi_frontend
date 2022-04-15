@@ -92,7 +92,7 @@ const Header = () => {
 
   useEffect(() => {
     GlobalFunction();
-  });
+  }, []);
 
   if (window.location.pathname.split('/')[1] === ('council'))
     return (
