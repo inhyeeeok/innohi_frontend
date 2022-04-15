@@ -115,9 +115,10 @@ function GlobalFunction() {
     */
    on('click', '.navbar .dropdown > a', function(e) {
      if (select('#navbar').classList.contains('navbar-mobile')) {
-       e.preventDefault()
-       if(!(this.nextElementSibling === null)) // 모바일 토글 시 제목 클릭 이벤트 예외 처리
-       this.nextElementSibling.classList.toggle('dropdown-active')
+       if(!(this.nextElementSibling === null)){ // 모바일 토글 시 제목 클릭 이벤트 예외 처리
+        e.preventDefault()
+        this.nextElementSibling.classList.toggle('dropdown-active')
+       } 
      }
    }, true)
  
