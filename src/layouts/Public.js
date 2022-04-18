@@ -27,6 +27,7 @@ import StartupArchive from '../views/council/StartupArchive';
 import ArchiveDetail from '../views/council/ArchiveDetail';
 
 import RequestForm from '../views/request/RequestForm'
+import StatusInquiry from '../views/request/StatusInquiry'
 
 import ErrorPage from '../views/common/ErrorPage';
 
@@ -58,59 +59,60 @@ const Public = () => {
 
     return (
         <>
-        <ApolloProvider client={Client}>
-            
-            <Header />
+            <ApolloProvider client={Client}>
 
-            <Routes>
-                <Route path='/' element={<Main />}></Route>
+                <Header />
 
-                <Route exact path='/test' element={<Test />}></Route>
+                <Routes>
+                    <Route path='/' element={<Main />}></Route>
 
-                <Route exact path='/intro'>
-                    <Route exact path='introduction' element={<Introduction />}></Route>
-                    <Route exact path='propel' element={<Propel />}></Route>
-                    <Route exact path='history' element={<History />}></Route>
-                </Route>
+                    <Route exact path='/test' element={<Test />}></Route>
 
-                <Route exact path='/program'>
-                    <Route exact path='startup' element={<StartupSourcing />}></Route>
-                    <Route exact path='external' element={<ExternalCooperation />}></Route>
-                    <Route exact path='suggest' element={<Suggestion />}></Route>
-                </Route>
+                    <Route exact path='/intro'>
+                        <Route exact path='introduction' element={<Introduction />}></Route>
+                        <Route exact path='propel' element={<Propel />}></Route>
+                        <Route exact path='history' element={<History />}></Route>
+                    </Route>
 
-                <Route exact path='/insight' >
-                    <Route path='innopick' element={<InnoPick />}></Route>
-                    <Route path='detail/:bno/:content' element={<Detail />}></Route>
-                    <Route path='contest' element={<Contest />}></Route>
-                </Route>
+                    <Route exact path='/program'>
+                        <Route exact path='startup' element={<StartupSourcing />}></Route>
+                        <Route exact path='external' element={<ExternalCooperation />}></Route>
+                        <Route exact path='suggest' element={<Suggestion />}></Route>
+                    </Route>
 
-                <Route exact path='/contact'>
-                    <Route exact path='member' element={<Member />}></Route>
-                    <Route exact path='question' element={<StartupArchive />}></Route>
-                </Route>
+                    <Route exact path='/insight' >
+                        <Route path='innopick' element={<InnoPick />}></Route>
+                        <Route path='detail/:bno/:content' element={<Detail />}></Route>
+                        <Route path='contest' element={<Contest />}></Route>
+                    </Route>
 
-                <Route exact path='/council'>
-                    <Route exact path='main' element={<CouncilMain />}> </Route>
-                    <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
-                    <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
-                    <Route exact path='oi' element={<OINewsletter />}> </Route>
-                    <Route exact path='oi/detail/:bno' element={<NewsletterDetail />}> </Route>
-                    <Route exact path='archive' element={<StartupArchive />}></Route>
-                    <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
-                    
-                    <Route exact path='requestform' element={<RequestForm />}> </Route>
-                </Route>
+                    <Route exact path='/contact'>
+                        <Route exact path='member' element={<Member />}></Route>
+                        <Route exact path='question' element={<StartupArchive />}></Route>
+                    </Route>
 
-                {/* <Route exact path='/login' element={<Login />}></Route> */}
+                    <Route exact path='/council'>
+                        <Route exact path='main' element={<CouncilMain />}> </Route>
+                        <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
+                        <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
+                        <Route exact path='oi' element={<OINewsletter />}> </Route>
+                        <Route exact path='oi/detail/:bno' element={<NewsletterDetail />}> </Route>
+                        <Route exact path='archive' element={<StartupArchive />}></Route>
+                        <Route exact path='archive/detail/:bno' element={<ArchiveDetail />}></Route>
+
+                        <Route exact path='requestform' element={<RequestForm />}> </Route>
+                        <Route exact path='statusinquiry' element={<StatusInquiry />}> </Route>
+                    </Route>
+
+                    {/* <Route exact path='/login' element={<Login />}></Route> */}
 
 
-                <Route path="/*" element={<ErrorPage />} />
+                    <Route path="/*" element={<ErrorPage />} />
 
-            </Routes>
+                </Routes>
 
-            <Footer />
-        </ApolloProvider>
+                <Footer />
+            </ApolloProvider>
 
         </>
     );

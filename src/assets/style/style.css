@@ -1334,7 +1334,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-  padding: 0 100px;
+  padding: 0 0px;
 }
 
 .faq .faq-list ul {
@@ -2137,7 +2137,8 @@ section {
 }
 .blog .sidebar {
   padding: 30px;
-  margin: 0 0 60px 20px;
+  /* margin: 0 0 60px 20px; */
+  margin: 0 0 60px 0px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 .blog .sidebar .sidebar-title {
@@ -2151,19 +2152,19 @@ section {
 .blog .sidebar .sidebar-item {
   margin-bottom: 30px;
 }
-.blog .sidebar .search-form form {
+.blog .sidebar .search-form  {
   background: #fff;
   border: 1px solid #ddd;
   padding: 3px 10px;
   position: relative;
 }
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form  input[type=text] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
   width: calc(100% - 40px);
 }
-.blog .sidebar .search-form form button {
+.blog .sidebar .search-form  button {
   position: absolute;
   top: 0;
   right: 0;
@@ -2179,10 +2180,10 @@ section {
   border-radius: 0 4px 4px 0;
   line-height: 0;
 }
-.blog .sidebar .search-form form button i {
+.blog .sidebar .search-form  button i {
   line-height: 0;
 }
-.blog .sidebar .search-form form button:hover {
+.blog .sidebar .search-form  button:hover {
   background: #5465f2;
 }
 .blog .sidebar .categories ul {

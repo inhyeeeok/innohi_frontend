@@ -92,51 +92,6 @@ const RequestForm = ({ signOut, user }) => {
             </div>
           </div>
 
-          {/* <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
-            <div className="row">
-              <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div className="icon-box" style={{ padding: '10px' }}>
-                  <img src={require('../../assets/img/council/sourcing_request/1_submit.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-                  <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost, sans-serif'}}>1. 소싱 신청서 제출</p>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div className="icon-box" style={{ padding: '10px' }}>
-                  <img src={require('../../assets/img/council/sourcing_request/2_result_check.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-                  <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost'}}>2. 신청 결과 확인</p>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div className="icon-box" style={{ padding: '10px' }}>
-                  <img src={require('../../assets/img/council/sourcing_request/3_startups_check.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-                  <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost, sans-serif'}}>3. 스타트업 리스트 확인</p>
-                </div>
-              </div>
-
-              <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              </div>
-
-              <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div className="icon-box" style={{ padding: '10px' }}>
-                  <img src={require('../../assets/img/council/sourcing_request/4_evaluation.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-                  <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost, sans-serif'}}>4. 스타트업 평가 참여 및 선정</p>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div className="icon-box" style={{ padding: '10px' }}>
-                  <img src={require('../../assets/img/council/sourcing_request/5_afterwork.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
-                  <p style={{textAlign: 'center', fontSize:'20px', fontFamily:'Jost, sans-serif'}}>5. 협업 수행</p>
-                </div>
-              </div>
-
-              <div className="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              </div>
-            </div>
-          </div> */}
-
           <div className="row">
             <div id="entry" className="entries">
               <RequestElement id='email' question='신청하시는분 메일주소' answer='innohi@hist.co.kr' />

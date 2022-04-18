@@ -1,9 +1,12 @@
 const now = new Date();
 const years = now.getFullYear();
-const months = now.getMonth() + 1;
-const days = now.getDate();
+let months = new String(now.getMonth() + 1);
+months = months >= 10 ? months : '0' + months;
+let days =  new String(now.getDate());
+days = days >= 10 ? days : '0' + days;
 const hours = now.getHours();
-const minutes = now.getMinutes();
+let minutes = now.getMinutes();
+minutes = minutes >= 10 ? minutes : '0' + minutes;
 const seconds = now.getSeconds();
 
 export const getToday = (shape) => {
