@@ -44,22 +44,32 @@ const StatusInquiry = ({ signOut, user }) => {
   const Element = () => {
     if (!loading) {
       const sortedData = data.listRequestForms.items.slice().sort((a, b) => a.uptodate - b.uptodate);
-      return (
-        sortedData.map((v, i) => {
-          console.log(v)
-          console.log(i)
-          return (
-            <>
-              <InquiryElement param={v} index={'faq-list-'+i}/>
-            </>
-          )
-        })
-      )
+      if (sortedData.length === 0) {
+        return (
+          <>
+            <p>조회 결과가 없습니다.  많은 지원 부탁드립니다.</p>
+          </>
+        )
+      } else {
+        return (
+          sortedData.map((v, i) => {
+            console.log(v)
+            console.log(i)
+            return (
+              <>
+                <InquiryElement param={v} index={'faq-list-' + i} />
+              </>
+            )
+          })
+        )
+      }
 
     } else {
-        return (
-           <></>
-        )
+      return (
+        <>
+          <p>로딩중..........</p>
+        </>
+      )
     }
 
   }
