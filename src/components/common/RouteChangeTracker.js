@@ -37,7 +37,7 @@ const RouteChangeTracker = () => {
             // ReactGA.pageview(location.pathname + location.search);
             console.log(nowPath);
             console.log(test(nowPath));
-            ReactGA.pageview(nowPath);
+            ReactGA.pageview('홈0');
             ReactGA.event({
                 category: "홉1",
                 action: "홈2",
