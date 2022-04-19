@@ -28,7 +28,7 @@ const DownloadButton = (props) => {
 
     return (
         <>
-            <a onClick={handleDownload} className="btn-get-started scrollto" href="#download">다운로드</a>
+            <a onClick={handleDownload} className="btn-get-started scrollto" href="#download">{props.lang}</a>
         </>
     );
 

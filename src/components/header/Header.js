@@ -47,6 +47,8 @@ const Header = () => {
             </li>
             <li><a href='/council/main' className='getstarted'>협의체공간</a>
             </li>
+            <li className='dropdown'><a href='/program/introduceEn'>English</a>
+            </li>
           </ul>
           <i className='bi bi-list mobile-nav-toggle'></i>
         </nav>
@@ -71,7 +73,7 @@ const Header = () => {
             </li>
             <li className='dropdown'><a href='/council/archive'>스타트업 찾기</a>
             </li>
-            <li className='dropdown'><a href='https://forms.gle/BkRuvRAdHo3wAMSA9' target="_blank" rel="noopener noreferrer">스타트업 소싱 요청</a>
+            <li className='dropdown'><a href='/council/requestform'>스타트업 소싱 요청</a>
               <ul>
                 <li><a href='/council/requestform'>스타트업 소싱 요청</a></li>
                 <li><a href='/council/statusinquiry'>소싱 요청 현황</a></li>
