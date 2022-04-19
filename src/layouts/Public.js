@@ -9,6 +9,7 @@ import History from '../views/intro/History';
 import StartupSourcing from '../views/program/StartupSourcing';
 import ExternalCooperation from '../views/program/ExternalCooperation';
 import Suggestion from '../views/program/Suggestion';
+import IntroduceEn from '../views/program/IntroduceEn';
 
 import InnoPick from '../views/insight/InnoPick';
 import Contest from '../views/insight/Contest';
@@ -78,6 +79,7 @@ const Public = () => {
                         <Route exact path='startup' element={<StartupSourcing />}></Route>
                         <Route exact path='external' element={<ExternalCooperation />}></Route>
                         <Route exact path='suggest' element={<Suggestion />}></Route>
+                    <Route exact path='introduceEn' element={<IntroduceEn />}></Route>
                     </Route>
 
                     <Route exact path='/insight' >
@@ -113,7 +115,6 @@ const Public = () => {
 
                 <Footer />
             </ApolloProvider>
-
         </>
     );
 }

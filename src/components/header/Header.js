@@ -47,6 +47,8 @@ const Header = () => {
             </li>
             <li><a href='/council/main' className='getstarted'>협의체공간</a>
             </li>
+            <li className='dropdown'><a href='/program/introduceEn'>English</a>
+            </li>
           </ul>
           <i className='bi bi-list mobile-nav-toggle'></i>
         </nav>

@@ -6,21 +6,16 @@ const RouteChangeTracker = () => {
     const location = useLocation();
     const [initialized, setInitialized] = useState(false);
 
+    // const test = (path) => {
+    //     console.log(path);
 
-
-
-    const test = (path) => {
-        console.log(path);
-
-        if(path === "/"){
-            return "홈";
-        } else if(path === "/contact/member"){
-            return "구성원 소개";
-        }
-        return "홈"; 
-
-
-    }
+    //     if(path === "/"){
+    //         return "홈";
+    //     } else if(path === "/contact/member"){
+    //         return "구성원 소개";
+    //     }
+    //     return "홈"; 
+    // }
 
     useEffect(() => {
         if (!window.location.href.includes("localhost")) {
@@ -35,14 +30,11 @@ const RouteChangeTracker = () => {
             const nowPath = location.pathname;
            
             // ReactGA.pageview(location.pathname + location.search);
-            console.log(nowPath);
-            console.log(test(nowPath));
-            ReactGA.pageview('홈0');
+            ReactGA.pageview(nowPath);
             ReactGA.event({
-                category: "홉1",
-                action: "홈2",
-                label:  "홈3",
-                title : "홈4",
+                category: nowPath,
+                action: nowPath,
+                label:  nowPath,
                 nonInteraction : true
             })
         }
