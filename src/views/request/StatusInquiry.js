@@ -107,7 +107,7 @@ const StatusInquiry = ({ signOut, user }) => {
               <thead style={{ backgroundColor: 'rgba(242, 242, 242, 0.706)' }}>
                 <tr align="center">
                   <th colSpan="1"><span>신청분야</span></th>
-                  <th colSpan="3"><span>디지털 트랜스포메이션</span></th>
+                  <th colSpan="3"><span>{eData.param.field}</span></th>
                 </tr>
               </thead>
               <tbody>
