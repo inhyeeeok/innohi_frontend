@@ -94,7 +94,7 @@ const RequestForm = ({ signOut, user }) => {
 
           <div className="row">
             <div id="entry" className="entries">
-              <RequestElement id='email' question='신청하시는분 메일주소' answer='innohi@hist.co.kr' />
+              <RequestElement id='email' question='연락받으실 메일주소' answer='예시) innohi@hist.co.kr' />
               <RequestElement id='name' question='성명' answer='신청하시는분의 성함을 기입 바랍니다' />
               <RequestElement id='belong' question='소속' answer='그룹명 혹은 팀명을 기입 바랍니다' />
               <RequestElement id='field' question='스타트업과 협업하고자하는 분야는 무엇입니까' answer='디지털 트랜스포메이션, AI, 메타버스, ESG 등 자유롭게 작성 바랍니다' />
