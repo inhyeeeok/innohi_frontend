@@ -1,5 +1,17 @@
 export const announceTestData = [
   {
+    "bno" : 5,
+    "title" : "한진정보통신-정보통신산업진흥원, 스타트업 발굴 협력을 위한 양해각서(MOU) 체결🎉",
+    "content" : "한진정보통신(이하 HIST)은 지난 15일 정보통신산업진흥원과 함께 스타트업 발굴 위한 양해각서(MOU)를 맺었다고 밝혔습니다.\n\n양사는 “K-Startup 그랜드챌린지 사업”과 연계해 스타트업 발굴 및 육성의 전문성 및 경험을 기반으로 해외 스타트업 모집, 우수성 검토, 육성 지원 등에 상호 협력에 힘을 모을 방침입니다.\n\nHIST 디지털솔루션팀은 지난해부터 해외 우수 스타트업 소싱 및 육성에 참여하고 있으며, 그룹사를 대표해 국내에 진출하고자 하는 해외 스타트업 IT 솔루션 발굴을 지속하고 있습니다.\n\n모래알처럼 많은 해외 스타트업속에서 유레카를 외칠만한 혁신기업을 찾는다는 것은 전문지식과 기술이 꼭 필요한 분야이기도 합니다.\n\nHIST 전략사업부 김문겸상무는 '한진정보통신은 스타트업과 새로운 사업모델을 발굴하고 새로운 성장동력으로 자리매김할 수 있도록 투자와 제휴도 적극 검토할 예정'이라고 말했습니다. ",
+    "img" : "2022_hist_mou.png",
+    "button" : "N",
+    "link" : "",
+    "regUser": "이노하이",
+    "regDate": "2022-04-20 09:02:12",
+    "updtUser": "taejun",
+    "updtDate": "2022-04-20",
+  },
+  {
     "bno" : 4,
     "title" : "innoHI 웹페이지 리뉴얼합니다🚧",
     "content" : "그동안 PC에서만 접속되어 많이 불편하셨죠~!😭 \n 이제 innoHI 사이트를 스마트폰으로도 접속하실 수 있도록 준비중입니다. \n 새로운 모습과 알찬 내용으로 AWS에서 다시 태어날 innoHI 사이트를 기대해주세요🥰",
@@ -137,6 +149,18 @@ export const techPickTestData = [
 ];
 
 export const newsletterTestData = [
+  {
+    "bno": 5,
+    "boardType": 1,
+    "noticeYn": 0,
+    "title": "[이노하이레터#5] 04월 뉴스레터 📭",
+    "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220325/(220401)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+4%EC%9B%94.html",
+    "regUser": "이노하이",
+    "regDate": "2022-04-01 09:03:17",
+    "updtUser": "taejun",
+    "updtDate": "2022-04-01",
+    "viewCnt": 1
+  },
   {
     "bno": 4,
     "boardType": 1,

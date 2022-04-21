@@ -4,6 +4,18 @@ export const CouncilMainElements =
             <div className="row">
                 <div className="section-title col-sm-6">
                     <h2 style={{ textTransform: 'capitalize' }}><a href='/council/announce'><span style={{color:'#37517e'}}>운영 현황</span>    <span style={{fontSize:'24px'}}>+</span></a></h2>
+                    <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
+                            <div className='row'>
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <a href='/council/announce/detail/5'>
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/council/announce/5/2022_hist_mou.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <p style={{color:'#000000'}}>한진정보-정보통신산업진흥원, 스타트업 발굴 협력을 위한 양해각서(MOU) 체결🎉</p>
+                                    </div>
+                                </a>                                
+                                </div>
+                            </div>
+                        </div>
                     <div>
                         <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
@@ -17,24 +29,24 @@ export const CouncilMainElements =
                                 </div>
                             </div>
                         </div>
-                        <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
-                            <div className='row'>
-                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <a href='/council/announce/detail/3'>
-                                    <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/council/announce/3/3.pnp_demoday.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                                        <p style={{color:'#000000'}}>한진, 스타트업과 함께 날아오르다! ✈️</p>
-                                    </div>
-                                </a>                                
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 <div className="section-title col-sm-6">
                     <h2 style={{ textTransform: 'capitalize' }}><a href='/council/oi'><span style={{color:'#37517e'}}>이노하이 레터</span>    <span style={{fontSize:'24px'}}>+</span></a></h2>
                     <div>
+                        <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
+                            <div className='row'>
+                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                <a href='/council/oi/detail/5'>
+                                    <div className="icon-box" style={{ padding: '10px'}}>
+                                        <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
+                                        <p style={{color:'#000000'}}>2022년 4월 이노하이 레터</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
                         <div style={{ background:'#FFFFFF', marginBottom:'10px'}}>
                             <div className='row'>
                                 <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -42,18 +54,6 @@ export const CouncilMainElements =
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
                                         <p style={{color:'#000000'}}>2022년 2월 이노하이 레터</p>
-                                    </div>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div style={{ background:'#FFFFFF', marginTop:'10px'}}>
-                            <div className='row'>
-                                <div className="col-xl-12 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <a href='/council/oi/detail/3'>
-                                    <div className="icon-box" style={{ padding: '10px'}}>
-                                        <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                                        <p style={{color:'#000000'}}>2022년 1월 이노하이 레터</p>
                                     </div>
                                 </a>
                                 </div>
