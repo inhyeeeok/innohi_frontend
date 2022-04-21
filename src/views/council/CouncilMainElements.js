@@ -41,7 +41,7 @@ export const CouncilMainElements =
                                 <a href='/council/oi/detail/5'>
                                     <div className="icon-box" style={{ padding: '10px'}}>
                                         <img src={require('../../assets/img/council/oi/newsletter_main_page.png').default} className="img-fluid" style={{ width: '50%' }} alt=""></img>
-                                        <p style={{color:'#000000'}}>2022년 4월 이노하이 레터</p>
+                                        <p style={{color:'#000000'}}>2022년 3월 이노하이 레터</p>
                                     </div>
                                 </a>
                                 </div>

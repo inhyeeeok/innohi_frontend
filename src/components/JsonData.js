@@ -153,7 +153,7 @@ export const newsletterTestData = [
     "bno": 5,
     "boardType": 1,
     "noticeYn": 0,
-    "title": "[이노하이레터#5] 04월 뉴스레터 📭",
+    "title": "[이노하이레터#5] 03월 뉴스레터 📭",
     "content": "https://oinewsletter.s3.ap-northeast-2.amazonaws.com/image/20220325/(220401)+%EC%9D%B4%EB%85%B8%ED%95%98%EC%9D%B4%EB%A0%88%ED%84%B0+4%EC%9B%94.html",
     "regUser": "이노하이",
     "regDate": "2022-04-01 09:03:17",
