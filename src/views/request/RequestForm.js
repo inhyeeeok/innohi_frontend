@@ -49,6 +49,7 @@ const RequestForm = ({ signOut, user }) => {
           "resource": document.getElementById('resource').value,
           "loginid": CouncilCommon.useremailCheck(user),
           "uptodate": DateFunction.getToday('yyyymmddhh24miss'),
+          "state": '1',
         }
       }
 
