@@ -45,7 +45,7 @@ const Header = () => {
                 <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform' target="_blank" rel="noopener noreferrer">문의하기</a></li>
               </ul>
             </li>
-            <li><a href='/council/main' className='getstarted'>협의체공간</a>
+            <li><a href='/council/main' className='getstarted'>그룹사공간</a>
             </li>
             <li className='dropdown'><a href='/program/introduceEn'>English</a>
             </li>
@@ -61,7 +61,7 @@ const Header = () => {
       <div className='container d-flex align-items-center'>
         <h1 className='logo me-auto'>
           <a href='/council/main'>
-            <span>협의체공간</span>
+            <span>그룹사 공간</span>
             <span></span>
           </a>
         </h1>

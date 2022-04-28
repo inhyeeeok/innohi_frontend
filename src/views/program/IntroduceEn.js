@@ -17,7 +17,7 @@ const IntroduceEn = () => {
                             <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
                                 <h1><span style={{ color: 'rgb(253, 142, 77)' }}>Introducing <span style={{ fontFamily: 'Jost', textTransform: 'uppercase', fontWeight: 'bold' }}>INNOHI</span></span></h1>
                                 <h2 style={{ marginTop: '15px' }}>
-                                    <span style={{ fontFamily: 'Jost', textTransform: 'uppercase', fontWeight: 'bold' }}>INNOHI</span> is on your side to help accomplish Open Innovation for your goal<br />
+                                    <span style={{ fontFamily: 'Jost', textTransform: 'uppercase', fontWeight: 'bold' }}>INNOHI</span> is on your side to help accomplish<br />Open Innovation for your goal<br />
                                 </h2>
                                 <div className='d-flex justify-content-center justify-content-lg-start'>
                                 <DownloadButton lang='Download' filename='(ENG) HIST Open Innovation.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/(ENG)+HIST+Open+Innovation.pdf'/>

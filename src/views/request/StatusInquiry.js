@@ -141,7 +141,7 @@ const StatusInquiry = ({ signOut, user }) => {
               </thead>
               <tbody>
                 <tr>
-                  <td align="center" width="25%">신청자 이메일</td>
+                  <td align="center" width="25%">연락받으실 이메일</td>
                   <td colSpan="1">{eData.param.email}</td>
                 </tr>
                 <tr>

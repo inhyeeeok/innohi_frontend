@@ -27,7 +27,16 @@ export const PortfolioElements =
             </ul>
 
             <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+                <div className="col-lg-4 col-md-6 portfolio-item filter-come">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform">
+                    <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/2022_pnp_summer_summit.jpg').default} className="img-fluid" alt=""></img></div>
+                    <div className="portfolio-info">
+                        <h4>2022 PnP Summer Summit</h4>
+                        <p>2022.06.14 ~ 2022.06.16</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform" className="details-link" title="More Details"><BiLink /></a>
+                    </div>
+                    </a>
+                </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-come">
                     <a href="https://www.plugandplaytechcenter.com/events/web-30-and-big-data-in-healthcare/">
                     <div className="portfolio-img"><img src={require('../../assets/img/insight/contest/PnP_Web3_and_Big_Data_in_Healthcare.png').default} className="img-fluid" alt=""></img></div>
