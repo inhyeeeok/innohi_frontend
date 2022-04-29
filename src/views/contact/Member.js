@@ -20,7 +20,7 @@ const Member = () => {
                                 <p><br /></p>
                                 <h4>김은희</h4>
                                 <p>Digital Architect</p>
-                                <p>솔루션사업그룹 그룹장/차장</p>
+                                <p>솔루션사업그룹 그룹장/부장</p>
                                 <p>HIST C&D 엔지니어</p>
                                 <p><br /></p>
                                 <p><br /></p>
