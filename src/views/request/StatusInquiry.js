@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useQuery, gql } from '@apollo/client';
+import * as DateFunction from '../../components/common/DateFunction';
 
 const StatusInquiry = ({ signOut, user }) => {
 
@@ -25,6 +26,7 @@ const StatusInquiry = ({ signOut, user }) => {
             resource
             tobe
             uptodate
+            state
           }
         }
       }
@@ -36,7 +38,7 @@ const StatusInquiry = ({ signOut, user }) => {
     }
   }
 
-  const { loading, error, data, refetch } = useQuery(selectTodo, { variables: input });
+  const { loading, error, data} = useQuery(selectTodo, { variables: input });
   console.log(error)
   console.log(data)
   console.log(loading)
@@ -77,23 +79,55 @@ const StatusInquiry = ({ signOut, user }) => {
   const InquiryElement = (eData) => {
     console.log(eData.param)
     console.log(eData.index)
+    const inquireDate = DateFunction.StringToDateString(eData.param.uptodate);
+    const status = eData.param.state;
 
     const StatusElement = () => {
-      const imgStyle = {
-        maxWidth: "20%",
-        height: "auto"
+      let msg = '';
+
+      if (status === '1') {
+        msg = '평가 위원회 날짜 확정 시 직접 연락드리겠습니다.'
+      } else if (status === '2') {
+        msg = '2번 멘트 문구 입니다.'
+      } else if (status === '3') {
+        msg = '3번 멘트 문구 입니다.'
+      } else if (status === '4') {
+        msg = '4번 멘트 문구 입니다.'
+      } else {
+        msg = '잘못된 데이터 입니다.'
       }
-
-      // const StatusCheck = () => {
-
-      // }
 
       return (
         <>
-          <img src={require('../../assets/img/request/status/소싱 신청_active.png').default} alt="" style={imgStyle}></img>
-          <img src={require('../../assets/img/request/status/스타트업.png').default} alt="" style={imgStyle}></img>
-          <img src={require('../../assets/img/request/status/스타트업선정.png').default} alt="" style={imgStyle}></img>
-          <img src={require('../../assets/img/request/status/후속업무.png').default} alt="" style={imgStyle}></img>
+          <td align="center" colSpan="4" style={{ fontWeight: 'bold', color: 'red' }}>{msg}</td>
+        </>
+      )
+    }
+
+    const StatusImgElement = () => {
+      const imgStyle = { maxWidth: "20%", height: "auto" }
+
+      let img1 = '소싱 신청.png';
+      let img2 = '스타트업.png';
+      let img3 = '스타트업선정.png';
+      let img4 = '후속업무.png';
+
+      if (status === '1') {
+        img1 = '소싱 신청_active.png'
+      } else if (status === '2') {
+        img2 = '스타트업발굴_active.png'
+      } else if (status === '3') {
+        img3 = '스타트업선정_active.png'
+      } else if (status === '4') {
+        img4 = '후속업무_active.png'
+      } 
+
+      return (
+        <>
+          <img src={require(`../../assets/img/request/status/${img1}`).default} alt="" style={imgStyle}></img>
+          <img src={require(`../../assets/img/request/status/${img2}`).default} alt="" style={imgStyle}></img>
+          <img src={require(`../../assets/img/request/status/${img3}`).default} alt="" style={imgStyle}></img>
+          <img src={require(`../../assets/img/request/status/${img4}`).default} alt="" style={imgStyle}></img>
         </>
       )
     }
@@ -113,12 +147,12 @@ const StatusInquiry = ({ signOut, user }) => {
               <tbody>
                 <tr>
                   <td align="center" width="25%">신청 날짜</td>
-                  <td colSpan="1">{eData.param.uptodate}</td>
+                  <td colSpan="1">{inquireDate}</td>
                   <td align="center" width="25%">진행 단계</td>
                   <td colSpan="1">신청서 검토중</td>
                 </tr>
                 <tr>
-                  <td align="center" colSpan="4" style={{ fontWeight: 'bold', color: 'red' }}>평가 위원회 날짜 확정 시 직접 연락드리겠습니다.</td>
+                  <StatusElement />
                 </tr>
               </tbody>
             </table>
@@ -129,7 +163,7 @@ const StatusInquiry = ({ signOut, user }) => {
         <div id={eData.index} className="collapse close" data-bs-parent=".faq-list">
 
           <div className="entry-img" style={{ marginTop: '50px', textAlign: 'center' }}>
-            <StatusElement />
+            <StatusImgElement />
           </div>
 
           <div className="table-responsive-md" style={{ marginTop: '50px' }}>
@@ -188,11 +222,9 @@ const StatusInquiry = ({ signOut, user }) => {
     )
   }
 
-
   useEffect(() => {
     CouncilCommon.eventLogOut(signOut);
     CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
-    // Element();
   })
 
   return (

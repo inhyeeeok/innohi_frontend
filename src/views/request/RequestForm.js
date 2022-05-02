@@ -25,6 +25,7 @@ const RequestForm = ({ signOut, user }) => {
           resource
           tobe
           uptodate
+          state
         }
       }
     `;
@@ -52,6 +53,8 @@ const RequestForm = ({ signOut, user }) => {
           "state": '1',
         }
       }
+
+      console.log(DateFunction.StringToDateString('20220502132802'));
 
       const validateMsg = validateRequest(input.createRequestForminput);
 
