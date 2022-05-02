@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Amplify, I18n, Auth } from 'aws-amplify';
+import { Amplify, I18n } from 'aws-amplify';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
