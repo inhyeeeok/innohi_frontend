@@ -1943,3 +1943,27 @@ export const affiliateTestData = [
     "email": "hli.re.kr",
   }
 ];
+
+export const eventTestData = [
+  {
+    "item": "1",
+    "link":"https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform",
+    "startDate": "20220614",
+    "endDate": "20220616",
+    "img":"insight/contest/2022_pnp_summer_summit.jpg"
+  },
+  {
+    "item": "2022 PnP Summer Summit",
+    "link":"https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform",
+    "startDate": "20220502",
+    "endDate": "20220616",
+    "img":"insight/contest/2022_pnp_summer_summit.jpg"
+  },
+  {
+    "item": "3",
+    "link":"https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform",
+    "startDate": "20220501",
+    "endDate": "20220501",
+    "img":"insight/contest/2022_pnp_summer_summit.jpg"
+  },
+];
