@@ -79,7 +79,7 @@ const Public = () => {
                         <Route exact path='startup' element={<StartupSourcing />}></Route>
                         <Route exact path='external' element={<ExternalCooperation />}></Route>
                         <Route exact path='suggest' element={<Suggestion />}></Route>
-                    <Route exact path='introduceEn' element={<IntroduceEn />}></Route>
+                        <Route exact path='introduceEn' element={<IntroduceEn />}></Route>
                     </Route>
 
                     <Route exact path='/insight' >
