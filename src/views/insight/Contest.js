@@ -73,7 +73,7 @@ const Contest = () => {
 
     }
 
-    setTimeout(() => { eventFunction() }, 300);
+    setTimeout(() => { eventFunction() }, 500);
 
     const { loading, data } = useQuery(selectTodo);
     // console.log(error)
