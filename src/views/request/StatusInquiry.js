@@ -40,8 +40,6 @@ const StatusInquiry = ({ signOut, user }) => {
 
   const { loading, error, data} = useQuery(selectTodo, { variables: input });
   console.log(error)
-  console.log(data)
-  console.log(loading)
 
   const Element = () => {
     if (!loading) {
@@ -77,31 +75,45 @@ const StatusInquiry = ({ signOut, user }) => {
   }
 
   const InquiryElement = (eData) => {
-    console.log(eData.param)
-    console.log(eData.index)
+    // console.log(eData.param)
+    // console.log(eData.index)
     const inquireDate = DateFunction.StringToDateString(eData.param.uptodate);
     const status = eData.param.state;
 
-    const StatusElement = () => {
+    const StatusElement = (param) => {
       let msg = '';
+      let title = '';
 
       if (status === '1') {
-        msg = '평가 위원회 날짜 확정 시 직접 연락드리겠습니다.'
+        msg = '담당자가 신청서를 확인하고 있습니다.';
+        title = '신청서 검토';
       } else if (status === '2') {
-        msg = '2번 멘트 문구 입니다.'
+        msg = '스타트업 발굴과 관련해 담당자가 연락드릴 예정입니다.';
+        title = '신청서 접수 완료';
       } else if (status === '3') {
-        msg = '3번 멘트 문구 입니다.'
+        msg = '평가위원회 개최 일자가 확정되면 연락드리겠습니다.';
+        title = '스타트업 발굴 완료';
       } else if (status === '4') {
-        msg = '4번 멘트 문구 입니다.'
+        msg = '후속 업무에 관한 문의는 innohi@hist.co.kr로 연락 바랍니다.';
+        title = '스타트업 평가 완료';
       } else {
-        msg = '잘못된 데이터 입니다.'
+        msg = '스타트업 소싱이 완료되었습니다. 감사합니다.'
+        title = '스타트업 소싱 완료';
       }
 
-      return (
-        <>
-          <td align="center" colSpan="4" style={{ fontWeight: 'bold', color: 'red' }}>{msg}</td>
-        </>
-      )
+      if (param.value === '1') {
+        return (
+          <>
+            <td align="center" colSpan="4" style={{ fontWeight: 'bold', color: 'red' }}>{msg}</td>
+          </>
+        )
+      } else {
+        return (
+          <>
+            <td colSpan="1">{title}</td>
+          </>
+        )
+      }
     }
 
     const StatusImgElement = () => {
@@ -112,13 +124,13 @@ const StatusInquiry = ({ signOut, user }) => {
       let img3 = '스타트업선정.png';
       let img4 = '후속업무.png';
 
-      if (status === '1') {
+      if (status === '2') {
         img1 = '소싱 신청_active.png'
-      } else if (status === '2') {
-        img2 = '스타트업발굴_active.png'
       } else if (status === '3') {
-        img3 = '스타트업선정_active.png'
+        img2 = '스타트업발굴_active.png'
       } else if (status === '4') {
+        img3 = '스타트업선정_active.png'
+      } else if (status === '5') {
         img4 = '후속업무_active.png'
       } 
 
@@ -149,10 +161,10 @@ const StatusInquiry = ({ signOut, user }) => {
                   <td align="center" width="25%">신청 날짜</td>
                   <td colSpan="1">{inquireDate}</td>
                   <td align="center" width="25%">진행 단계</td>
-                  <td colSpan="1">신청서 검토중</td>
+                  <StatusElement value='2'/>
                 </tr>
                 <tr>
-                  <StatusElement />
+                  <StatusElement value='1'/>
                 </tr>
               </tbody>
             </table>

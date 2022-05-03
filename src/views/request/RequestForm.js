@@ -54,8 +54,6 @@ const RequestForm = ({ signOut, user }) => {
         }
       }
 
-      console.log(DateFunction.StringToDateString('20220502132802'));
-
       const validateMsg = validateRequest(input.createRequestForminput);
 
       if (validateMsg === '') {
