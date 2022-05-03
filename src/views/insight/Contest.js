@@ -46,8 +46,8 @@ const Contest = () => {
             }
         }
 
-
         let portfolioContainer = select('.portfolio-container');
+
         if (portfolioContainer) {
             let portfolioIsotope = new Isotope(portfolioContainer, {
                 itemSelector: '.portfolio-item'
@@ -75,10 +75,21 @@ const Contest = () => {
 
     setTimeout(() => { eventFunction() }, 100);
 
-    const { loading, error, data } = useQuery(selectTodo);
-    console.log(error)
-    console.log(data)
-    console.log(loading)
+    const { loading, data } = useQuery(selectTodo);
+    // console.log(error)
+    // console.log(data)
+    // console.log(loading)
+
+    const arrOrder = (key) => {
+        return (a, b) => {
+            if (a[key] > b[key]) {
+                return 1;
+            } else if (a[key] < b[key]) {
+                return -1;
+            }
+            return 0;
+        }
+    }
 
     const ClassificationData = () => {
         let ingData = [];
@@ -100,6 +111,10 @@ const Contest = () => {
                 }
             })
 
+            ingData.sort(arrOrder('startDate'));
+            comeData.sort(arrOrder('startDate'));
+            finishData.sort(arrOrder('startDate'));
+            
             const GridF = (param) => {
 
                 return param.dataSet.map(i => {
