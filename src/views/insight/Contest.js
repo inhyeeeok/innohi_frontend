@@ -73,7 +73,7 @@ const Contest = () => {
 
     }
 
-    setTimeout(() => { eventFunction() }, 100);
+    setTimeout(() => { eventFunction() }, 300);
 
     const { loading, data } = useQuery(selectTodo);
     // console.log(error)
@@ -114,7 +114,7 @@ const Contest = () => {
             ingData.sort(arrOrder('startDate'));
             comeData.sort(arrOrder('startDate'));
             finishData.sort(arrOrder('startDate'));
-            
+
             const GridF = (param) => {
 
                 return param.dataSet.map(i => {
