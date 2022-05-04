@@ -3,20 +3,41 @@ import * as json2data from '../../components/JsonData'
 import { useParams } from 'react-router-dom';
 import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
+import { useQuery, gql } from '@apollo/client';
 
 const NewsletterDetail = ({ signOut, user }) => {
     const params = useParams;
 
     CouncilCommon.headerGrid();
 
+    const selectTodo = gql`
+        query listInnohis {
+            listNewsletterData {
+                    items {
+                        id
+                        bno
+                        content
+                        regDate
+                        sendDate
+                        title
+                    }
+                }
+            }
+    `;
+
+    const { loading, data } = useQuery(selectTodo);
+    // console.log(error)
+    // console.log(data)
+    // console.log(loading)
+
     const setFrameHeight = () => {
         const height = document.body.scrollHeight;
         document.getElementById('ContentUrl').style.height = height + 50 + 'px';
     }
 
-    const RenderImg = (data) => {
+    const RenderImg = () => {
 
-        const returnValue = (data.data.newsletterTestData).find(function (jsonData) { return jsonData.bno === Number(params().bno) })
+        const returnValue = (data.listNewsletterData.items).find(function (jsonData) { return jsonData.bno === params().bno });
 
         return (
             <div className="container">
@@ -52,27 +73,37 @@ const NewsletterDetail = ({ signOut, user }) => {
         )
     }
 
+    CouncilCommon.eventLogOut(signOut);
+    CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
+
     useEffect(() => {
-        CouncilCommon.eventLogOut(signOut);
-        CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
-        setFrameHeight();
+        if (!loading) setFrameHeight();
     })
 
-    return (
-        <>
-            <section id="portfolio" className="portfolio section-bg">
-                <div className="container" data-aos="fade-up" >
-                    <div className="section-title">
-                        <h2>오픈 이노베이션 레터</h2>
-                        {/* <p>새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.</p> */}
+    if (!loading) {
+        return (
+            <>
+                <section id="portfolio" className="portfolio section-bg">
+                    <div className="container" data-aos="fade-up" >
+                        <div className="section-title">
+                            <h2>오픈 이노베이션 레터</h2>
+                        </div>
+                        <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
+                            <RenderImg data={json2data} />
+                        </div>
                     </div>
-                    <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
-                        <RenderImg data={json2data} />
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+                </section>
+            </>
+        )
+
+    } else {
+        return (
+            <>
+                <p>loading....</p>
+            </>
+        )
+    }
+
 
 }
 
