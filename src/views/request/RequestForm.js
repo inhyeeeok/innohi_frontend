@@ -3,10 +3,12 @@ import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useMutation, gql } from '@apollo/client';
 import * as DateFunction from '../../components/common/DateFunction';
+import { useNavigate } from "react-router-dom";
 
 const RequestForm = ({ signOut, user }) => {
 
   CouncilCommon.headerGrid();
+  const navigate = useNavigate();
 
   const createRequestForm = gql`
     mutation createRequestForm($createRequestForminput: CreateRequestFormInput!) {
@@ -64,6 +66,7 @@ const RequestForm = ({ signOut, user }) => {
         })
           .then((res) => {
             alert('신청이 완료되었습니다.');
+            navigate('/council/statusinquiry');
             console.log(res);
           })
           .catch((err) => {

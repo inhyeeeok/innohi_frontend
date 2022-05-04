@@ -38,12 +38,12 @@ const StatusInquiry = ({ signOut, user }) => {
     }
   }
 
-  const { loading, error, data} = useQuery(selectTodo, { variables: input });
+  const { loading, error, data } = useQuery(selectTodo, { variables: input });
   console.log(error)
 
   const Element = () => {
     if (!loading) {
-      const sortedData = data.listRequestForms.items.slice().sort((a, b) => a.uptodate - b.uptodate);
+      const sortedData = data.listRequestForms.items.slice().sort((a, b) => b.uptodate - a.uptodate);
       if (sortedData.length === 0) {
         return (
           <>
@@ -52,12 +52,12 @@ const StatusInquiry = ({ signOut, user }) => {
         )
       } else {
         return (
-          sortedData.map((v, i) => {
+          sortedData.map((i, v) => {
             console.log(v)
             console.log(i)
             return (
               <>
-                <InquiryElement param={v} index={'faq-list-' + i} />
+                <InquiryElement param={i} index={'faq-list-' + v} />
               </>
             )
           })
@@ -132,7 +132,7 @@ const StatusInquiry = ({ signOut, user }) => {
         img3 = '스타트업선정_active.png'
       } else if (status === '5') {
         img4 = '후속업무_active.png'
-      } 
+      }
 
       return (
         <>
@@ -161,10 +161,10 @@ const StatusInquiry = ({ signOut, user }) => {
                   <td align="center" width="25%">신청 날짜</td>
                   <td colSpan="1">{inquireDate}</td>
                   <td align="center" width="25%">진행 단계</td>
-                  <StatusElement value='2'/>
+                  <StatusElement value='2' />
                 </tr>
                 <tr>
-                  <StatusElement value='1'/>
+                  <StatusElement value='1' />
                 </tr>
               </tbody>
             </table>
