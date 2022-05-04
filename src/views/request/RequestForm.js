@@ -35,6 +35,7 @@ const RequestForm = ({ signOut, user }) => {
   const SubmitRequest = () => {
 
     const handleCreateTodoClick = (e) => {
+
       const input = {
         "createRequestForminput": {
           "email": document.getElementById('email').value,
@@ -50,18 +51,19 @@ const RequestForm = ({ signOut, user }) => {
           "resource": document.getElementById('resource').value,
           "loginid": CouncilCommon.useremailCheck(user),
           "uptodate": DateFunction.getToday('yyyymmddhh24miss'),
-          "state": '1',
+          "state": '1', //고정 값 최초 접수 시 1
         }
       }
 
       const validateMsg = validateRequest(input.createRequestForminput);
 
+      //제출 성공시 : 제출하기 버튼 클릭 -> validation check -> 정상 입력시 Alert창 팝업("신청이 완료되었습니다") -> 소싱 요쳥 현황 페이지로 이동
       if (validateMsg === '') {
         createRequestFormMutation({
           variables: input,
         })
           .then((res) => {
-            alert('Todo created successfully');
+            alert('신청이 완료되었습니다.');
             console.log(res);
           })
           .catch((err) => {
@@ -69,7 +71,10 @@ const RequestForm = ({ signOut, user }) => {
             console.log(err);
           });
       } else {
+        //제출 실패시 : 제출하기 버튼 클릭 -> validation check -> 잘못입력된 부분으로 scroll up + alert message출력("xxx가 잘못입력되었습니다. 양식에 맞춰 입력바랍니다" / "xxx가 입력되지 않았습니다")
         alert(validateMsg);
+        const scrollId = validateMsg.substring(0, validateMsg.indexOf('이(가) 입력되지 않았습니다.'));
+        document.getElementById(scrollId).scrollIntoView({behavior: "smooth", block: "center"});
       }
     }
 
@@ -140,7 +145,7 @@ const RequestForm = ({ signOut, user }) => {
 
     for (const key in data) {
       if (data[key] === '' || data[key] === undefined) {
-        errMsg = key + '는 필수 값 입니다.'
+        errMsg = key + '이(가) 입력되지 않았습니다.'
         break;
       }
     }
@@ -151,7 +156,6 @@ const RequestForm = ({ signOut, user }) => {
   useEffect(() => {
     CouncilCommon.eventLogOut(signOut);
     CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
-
   })
 
   return (
