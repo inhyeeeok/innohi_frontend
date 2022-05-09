@@ -1,16 +1,39 @@
 import React, { useEffect } from 'react';
-import * as json2data from '../../components/JsonData'
 import { useParams } from 'react-router-dom';
 import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
+import { useQuery, gql } from '@apollo/client';
 
 const AnnouceDetail = ({ signOut, user }) => {
     const params = useParams;
 
     CouncilCommon.headerGrid();
 
-    const RenderImg = (data) => {
-        const returnValue = (data.data.announceTestData).find(function (jsonData) { return jsonData.bno === Number(params().bno) })
+    const selectTodo = gql`
+        query listInnohis {
+            listNoticeData {
+                    items {
+                        id
+                        bno
+                        content
+                        description
+                        regDate
+                        sendDate
+                        title
+                    }
+                }
+            }
+    `;
+
+    const { loading, data } = useQuery(selectTodo);
+//   //  console.log(error)
+//     console.log(data)
+//     console.log(loading)
+
+    const RenderImg = () => {
+        const returnValue = (data.listNoticeData.items).find(function (jsonData) { return jsonData.bno === params().bno })
+        //const ds = returnValue.description; ds.replaceAll("\\n", "\n");
+        //console.log(ds)
 
         return (
             <div className="container">
@@ -26,7 +49,7 @@ const AnnouceDetail = ({ signOut, user }) => {
                         <tbody>
                             <tr>
                                 <td >
-                                    <img src={require('../../assets/img/council/announce/' + Number(returnValue.bno) + '/' + returnValue.img).default} className="img-fluid" alt=""></img>
+                                    <img src={require('../../assets/img/council/announce/' + Number(returnValue.bno) + '/' + returnValue.content).default} className="img-fluid" alt=""></img>
                                 </td>
                             </tr>
                         </tbody>
@@ -35,7 +58,7 @@ const AnnouceDetail = ({ signOut, user }) => {
                     <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
                         <tbody>
                             <tr align="left">
-                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{returnValue.content}</td>
+                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{returnValue.description}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -49,22 +72,29 @@ const AnnouceDetail = ({ signOut, user }) => {
         CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
     })
 
-    return (
-        <>
-            <section id="portfolio" className="portfolio section-bg">
-                <div className="container" data-aos="fade-up" >
-                    <div className="section-title">
-                        <h2>알려드려요</h2>
-                        {/* <p>새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.</p> */}
+    if (!loading) {
+        return (
+            <>
+                <section id="portfolio" className="portfolio section-bg">
+                    <div className="container" data-aos="fade-up" >
+                        <div className="section-title">
+                            <h2>알려드려요</h2>
+                            {/* <p>새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.</p> */}
+                        </div>
+                        <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
+                            <RenderImg />
+                        </div>
                     </div>
-                    <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
-                        <RenderImg data={json2data} />
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-
+                </section>
+            </>
+        )
+    } else {
+        return (
+            <>
+                <p>loading....</p>
+            </>
+        )
+    }
 }
 
 export default withAuthenticator(AnnouceDetail, {
