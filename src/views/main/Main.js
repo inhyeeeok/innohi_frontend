@@ -21,10 +21,7 @@ const Main = () => {
         }
   `;
 
-  const { loading, error, data } = useQuery(selectTodo);
-  console.log(error)
-  console.log(data)
-  console.log(loading)
+  const { loading, data } = useQuery(selectTodo);
 
   const arrOrder = (key) => {
     return (a, b) => {
@@ -62,7 +59,6 @@ const Main = () => {
       ingData.sort(arrOrder('startDate'));
       comeData.sort(arrOrder('startDate'));
       finishData.sort(arrOrder('startDate'));
-      console.log(comeData);
 
       const GridData = (param) => {
         return param.dataSet.map(i => {
@@ -122,11 +118,8 @@ const Main = () => {
     <>
       {main.heroElements}
       <main id='main'>
-        {/* {main.cliensElements} */}
-        {/* {main.refElements} */}
         {main.serviceElements}
         <ClientsElements />
-        {/*main.joinNewsletterElements*/}
       </main>
 
     </>
