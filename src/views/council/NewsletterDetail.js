@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import * as json2data from '../../components/JsonData'
 import { useParams } from 'react-router-dom';
 import * as CouncilCommon from './CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
@@ -89,7 +88,7 @@ const NewsletterDetail = ({ signOut, user }) => {
                             <h2>오픈 이노베이션 레터</h2>
                         </div>
                         <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
-                            <RenderImg data={json2data} />
+                            <RenderImg />
                         </div>
                     </div>
                 </section>
