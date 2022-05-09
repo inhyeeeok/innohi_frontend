@@ -12,6 +12,8 @@ import SwiperComponents from '../../components/swipers/Swiper';
 import Modal from '../../components/modal/Modal'
 import * as jsondata from '../../components/JsonData'
 
+import CouncilCarousel from '../council/CouncilCarousel'
+
 Amplify.configure(config)
 
 I18n.setLanguage('kr');
@@ -130,7 +132,7 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     <>
       <ModalElements />
       {council.heroElements}
-      {council.CouncilMainElements}
+      <CouncilCarousel />
       {council.clientsElements}
     </>
   )

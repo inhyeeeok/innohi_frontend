@@ -20,7 +20,7 @@ const Contest = () => {
                 }
         }
         }
-  `;
+    `;
 
     const eventFunction = () => {
         const select = (el, all = false) => {
@@ -100,7 +100,9 @@ const Contest = () => {
 
         if (loading) {
             return false;
+
         } else {
+            
             data.listEventData.items.map((i) => {
                 if (today < i.startDate) {      //예정 today() < startdate 
                     return comeData.push(i);
