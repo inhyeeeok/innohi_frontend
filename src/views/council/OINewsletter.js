@@ -70,7 +70,7 @@ const OINewsletter = ({ signOut, user }) => {
       )
     } else {
       return (
-        ((data.listNewsletterData.items)?.slice(start, end)).slice(0).reverse().map((i, v) => {
+        ((data.listNewsletterData.items)?.slice(start, end)).sort(function (a, b) { return b.bno - a.bno }).map((i, v) => {
           const convertSendDate = `${i.sendDate.substr(0, 4)}년 ${i.sendDate.substr(4, 2)}월`
           const convertRegDate = `작성일자 : ${i.regDate.substr(0, 4)}년 ${i.regDate.substr(4, 2)}월 ${i.regDate.substr(6, 2)}일`
           return (
@@ -87,9 +87,9 @@ const OINewsletter = ({ signOut, user }) => {
 
                 <div className="entry-meta">
                   <ul>
-                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <div>{convertSendDate}</div></li>
+                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <div>작성자 : 이노하이</div></li>
                     <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <div>{convertRegDate}</div></li>
-                    {/* <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <div>{i.id}</div></li> */}
+                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <div>{convertSendDate}</div></li>
                   </ul>
                 </div>
 
@@ -137,11 +137,6 @@ const OINewsletter = ({ signOut, user }) => {
       )
     }
   }
-
-  // useEffect(() => {
-  //   reactDom.render(ArticleElements(stData?.slice(start, end)), document.getElementById('entry'));
-  //   reactDom.render(entryPage(pageNumber, currentPage), document.getElementById('entryPage'));
-  // }, [stData, currentPage]);
 
   useEffect(() => { });
 
