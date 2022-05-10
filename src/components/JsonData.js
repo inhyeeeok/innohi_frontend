@@ -63,6 +63,18 @@ export const announceTestData = [
 
 export const techPickTestData = [
   {
+    "bno": 8,
+    "boardType": 2,
+    "noticeYn": 0,
+    "title": "혁신이지41차 (Zero Trust)",
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg" , "11.jpg"],
+    "regUser": "관리자",
+    "regDate": "2022-05-10 08:49:39",
+    "updtUser": null,
+    "updtDate": null,
+    "viewCnt": 0
+  },
+  {
     "bno": 7,
     "boardType": 2,
     "noticeYn": 0,
