@@ -67,7 +67,7 @@ export const techPickTestData = [
     "boardType": 2,
     "noticeYn": 0,
     "title": "혁신이지41차 (Zero Trust)",
-    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg" , "11.jpg"],
+    "content": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"],
     "regUser": "관리자",
     "regDate": "2022-05-10 08:49:39",
     "updtUser": null,
