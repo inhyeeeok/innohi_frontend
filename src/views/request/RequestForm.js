@@ -76,8 +76,8 @@ const RequestForm = ({ signOut, user }) => {
       } else {
         //제출 실패시 : 제출하기 버튼 클릭 -> validation check -> 잘못입력된 부분으로 scroll up + alert message출력("xxx가 잘못입력되었습니다. 양식에 맞춰 입력바랍니다" / "xxx가 입력되지 않았습니다")
         alert(validateMsg);
-        const scrollId = validateMsg.substring(0, validateMsg.indexOf('이(가) 입력되지 않았습니다.'));
-        document.getElementById(scrollId).scrollIntoView({behavior: "smooth", block: "center"});
+        // const scrollId = validateMsg.substring(0, validateMsg.indexOf('이(가) 입력되지 않았습니다.'));
+        // document.getElementById(scrollId).scrollIntoView({behavior: "smooth", block: "center"});
       }
     }
 
@@ -145,10 +145,16 @@ const RequestForm = ({ signOut, user }) => {
 
   const validateRequest = (data) => {
     let errMsg = '';
+    const pattern = /^\s+|\s+$/g; 
 
     for (const key in data) {
-      if (data[key] === '' || data[key] === undefined) {
+      if (data[key] === '' || data[key] === undefined || data[key].replace(pattern, '') === "") {
         errMsg = key + '이(가) 입력되지 않았습니다.'
+        document.getElementById(key).scrollIntoView({behavior: "smooth", block: "center"});
+        break;
+      }else if(key==='email' && !data[key].match('@')) {
+        errMsg = key + '유효한 이메일 주소 형식이 아닙니다.'
+        document.getElementById(key).scrollIntoView({behavior: "smooth", block: "center"});
         break;
       }
     }

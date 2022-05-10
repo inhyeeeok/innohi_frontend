@@ -53,8 +53,6 @@ const StatusInquiry = ({ signOut, user }) => {
       } else {
         return (
           sortedData.map((i, v) => {
-            console.log(v)
-            console.log(i)
             return (
               <>
                 <InquiryElement param={i} index={'faq-list-' + v} />
