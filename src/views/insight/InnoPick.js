@@ -1,22 +1,52 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-import * as jsondata from '../../components/JsonData';
 import { BiLink } from "react-icons/bi";
 import AOS from "aos";
 import Isotope from 'isotope-layout'
-
+import { useQuery, gql } from '@apollo/client';
 
 const InnoPick = () => {
 
-    const firstData = jsondata.techPickTestData.slice(jsondata.techPickTestData.length - 50, jsondata.techPickTestData.length); //최초 진입시 가장 최신 50개 렌더링
-    const [stData] = useState(firstData);
- //   const [start, setStart] = useState(0);
-//    const [end, setEnd] = useState(5);
- //   const [currentPage, setCurrentPage] = useState(1);
-//    const pageNumber = [];
+    const selectTodo = gql`
+    query listInnohis {
+        listTechPickData {
+            items {
+                id
+                bno
+                content
+                regDate
+                title
+            }
+        }
+    }
+    `;
 
-    window.addEventListener('load', () => {
+    const eventFunction = () => {
+        const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
+
+        /**
+     * Easy event listener function
+     */
+        const on = (type, el, listener, all = false) => {
+            let selectEl = select(el, all)
+            if (selectEl) {
+                if (all) {
+                    selectEl.forEach(e => e.addEventListener(type, listener))
+                } else {
+                    selectEl.addEventListener(type, listener)
+                }
+            }
+        }
+
         let portfolioContainer = select('.portfolio-container');
+
         if (portfolioContainer) {
             let portfolioIsotope = new Isotope(portfolioContainer, {
                 itemSelector: '.portfolio-item'
@@ -39,64 +69,44 @@ const InnoPick = () => {
                 });
             }, true);
         }
-    });
 
-    const select = (el, all = false) => {
-        el = el.trim()
-        if (all) {
-            return [...document.querySelectorAll(el)]
-        } else {
-            return document.querySelector(el)
-        }
     }
 
-    const on = (type, el, listener, all = false) => {
-        let selectEl = select(el, all)
-        if (selectEl) {
-            if (all) {
-                selectEl.forEach(e => e.addEventListener(type, listener))
-            } else {
-                selectEl.addEventListener(type, listener)
-            }
-        }
-    }
+    setTimeout(() => { eventFunction() }, 500);
 
-    const RenderPortfolio = (data) => {
-        return (
-            data.stData.map((v, i) => {
-                return (
-                    <div className={'col-lg-4 col-md-6 portfolio-item filter-' + i}>
-                        <a href={"/insight/detail/"+v.bno+"/"+v.content}>
-                        <div className="portfolio-img"><img src={require('../../assets/img/insight/techpick/'+v.bno+'/'+v.content[0]).default} className="img-fluid" alt=""></img></div>
-                        <div className="portfolio-info">
-                            <h4>{v.title}</h4>
-                            <p>{v.regDate.slice(0,10)}</p>
-                            <a href={"/insight/detail/"+v.bno+"/"+v.content} className="details-link" title="More Details"><BiLink /></a>
+    const { loading, data } = useQuery(selectTodo);
+
+    const RenderPortfolio = () => {
+        if (!loading) {
+            const listTechPickData = ((data.listTechPickData.items)?.slice(0)).sort(function (a, b) { return b.bno - a.bno });
+            return (
+                listTechPickData.map((v, i) => {
+                    const splitContent = v.content.split(',');
+                    const regDateContent = v.regDate.slice(0, 4)+'-'+v.regDate.slice(4, 6)+'-'+v.regDate.slice(6, 8)
+                    return (
+                        <div className={'col-lg-4 col-md-6 portfolio-item filter-' + i}>
+                            <a href={"/insight/innopick/detail/" + v.id}>
+                                <div className="portfolio-img"><img src={require('../../assets/img/insight/techpick/' + v.bno + '/' + splitContent[0]).default} className="img-fluid" alt=""></img></div>
+                                <div className="portfolio-info">
+                                    <h4>{v.title}</h4>
+                                    <p>{regDateContent}</p>
+                                    <a href={"/insight/innopick/detail/" + v.id} className="details-link" title="More Details"><BiLink /></a>
+                                </div>
+                            </a>
                         </div>
-                        </a>
-                    </div>
-                )
-            })
-        )
+                    )
+                })
+            )
+        } else {
+            return (
+                <>
+                    <p></p>
+                </>
+            )
+        }
     }
 
-    // const UU = (data) => {
-    //     return (
-    //         data.map((v, i) => {
-    //             return (
-    //                 <>
-    //                     {/* <li data-filter={".filter-"+ i} className="filter-active">{i}</li> */}
-    //                     <li data-filter={".filter-" + i}>{i}</li>
-    //                 </>
-
-    //             )
-    //         })
-    //     )
-    // }
-
-    useEffect(() => {
-
-    })
+    useEffect(() => { })
 
     return (
         <>
@@ -109,22 +119,12 @@ const InnoPick = () => {
                     </div>
 
                     <div id='entryPage' className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                        <RenderPortfolio stData={stData}/>
+                        <RenderPortfolio />
                     </div>
-
-                    <ul id="portfolio-flters" className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                        {/* <li data-filter="*" className="filter-active">전체</li>
-                                <li data-filter=".filter-ing">1</li>
-                                <li data-filter=".filter-come">2</li>
-                                <li data-filter=".filter-finish">3</li> */}
-                    </ul>
-
                 </div>
             </section>
         </>
     );
-
-
 }
 
 export default InnoPick;

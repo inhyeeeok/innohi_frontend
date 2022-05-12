@@ -84,7 +84,7 @@ const Public = () => {
 
                     <Route exact path='/insight' >
                         <Route path='innopick' element={<InnoPick />}></Route>
-                        <Route path='detail/:bno/:content' element={<Detail />}></Route>
+                        <Route path='innopick/detail/:id' element={<Detail />}></Route>
                         <Route path='contest' element={<Contest />}></Route>
                     </Route>
 
