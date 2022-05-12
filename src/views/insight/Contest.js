@@ -147,8 +147,6 @@ const Contest = () => {
                 </>
             )
         }
-
-
     }
 
     const Elements = () => {
@@ -175,14 +173,12 @@ const Contest = () => {
             )
         } else {
             return (
-                <><p>데이터 다운로드 중...</p></>
+                <><p>loading....</p></>
             )
         }
     }
 
-    useEffect(() => {
-
-    });
+    useEffect(() => {});
 
     return (
         <>
