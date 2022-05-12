@@ -28,7 +28,6 @@ const InnoPickDetail = () => {
     const RenderImg = () => {
         if (!loading) {
             const contentDataArray = (data.getTechPickData.content).split(',');
-            console.log(contentDataArray[0]);
 
             return (
                 contentDataArray.map((v) => {
