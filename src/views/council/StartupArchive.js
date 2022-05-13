@@ -129,7 +129,7 @@ const StartupArchive = ({ signOut, user }) => {
 
                 <div className="sidebar-item search-form">
                   <form action="">
-                    <input id="search" type="text" ></input>
+                    <input id="search" type="text" onKeyPress={(e) => {if(e.key ==='Enter'){ searchData(document.getElementById('search').value) }}} ></input>
                     <button type="button" onClick={() => { searchData(document.getElementById('search').value) }}><i className="bi bi-search"></i></button>
                   </form>
                 </div>
