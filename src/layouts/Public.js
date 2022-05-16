@@ -7,7 +7,6 @@ import Propel from '../views/intro/Propel';
 import History from '../views/intro/History';
 
 import StartupSourcing from '../views/program/StartupSourcing';
-import ExternalCooperation from '../views/program/ExternalCooperation';
 import Suggestion from '../views/program/Suggestion';
 import IntroduceEn from '../views/program/IntroduceEn';
 
@@ -19,13 +18,15 @@ import Detail from '../views/insight/InnoPickDetail';
 import Member from '../views/contact/Member'
 
 import CouncilMain from '../views/council/CouncilMain';
-import CouncilAnnounce from "../views/council/CouncilAnnouce";
-import AnnouceDetail from "../views/council/AnnouceDetail";
-import OINewsletter from "../views/council/OINewsletter"
-import NewsletterDetail from "../views/council/NewsletterDetail"
-import StartupArchive from '../views/council/StartupArchive';
-// import StartupArchive from '../views/council/StartupArchive copy';
-import ArchiveDetail from '../views/council/ArchiveDetail';
+
+import CouncilAnnounce from "../views/announce/CouncilAnnouce";
+import AnnouceDetail from "../views/announce/AnnouceDetail";
+
+import OINewsletter from "../views/newsletter/OINewsletter"
+import NewsletterDetail from "../views/newsletter/NewsletterDetail"
+
+import StartupArchive from '../views/archive/StartupArchive';
+import ArchiveDetail from '../views/archive/ArchiveDetail';
 
 import RequestForm from '../views/request/RequestForm'
 import StatusInquiry from '../views/request/StatusInquiry'
@@ -77,7 +78,6 @@ const Public = () => {
 
                     <Route exact path='/program'>
                         <Route exact path='startup' element={<StartupSourcing />}></Route>
-                        <Route exact path='external' element={<ExternalCooperation />}></Route>
                         <Route exact path='suggest' element={<Suggestion />}></Route>
                         <Route exact path='introduceEn' element={<IntroduceEn />}></Route>
                     </Route>
@@ -90,7 +90,6 @@ const Public = () => {
 
                     <Route exact path='/contact'>
                         <Route exact path='member' element={<Member />}></Route>
-                        <Route exact path='question' element={<StartupArchive />}></Route>
                     </Route>
 
                     <Route exact path='/council'>
@@ -107,7 +106,6 @@ const Public = () => {
                     </Route>
 
                     {/* <Route exact path='/login' element={<Login />}></Route> */}
-
 
                     <Route path="/*" element={<ErrorPage />} />
 

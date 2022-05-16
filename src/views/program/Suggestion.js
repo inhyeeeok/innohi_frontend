@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 
 const Suggestion = () => {
 
+  const preventClick = (e) => {
+    e.preventDefault();
+    return false;
+  }
+
   const heroElements =
 
   <section id='hero' className='d-flex align-items-center'>
@@ -61,7 +66,7 @@ const Suggestion = () => {
 
             <br /> <br />
             <div className='d-flex justify-content-center justify-content-start'>
-              <a href='https://forms.gle/ouhCP4vATWWTcBN67' target="_blank" rel="noopener noreferrer"><div className='btn-get-started scrollto'>협업 제안하기</div></a>
+              <a href='https://forms.gle/ouhCP4vATWWTcBN67' target="_blank" rel="noopener noreferrer" onClick={preventClick}><div className='btn-get-started scrollto'>협업 제안하기</div></a>
             </div>
 
           </div>

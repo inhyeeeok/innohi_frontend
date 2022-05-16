@@ -240,7 +240,7 @@ const StatusInquiry = ({ signOut, user }) => {
   return (
     <>
       <main id="main">
-        <section id="faq" className="faq section-bg">
+        <section id="faq" className="faq section-bg" style={{ marginTop: '62px' }}>
           <div className="container" data-aos="fade-up">
 
             <div className="section-title">

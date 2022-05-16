@@ -1,21 +1,22 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import * as CouncilCommon from './CouncilCommon'
+import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useQuery, gql } from '@apollo/client';
 
-const NewsletterDetail = ({ signOut, user }) => {
+const AnnouceDetail = ({ signOut, user }) => {
     const params = useParams;
 
     CouncilCommon.headerGrid();
 
     const selectTodo = gql`
         query listInnohis {
-            listNewsletterData {
+            listNoticeData {
                     items {
                         id
                         bno
                         content
+                        description
                         regDate
                         sendDate
                         title
@@ -25,18 +26,14 @@ const NewsletterDetail = ({ signOut, user }) => {
     `;
 
     const { loading, data } = useQuery(selectTodo);
-    // console.log(error)
-    // console.log(data)
-    // console.log(loading)
-
-    const setFrameHeight = () => {
-        const height = document.body.scrollHeight;
-        document.getElementById('ContentUrl').style.height = height + 50 + 'px';
-    }
+//   //  console.log(error)
+//     console.log(data)
+//     console.log(loading)
 
     const RenderImg = () => {
-
-        const returnValue = (data.listNewsletterData.items).find(function (jsonData) { return jsonData.bno === params().bno });
+        const returnValue = (data.listNoticeData.items).find(function (jsonData) { return jsonData.bno === params().bno })
+        //const ds = returnValue.description; ds.replaceAll("\\n", "\n");
+        //console.log(ds)
 
         return (
             <div className="container">
@@ -44,26 +41,24 @@ const NewsletterDetail = ({ signOut, user }) => {
                     <table className="table table-bordered" style={{ backgroundColor: 'white' }}>
                         <thead>
                             <tr align="center" >
-                                <th colSpan="4" style={{ fontSize: '24px' }}>{returnValue.title}</th>
+                                <th colSpan="4" style={{fontSize:'24px'}}>{returnValue.title}</th>
                             </tr>
                         </thead>
                     </table>
-                    <table className="table table-bordered" style={{ backgroundColor: 'white' }}>
+                    <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
                         <tbody>
                             <tr>
                                 <td >
-                                    <iframe
-                                        title={returnValue.bno}
-                                        id="ContentUrl"
-                                        width="100%"
-                                        height="100%"
-                                        src={returnValue.content}
-                                        // onLoad={setFrameHeight}
-                                        scrolling="auto"
-                                    >
-                                    </iframe>
-
+                                    <img src={require('../../assets/img/council/announce/' + Number(returnValue.bno) + '/' + returnValue.content).default} className="img-fluid" alt=""></img>
                                 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table className="table table-bordered"  style={{ backgroundColor: 'white' }}>
+                        <tbody>
+                            <tr align="left">
+                                <td colSpan="2" style={{'whiteSpace': 'pre-wrap'}}>{returnValue.description}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -72,20 +67,19 @@ const NewsletterDetail = ({ signOut, user }) => {
         )
     }
 
-    CouncilCommon.eventLogOut(signOut);
-    CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
-
     useEffect(() => {
-        if (!loading) setFrameHeight();
+        CouncilCommon.eventLogOut(signOut);
+        CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
     })
 
     if (!loading) {
         return (
             <>
-                <section id="portfolio" className="portfolio section-bg">
+                <section id="portfolio" className="portfolio section-bg" style={{ marginTop: '61px' }}>
                     <div className="container" data-aos="fade-up" >
                         <div className="section-title">
-                            <h2>오픈 이노베이션 레터</h2>
+                            <h2>알려드려요</h2>
+                            {/* <p>새로운 기술과 트렌드를 innoHI가 콕 찝어드립니다.</p> */}
                         </div>
                         <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
                             <RenderImg />
@@ -94,7 +88,6 @@ const NewsletterDetail = ({ signOut, user }) => {
                 </section>
             </>
         )
-
     } else {
         return (
             <>
@@ -102,11 +95,9 @@ const NewsletterDetail = ({ signOut, user }) => {
             </>
         )
     }
-
-
 }
 
-export default withAuthenticator(NewsletterDetail, {
+export default withAuthenticator(AnnouceDetail, {
     socialProviders: ['google'],
     hideSignUp: [true],
     //   loginMechanisms : ['username'],

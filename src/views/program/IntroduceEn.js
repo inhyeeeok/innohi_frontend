@@ -93,7 +93,7 @@ const IntroduceEn = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_3_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>Medical Service</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>Medical Service</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Contactless bio-signal detection</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>VR Training service</p>
                             </div>
@@ -103,7 +103,7 @@ const IntroduceEn = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_1_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>Aviation</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>Aviation</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Data Analysis Technology</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>VR Training Service</p>
                             </div>
@@ -113,7 +113,7 @@ const IntroduceEn = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_2_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>Logistics</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>Logistics</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Fulfillment Automation</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Last Mile Delivery</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Smart Logistics</p>
@@ -124,7 +124,7 @@ const IntroduceEn = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_6_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>Travel & Hospitality</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>Travel & Hospitality</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Impove User Experience</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Travel Mobility Service</p>
                             </div>

@@ -93,7 +93,7 @@ const StartupSourcing = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_3_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>의료</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>의료</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Contactless service (비접촉 생체 신호 감지 기술)</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>VR service (가상 현실 교육 서비스)</p>
                             </div>
@@ -103,7 +103,7 @@ const StartupSourcing = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_1_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>항공</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>항공</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Data Analysis (영업 / 마케팅)</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>VR Service (승무원 훈련)</p>
                             </div>
@@ -113,7 +113,7 @@ const StartupSourcing = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_2_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>물류</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>물류</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Fulfillment (물류 자동화)</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Last Mile Delivery (배송 최적화)</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Smart Logistics (차세대 물류 기술)</p>
@@ -124,7 +124,7 @@ const StartupSourcing = () => {
                             <div className="icon-box">
                                 <img src={require('../../assets/img/program/startup-archive_6_bg.png').default} className="img-fluid" alt=""></img>
                                 <br />
-                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#" onClick={preventClick}>여행</a></h4>
+                                <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>여행</a></h4>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Commerce Tour (소비자 경험 향상)</p>
                                 <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Mobility Service (여행 모빌리티 서비스)</p>
                             </div>

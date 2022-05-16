@@ -109,7 +109,7 @@ const CouncilCarousel = () => {
     }
 
     if(loading) {
-        return (<><p>loading....</p></>)
+        return (<><p></p></>)
     }else {
         return (
             <CarouselMainElements />
