@@ -36,7 +36,7 @@ const RequestForm = ({ signOut, user }) => {
 
   const SubmitRequest = () => {
 
-    const handleCreateTodoClick = (e) => {
+    const handleCreateTodoClick = () => {
 
       const input = {
         "createRequestForminput": {
@@ -83,7 +83,7 @@ const RequestForm = ({ signOut, user }) => {
 
 
     return (
-      <section id="blog" className="blog">
+      <section id="blog" className="blog section" style={{ marginTop: '82px' }}>
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>스타트업 수요조사 Request</h2>
@@ -145,16 +145,46 @@ const RequestForm = ({ signOut, user }) => {
 
   const validateRequest = (data) => {
     let errMsg = '';
-    const pattern = /^\s+|\s+$/g; 
+    const pattern = /^\s+|\s+$/g;
+
+    const rspkg = (msg) => {
+      let rsMsg = '';
+
+      if (msg === 'email') {
+        rsMsg = '메일';
+      } else if (msg === 'name') {
+        rsMsg = '성명';
+      } else if (msg === 'belong') {
+        rsMsg = '소속';
+      } else if (msg === 'field') {
+        rsMsg = '분야';
+      } else if (msg === 'country') {
+        rsMsg = '희망국가';
+      } else if (msg === 'project') {
+        rsMsg = '사업 혹은 프로젝트명';
+      } else if (msg === 'asis') {
+        rsMsg = '협업 사유';
+      } else if (msg === 'tobe') {
+        rsMsg = '협업 목표';
+      } else if (msg === 'keypoint') {
+        rsMsg = '핵심요소 또는 기준';
+      } else if (msg === 'notwish') {
+        rsMsg = '스타트업의 기준 혹은 형태';
+      } else if (msg === 'resource') {
+        rsMsg = '제공 가능한 자원';
+      }
+
+      return rsMsg;
+    }
 
     for (const key in data) {
       if (data[key] === '' || data[key] === undefined || data[key].replace(pattern, '') === "") {
-        errMsg = key + '이(가) 입력되지 않았습니다.'
-        document.getElementById(key).scrollIntoView({behavior: "smooth", block: "center"});
+        errMsg = rspkg(key) + '이(가) 입력되지 않았습니다.'
+        document.getElementById(key).scrollIntoView({ behavior: "smooth", block: "center" });
         break;
-      }else if(key==='email' && !data[key].match('@')) {
+      } else if (key === 'email' && !data[key].match('@')) {
         errMsg = key + '유효한 이메일 주소 형식이 아닙니다.'
-        document.getElementById(key).scrollIntoView({behavior: "smooth", block: "center"});
+        document.getElementById(key).scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       }
     }
