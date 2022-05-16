@@ -183,7 +183,7 @@ const RequestForm = ({ signOut, user }) => {
         document.getElementById(key).scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       } else if (key === 'email' && !data[key].match('@')) {
-        errMsg = key + '유효한 이메일 주소 형식이 아닙니다.'
+        errMsg = rspkg(key) + '유효한 이메일 주소 형식이 아닙니다.'
         document.getElementById(key).scrollIntoView({ behavior: "smooth", block: "center" });
         break;
       }
