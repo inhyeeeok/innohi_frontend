@@ -19,16 +19,10 @@ const Header = () => {
             <li className='dropdown'><a href='/intro/introduction'>Introduce
               {/* <i className='bi bi-chevron-down'></i> */}
             </a>
-              {/* <ul>
-              <li><a href='/intro/introduction'>이노하이란?</a></li>
-              <li><a href='/intro/propel'>비전</a></li>
-              <li><a href='/intro/history'>연혁</a></li>
-            </ul> */}
             </li>
             <li className='dropdown'><a href='/program/startup'>Program<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/program/startup'>프로그램 소개</a></li>
-                {/* <li><a href='/program/external'>대외협력</a></li> */}
                 <li><a href='/program/suggest'>협업제안</a></li>
               </ul>
             </li>
@@ -41,7 +35,6 @@ const Header = () => {
             <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/contact/member'>구성원 소개</a></li>
-                {/* <li><a href='/contact/question'><div>문의하기</div></a></li> */}
                 <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform' target="_blank" rel="noopener noreferrer">문의하기</a></li>
               </ul>
             </li>
@@ -56,8 +49,8 @@ const Header = () => {
     </header>;
 
   const headerCouncilElements =
-    //  <header id='header' className='fixed-top header-inner-pages' style={{display:'none'}}>
-    <header id='header' className='header-inner-pages' style={{ display: 'none' }}>
+    <header id='header' className='fixed-top header-inner-pages' style={{display:'none'}}>
+     {/* <header id='header' className='header-inner-pages' style={{ display: 'none' }}> */}
       <div className='container d-flex align-items-center'>
         <h1 className='logo me-auto'>
           <a href='/council/main'>
@@ -96,7 +89,7 @@ const Header = () => {
     GlobalFunction();
   }, []);
 
-  if (window.location.pathname.split('/')[1] === ('council'))
+  if (window.location.pathname.split('/')[1] === ('council') || window.location.pathname.split('/')[1] === ('council'))
     return (
       <>
         {headerCouncilElements}
