@@ -17,7 +17,7 @@ const Main = () => {
                     link
                     startDate
                 }
-        }
+            }
         }
   `;
 

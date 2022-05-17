@@ -160,12 +160,10 @@ const CouncilCarousel = (param) => {
         )
     }
 
-    useEffect(() => {
-        SwiperComponents();
-      })
+    useEffect(() => { SwiperComponents(); })
 
     if (loading) {
-        return (<><p></p></>)
+        return (<><section id="about" className="about" style={{ background: '#f3f5fa', height: '500px' }}></section></>)
     } else {
         if (param.type === 'operation') {
             return (
@@ -177,7 +175,6 @@ const CouncilCarousel = (param) => {
             )
         }
     }
-
 }
 
 export default CouncilCarousel;
