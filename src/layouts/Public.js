@@ -31,7 +31,7 @@ import ArchiveDetail from '../views/archive/ArchiveDetail';
 import RequestForm from '../views/request/RequestForm'
 import StatusInquiry from '../views/request/StatusInquiry'
 
-import ErrorPage from '../views/common/ErrorPage';
+import ErrorPage from '../components/error/ErrorPage';
 
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer';

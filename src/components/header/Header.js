@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import GlobalFunction from "../GlobalFunction";
+import GlobalFunction from "../common/GlobalFunction";
 
 const Header = () => {
 
