@@ -27,14 +27,9 @@ const AnnouceDetail = ({ signOut, user }) => {
     `;
 
     const { loading, data } = useQuery(selectTodo);
-//   //  console.log(error)
-//     console.log(data)
-//     console.log(loading)
 
     const RenderImg = () => {
         const returnValue = (data.listNoticeData.items).find(function (jsonData) { return jsonData.bno === params().bno })
-        //const ds = returnValue.description; ds.replaceAll("\\n", "\n");
-        //console.log(ds)
 
         return (
             <div className="container">

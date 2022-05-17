@@ -31,7 +31,6 @@ const ArchiveDetail = ({ signOut, user }) => {
     `;
 
     const { loading, data } = useQuery(selectTodo);
-    console.log(data);
 
     const RenderStartup = () => {
 

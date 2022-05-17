@@ -24,9 +24,6 @@ const StartupArchive = ({ signOut, user }) => {
   `;
 
   const { loading, error, data } = useQuery(selectTodo);
-  console.log(error)
-  console.log(data)
-  console.log(loading)
 
   const [start, setStart] = useState(0);
   const [end, setEnd] = useState(5);
