@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery, gql } from '@apollo/client';
+import GoBackButton from '../../components/button/GoBackButton';
 
 const InnoPickDetail = () => {
     const params = useParams;
@@ -58,6 +59,9 @@ const InnoPickDetail = () => {
                     <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
                         <RenderImg />
                     </div>
+
+                    <GoBackButton />
+                    
                 </div>
             </section>
         </>

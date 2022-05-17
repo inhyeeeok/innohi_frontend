@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useQuery, gql } from '@apollo/client';
+import GoBackButton from '../../components/button/GoBackButton';
 
 const AnnouceDetail = ({ signOut, user }) => {
     const params = useParams;
@@ -62,6 +63,8 @@ const AnnouceDetail = ({ signOut, user }) => {
                             </tr>
                         </tbody>
                     </table>
+
+                    <GoBackButton />
                 </div>
             </div>
         )

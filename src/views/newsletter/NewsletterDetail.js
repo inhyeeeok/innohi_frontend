@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import * as CouncilCommon from '../council/CouncilCommon'
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useQuery, gql } from '@apollo/client';
+import GoBackButton from '../../components/button/GoBackButton';
 
 const NewsletterDetail = ({ signOut, user }) => {
     const params = useParams;
@@ -34,7 +35,7 @@ const NewsletterDetail = ({ signOut, user }) => {
         document.getElementById('ContentUrl').style.height = height + 50 + 'px';
     }
 
-    const RenderImg = () => {
+    const RenderArticle = () => {
 
         const returnValue = (data.listNewsletterData.items).find(function (jsonData) { return jsonData.bno === params().bno });
 
@@ -88,8 +89,9 @@ const NewsletterDetail = ({ signOut, user }) => {
                             <h2>오픈 이노베이션 레터</h2>
                         </div>
                         <div id='entryPage' className="section-title" data-aos="fade-up" data-aos-delay="200">
-                            <RenderImg />
+                            <RenderArticle />
                         </div>
+                        <GoBackButton />
                     </div>
                 </section>
             </>
