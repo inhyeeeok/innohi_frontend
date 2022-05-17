@@ -3,7 +3,7 @@ import { Amplify, I18n } from 'aws-amplify';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 // import { ConfirmSignIn, ConfirmSignUp, ForgotPassword, RequireNewPassword, SignIn, SignUp, VerifyContact } from 'aws-amplify-react';
 import '@aws-amplify/ui-react/styles.css';
-import config from '../../aws-exports';
+import config from '../../config/aws-exports';
 
 import * as CouncilCommon from './CouncilCommon'
 import CouncilCarousel from '../council/CouncilCarousel'
