@@ -5,7 +5,7 @@ const GoBackButton = () => {
     
     return (
         <div style={{ textAlign: 'end' }}>
-            <button onClick={() => navigate(-1)} className="btn-get-end" href="#">목록</button >
+            <button onClick={() => navigate(-1)} className="btn-get-end">목록</button >
         </div>
     )
 }
