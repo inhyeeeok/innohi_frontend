@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import DownloadButton from '../../components/download/DownloadButton';
+import DownloadButton from '../../components/button/DownloadButton';
 
 const StartupSourcing = () => {
     
