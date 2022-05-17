@@ -6,17 +6,6 @@ const RouteChangeTracker = () => {
     const location = useLocation();
     const [initialized, setInitialized] = useState(false);
 
-    // const test = (path) => {
-    //     console.log(path);
-
-    //     if(path === "/"){
-    //         return "홈";
-    //     } else if(path === "/contact/member"){
-    //         return "구성원 소개";
-    //     }
-    //     return "홈"; 
-    // }
-
     useEffect(() => {
         if (!window.location.href.includes("localhost")) {
             // 환경 변수 사용
