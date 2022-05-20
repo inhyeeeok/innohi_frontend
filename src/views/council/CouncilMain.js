@@ -142,7 +142,7 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
 
   return (
     <>
-      <ModalElements />
+      {/* <ModalElements /> */}
       <HeroElements />
       <CouncilCarousel type='operation'/>
       <CouncilCarousel type='startup'/>
