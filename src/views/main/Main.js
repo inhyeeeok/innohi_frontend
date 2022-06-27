@@ -71,15 +71,39 @@ const Main = () => {
       const count = 5 - ingData.length;
 
       if (count > 0) {
-        return (
-          <>
-            <GridData dataSet={ingData} />
-            <GridData dataSet={comeData.slice(0, count)} />
-          </>
-        )
+        if (ingData.length+comeData.length < 4) {
+          return (
+            <>
+              <div className="clients-slider2 swiper">
+                <div className="swiper-wrapper align-items-center">
+                  <GridData dataSet={ingData} />
+                  <GridData dataSet={comeData.slice(0, count)} />
+                </div>
+                <div className="swiper-pagination"></div>
+              </div>
+            </>
+          )
+        } else {
+          return (
+            <>
+              <div className="clients-slider swiper">
+                <div className="swiper-wrapper align-items-center">
+                  <GridData dataSet={ingData} />
+                  <GridData dataSet={comeData.slice(0, count)} />
+                </div>
+                <div className="swiper-pagination"></div>
+              </div>
+            </>
+          )
+        }
       } else {
         return (
-          <GridData dataSet={ingData.slice(0, 5)} />
+          <div className="clients-slider swiper">
+            <div className="swiper-wrapper align-items-center">
+              <GridData dataSet={comeData.slice(0, 5)} />
+            </div>
+            <div className="swiper-pagination"></div>
+          </div>
         )
       }
     }

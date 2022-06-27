@@ -39,6 +39,21 @@ const SwiperComponents = () => {
     }
   });
 
+  new Swiper('.clients-slider2', {
+    speed: 400,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+  });
+
  /**
    * Testimonials slider
    */
