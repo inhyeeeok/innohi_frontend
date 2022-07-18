@@ -67,7 +67,7 @@ const OINewsletter = ({ signOut, user }) => {
       )
     } else {
       return (
-        ((data.listNewsletterData.items)?.slice(start, end)).sort(function (a, b) { return b.bno - a.bno }).map((i, v) => {
+        ((data.listNewsletterData.items)?.slice(0).sort(function (a, b) { return b.bno - a.bno }).slice(start, end)).map((i, v) => {
           const convertSendDate = `${i.sendDate.substr(0, 4)}년 ${i.sendDate.substr(4, 2)}월`
           const convertRegDate = `작성일자 : ${i.regDate.substr(0, 4)}년 ${i.regDate.substr(4, 2)}월 ${i.regDate.substr(6, 2)}일`
           return (
