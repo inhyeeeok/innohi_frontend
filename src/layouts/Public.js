@@ -17,6 +17,9 @@ import Detail from '../views/insight/InnoPickDetail';
 
 import Member from '../views/contact/Member'
 
+import OnemorePassLogin from '../views/pilot/OnemorePassLogin'
+import OnemorePassSetting from '../views/pilot/OnemorePassSetting'
+
 import CouncilMain from '../views/council/CouncilMain';
 
 import CouncilAnnounce from "../views/announce/CouncilAnnouce";
@@ -38,6 +41,11 @@ import Footer from '../components/footer/Footer';
 
 import * as CouncilCommon from '../views/council/CouncilCommon'
 import RouteChangeTracker from '../components/common/RouteChangeTracker';
+
+
+import CouncilMain1 from '../views/hipass/CouncilMain';
+
+
 
 import {
     ApolloProvider
@@ -103,6 +111,15 @@ const Public = () => {
 
                         <Route exact path='requestform' element={<RequestForm />}> </Route>
                         <Route exact path='statusinquiry' element={<StatusInquiry />}> </Route>
+
+                        <Route exact path='onemorepass' element={<OnemorePassLogin />}></Route>
+                        <Route exact path='setting' element={<OnemorePassSetting />}></Route>
+                    </Route>
+
+                    <Route exact path='/hipass'>
+                        <Route exact path='main' element={<CouncilMain1 />}> </Route>
+                        <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
+                        <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
                     </Route>
 
                     {/* <Route exact path='/login' element={<Login />}></Route> */}
