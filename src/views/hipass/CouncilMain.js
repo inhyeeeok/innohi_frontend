@@ -6,6 +6,7 @@ import CouncilCarousel from '../council/CouncilCarousel'
 const CouncilMain = () => {
 
   const HeroElements = () => {
+    tokenVefi();
     return (
       <section id='hero' className='d-flex align-items-center' >
       <div className='container'>
@@ -27,9 +28,6 @@ const CouncilMain = () => {
     const qs = getQueryStringObject();
     const username = qs.username; 
     const access_token = qs.access_token; 
-
-    // console.log(username);
-    // console.log(access_token);
 
     var myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
@@ -69,19 +67,12 @@ const CouncilMain = () => {
 }
 
   useEffect(() => {
-    alert('test')
     CouncilCommon.headerGrid();
-    tokenVefi();
-    
-    // popUpCheck();
-    // affiliateCheck(user);
-    // CouncilCommon.eventLogOut(signOut);
-    // CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
+
   })
 
   return (
     <>
-      {/* <ModalElements /> */}
       <HeroElements />
       <CouncilCarousel type='operation'/>
       <CouncilCarousel type='startup'/>
