@@ -48,7 +48,7 @@ const CouncilMain = () => {
       .then(response => response.text())
       .then(result => {
         console.log(result)
-        CouncilCommon.changeName(CouncilCommon.usernameCheck(username));
+        CouncilCommon.changeName(username);
       })
       .catch(error => console.log('error', error));
 

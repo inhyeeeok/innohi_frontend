@@ -146,7 +146,7 @@ const Header = () => {
         .then(response => response.text())
         .then(result => {
           window.open(JSON.parse(result).data.ompass_uri, '_blank', 'status=no, height=' + window.screen.height / 2 + ', width=' + window.screen.width / 2 + ', top=' + window.screen.height / 4 + ', left=' + window.screen.width / 4)
-          console.log(result)
+          // console.log(result)
         })
         .catch(error => console.log('error', error));
 
@@ -176,7 +176,7 @@ const Header = () => {
       .then(response => response.text())
       .then(result => {
         window.open(JSON.parse(result).data.ompass_uri, '_blank', 'status=no, height=' + window.screen.height / 2 + ', width=' + window.screen.width / 2 + ', top=' + window.screen.height / 4 + ', left=' + window.screen.width / 4)
-        console.log(result)
+        // console.log(result)
       })
       .catch(error => console.log('error', error));
   }
