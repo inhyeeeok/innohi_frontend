@@ -28,8 +28,8 @@ const CouncilMain = () => {
     const username = qs.username; 
     const access_token = qs.access_token; 
 
-    console.log(username);
-    console.log(access_token);
+    // console.log(username);
+    // console.log(access_token);
 
     var myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
@@ -46,7 +46,10 @@ const CouncilMain = () => {
 
     fetch("https://interface-api.ompasscloud.com/v1/ompass/token-verification", requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result))
+      .then(result => {
+        console.log(result)
+        CouncilCommon.changeName(CouncilCommon.usernameCheck(username));
+      })
       .catch(error => console.log('error', error));
 
   }

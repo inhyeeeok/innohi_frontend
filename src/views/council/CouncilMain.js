@@ -57,6 +57,11 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
     }
   }
 
+  const setLoginData = (param) => {
+    sessionStorage.removeItem("CognitoIdentityServiceProvider");
+    sessionStorage.setItem("CognitoIdentityServiceProvider", JSON.stringify(param.attributes));
+  }
+
   const affiliateCheck = (param) => {
     // const user1 = await Auth.currentAuthenticatedUser()
     // console.log('user: ', user1)
@@ -96,7 +101,8 @@ const CouncilMain = ({ isPassedToWithAuthenticator, signOut, user }) => {
   }
 
   useEffect(() => {
-    popUpCheck();
+  //  popUpCheck();
+    setLoginData(user);
     affiliateCheck(user);
     CouncilCommon.eventLogOut(signOut);
     CouncilCommon.changeName(CouncilCommon.usernameCheck(user));
