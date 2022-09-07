@@ -23,8 +23,52 @@ const CouncilMain = () => {
     )
   }
 
+  const tokenVefi = () => {
+    const qs = getQueryStringObject();
+    const username = qs.username; 
+    const access_token = qs.access_token; 
+
+    console.log(username);
+    console.log(access_token);
+
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({"user_id":username,"access_token":access_token});
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("https://interface-api.ompasscloud.com/v1/ompass/token-verification", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+
+  }
+
+  const getQueryStringObject = () => {
+    var a = window.location.search.substr(1).split('&');
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i) {
+        var p = a[i].split('=', 2);
+        if (p.length == 1)
+            b[p[0]] = "";
+        else
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+}
+
   useEffect(() => {
     CouncilCommon.headerGrid();
+    tokenVefi();
+    
     // popUpCheck();
     // affiliateCheck(user);
     // CouncilCommon.eventLogOut(signOut);
