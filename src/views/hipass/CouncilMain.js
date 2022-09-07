@@ -30,7 +30,7 @@ const CouncilMain = () => {
     const access_token = qs.access_token; 
 
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+    myHeaders.append("Authorization", "Bearer b0843ef0ea33f8a5d38dd938a1af426385ca82dfa520bab036c8497806811dd9");
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({"user_id":username,"access_token":access_token});
@@ -42,7 +42,7 @@ const CouncilMain = () => {
       redirect: 'follow'
     };
 
-    fetch("https://interface-api.ompasscloud.com/v1/ompass/token-verification", requestOptions)
+    fetch("https://hipass.hist.co.kr:7002/v1/ompass/token-verification", requestOptions)
       .then(response => response.text())
       .then(result => {
         console.log(result)

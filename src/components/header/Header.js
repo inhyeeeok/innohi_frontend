@@ -161,7 +161,7 @@ const Header = () => {
     const userInfo = JSON.parse(sessionStorage.getItem('CognitoIdentityServiceProvider'));
 
     const myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+    myHeaders.append("Authorization", "Bearer b0843ef0ea33f8a5d38dd938a1af426385ca82dfa520bab036c8497806811dd9");
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({ "user_id": userInfo.email, "lang_init": "KR" });
@@ -173,7 +173,7 @@ const Header = () => {
       redirect: 'follow'
     };
 
-    fetch("https://interface-api.ompasscloud.com/v1/ompass/u2f", requestOptions)
+    fetch("https://hipass.hist.co.kr:7002/v1/ompass/u2f", requestOptions)
       .then(response => response.text())
       .then(result => {
         window.open(JSON.parse(result).data.ompass_uri, '_blank', 'status=no, height=' + window.screen.height / 2 + ', width=' + window.screen.width / 2 + ', top=' + window.screen.height / 4 + ', left=' + window.screen.width / 4)
@@ -187,7 +187,7 @@ const Header = () => {
     const userInfo = JSON.parse(sessionStorage.getItem('CognitoIdentityServiceProvider'));
 
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+    myHeaders.append("Authorization", "Bearer b0843ef0ea33f8a5d38dd938a1af426385ca82dfa520bab036c8497806811dd9");
 
     var requestOptions = {
       method: 'DELETE',
@@ -195,7 +195,7 @@ const Header = () => {
       redirect: 'follow'
     };
 
-    fetch("https://interface-api.ompasscloud.com/v1/ompass/users/"+userInfo.email, requestOptions)
+    fetch("https://hipass.hist.co.kr:7002/v1/ompass/users/"+userInfo.email, requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
