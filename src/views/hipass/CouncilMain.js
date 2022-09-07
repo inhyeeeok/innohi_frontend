@@ -69,6 +69,7 @@ const CouncilMain = () => {
 }
 
   useEffect(() => {
+    alert('test')
     CouncilCommon.headerGrid();
     tokenVefi();
     

@@ -76,6 +76,7 @@ const Header = () => {
             <li className='dropdown'><a href='#'>파일럿</a>
               <ul>
                 <li onClick={() => { u2fCall() }}><a href='#'>간편인증 등록 (Hi-Pass)</a></li>
+                <li onClick={() => { resetHipass() }}><a href='#'>Hi-Pass 등록 초기화</a></li>
               </ul>
             </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
@@ -117,7 +118,7 @@ const Header = () => {
             </li>
             <li><a href='/' className='getstarted'>INNOHI</a>
             </li>
-            <li className='dropdown' ><a id='user_name' href='/'>로그인이 필요합니다.</a>
+            <li className='dropdown' ><a id='user_name' href='#'>로그인이 필요합니다.</a>
             </li>
           </ul>
           <i className='bi bi-list mobile-nav-toggle'></i>
@@ -158,7 +159,7 @@ const Header = () => {
   const u2fCall = () => {
 
     const userInfo = JSON.parse(sessionStorage.getItem('CognitoIdentityServiceProvider'));
-    
+
     const myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
     myHeaders.append("Content-Type", "application/json");
@@ -178,6 +179,25 @@ const Header = () => {
         window.open(JSON.parse(result).data.ompass_uri, '_blank', 'status=no, height=' + window.screen.height / 2 + ', width=' + window.screen.width / 2 + ', top=' + window.screen.height / 4 + ', left=' + window.screen.width / 4)
         // console.log(result)
       })
+      .catch(error => console.log('error', error));
+  }
+
+  const resetHipass = () => {
+
+    const userInfo = JSON.parse(sessionStorage.getItem('CognitoIdentityServiceProvider'));
+
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+
+    var requestOptions = {
+      method: 'DELETE',
+      headers: myHeaders,
+      redirect: 'follow'
+    };
+
+    fetch("https://interface-api.ompasscloud.com/v1/ompass/users/"+userInfo.email, requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
       .catch(error => console.log('error', error));
   }
 
