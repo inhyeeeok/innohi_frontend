@@ -131,7 +131,7 @@ const Header = () => {
     if (window.confirm('비밀번호 없는 로그인(Beta)하시겠습니까? \n *등록되지 않은 사용자는 취소 버튼을 눌러야 진행 가능합니다.')) {
 
       var myHeaders = new Headers();
-      myHeaders.append("Authorization", "Bearer 6f1810263bbf08a347e9a9d5bbeb456e373e6470afdfb70ba3ebc6cd14131f16");
+      myHeaders.append("Authorization", "Bearer b0843ef0ea33f8a5d38dd938a1af426385ca82dfa520bab036c8497806811dd9");
       myHeaders.append("Content-Type", "application/json");
 
       var raw = JSON.stringify({ "user_id": "test", "lang_init": "KR" });
@@ -143,7 +143,7 @@ const Header = () => {
         redirect: 'follow'
       };
 
-      fetch("https://interface-api.ompasscloud.com/v1/ompass/uaf", requestOptions)
+      fetch("https://hipass.hist.co.kr:7002/v1/ompass/uaf", requestOptions)
         .then(response => response.text())
         .then(result => {
           window.open(JSON.parse(result).data.ompass_uri, '_blank', 'status=no, height=' + window.screen.height / 2 + ', width=' + window.screen.width / 2 + ', top=' + window.screen.height / 4 + ', left=' + window.screen.width / 4)
