@@ -197,7 +197,10 @@ const Header = () => {
 
     fetch("https://hipass.hist.co.kr:7002/v1/ompass/users/"+userInfo.email, requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result))
+      .then(result => {
+        alert('간편인증 등록 해지 처리되었습니다.')
+        // console.log(result)
+      })
       .catch(error => console.log('error', error));
   }
 
