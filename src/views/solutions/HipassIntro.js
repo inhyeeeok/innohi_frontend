@@ -97,7 +97,7 @@ const HipassIntro = () => {
 
                     <div className="section-title">
                         <h2>생체인증 솔루션 '하이패스'</h2>
-                        <p style={{ fontSize: '18px', textAlign: 'center' }}>패스워드 방식의 불편함과 불안함을 해소하고 사용자의 편의성과 보안성을 동시에 보장합니다</p>
+                        <p style={{ fontSize: '18px', textAlign: 'center' }}>패스워드 방식의 불편함과 불안함을 해소하고 사용자의 편의성과 보안성을 동시에 제공합니다</p>
                     </div>
 
                     <div className="row">
@@ -105,7 +105,7 @@ const HipassIntro = () => {
                             <div className="icon-box" style={{ textAlign: 'center' }}>
                                 <img src={require('../../assets/img/solutions/hipass/7.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
                                 <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold', marginTop: '10px' }}>고객중심의 유연성</h4>
-                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>다양한 인증수단 적용 및 통합된 인증 관리가 제공합니다</p>
+                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>다양한 인증수단 적용 및 통합된 인증 관리가 가능합니다</p>
                             </div>
                         </div>
 
@@ -113,7 +113,7 @@ const HipassIntro = () => {
                             <div className="icon-box" style={{ textAlign: 'center' }}>
                                 <img src={require('../../assets/img/solutions/hipass/6.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
                                 <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold', marginTop: '10px' }}>시스템 보안성 강화</h4>
-                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>모바일 인증장치 내에서 탈옥,위변조 및 최신버전 여부 검증이 가능합니다</p>
+                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>모바일 인증장치 내에서 탈옥,위변조 및 최신버전 여부 검증합니다</p>
                             </div>
                         </div>
 
