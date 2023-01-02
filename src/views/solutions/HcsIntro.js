@@ -104,6 +104,8 @@ const HcsIntro = () => {
                                 <img src={require('../../assets/img/solutions/hcs/device_web_v2.png').default} className="img-fluid" alt=""></img>
                                 <br />
                                 <h4 style={{ fontSize: '22px', fontWeight: 'bold' }}><a href="#!" onClick={preventClick}>웹 버전</a></h4>
+                                <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Chrome, Edge</p>
+                                <p style={{ fontSize: '16px', marginTop: ' 5px' }}>Safari, Firefox</p>
                             </div>
                         </div>
 
