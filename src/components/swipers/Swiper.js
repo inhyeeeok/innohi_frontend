@@ -83,6 +83,36 @@ const SwiperComponents = () => {
   });
 
   /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider2', {
+    speed: 600,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      },
+
+      1200: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      }
+    }
+  });
+
+  /**
    * Portfolio details slider
    */
    new Swiper('.portfolio-details-slider', {

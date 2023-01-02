@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
 import GlobalFunction from "../common/GlobalFunction";
 
@@ -5,7 +6,6 @@ const Header = () => {
 
   const headerElements =
     <header id='header' className='fixed-top header-inner-pages'>
-      {/* <header id='header' className=' header-inner-pages'> */}
       <div className='container d-flex align-items-center'>
         <h1 className='logo me-auto'>
           <a href='/'>
@@ -15,9 +15,7 @@ const Header = () => {
         </h1>
         <nav id='navbar' className='navbar'>
           <ul>
-            {/* <li className='nav-link scrollto'><a href='/'><div>HOME</div></a></li> */}
             <li className='dropdown'><a href='/intro/introduction'>Introduce
-              {/* <i className='bi bi-chevron-down'></i> */}
             </a>
             </li>
             <li className='dropdown'><a href='/program/startup'>Program<i className='bi bi-chevron-down'></i></a>
@@ -28,10 +26,17 @@ const Header = () => {
             </li>
             <li className='dropdown'><a href='/insight/contest'>Insight<i className='bi bi-chevron-down'></i></a>
               <ul>
-                <li><a href='/insight/innopick'>Inno Pick</a></li>
+              <li><a href='/insight/innopick'>Inno Pick</a></li>
                 <li><a href='/insight/contest'>Event</a></li>
               </ul>
             </li>
+            {/* <li className='dropdown'><a href='/solutions/hipass'>Solutions<i className='bi bi-chevron-down'></i></a>
+              <ul>
+                <li><a href='/solutions/hipass'>HiPass</a></li>
+                <li><a href='/solutions/idp'>IDP</a></li>
+                <li><a href='/solutions/hcs'>협업툴</a></li>
+              </ul>
+            </li> */}
             <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/contact/member'>구성원 소개</a></li>
@@ -39,7 +44,6 @@ const Header = () => {
               </ul>
             </li>
             <li onClick={() => { uafCall() }} className='getstarted'>그룹사공간
-              {/* <a href='/council/main' className='getstarted'>그룹사공간</a> */}
             </li>
             <li className='dropdown'><a href='/program/introduceEn'>English</a>
             </li>
@@ -51,7 +55,6 @@ const Header = () => {
 
   const headerCouncilElements =
     <header id='header' className='fixed-top header-inner-pages' style={{ display: 'none' }}>
-      {/* <header id='header' className='header-inner-pages' style={{ display: 'none' }}> */}
       <div className='container d-flex align-items-center'>
         <h1 className='logo me-auto'>
           <a href='/council/main'>
@@ -94,7 +97,6 @@ const Header = () => {
 
   const headerHiPassElements =
     <header id='header' className='fixed-top header-inner-pages' style={{ display: 'none' }}>
-      {/* <header id='header' className='header-inner-pages' style={{ display: 'none' }}> */}
       <div className='container d-flex align-items-center'>
         <h1 className='logo me-auto'>
           <a href='/council/main'>
