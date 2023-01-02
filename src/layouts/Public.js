@@ -3,8 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Main from '../views/main/Main';
 
 import Introduction from '../views/intro/Introduction';
-import Propel from '../views/intro/Propel';
-import History from '../views/intro/History';
 
 import StartupSourcing from '../views/program/StartupSourcing';
 import Suggestion from '../views/program/Suggestion';
@@ -13,6 +11,10 @@ import IntroduceEn from '../views/program/IntroduceEn';
 import InnoPick from '../views/insight/InnoPick';
 import Contest from '../views/insight/Contest';
 import Detail from '../views/insight/InnoPickDetail';
+
+import HipassIntro from "../views/solutions/HipassIntro";
+import IdpIntro from "../views/solutions/IdpIntro";
+import HcsIntro from "../views/solutions/HcsIntro";
 
 
 import Member from '../views/contact/Member'
@@ -41,11 +43,6 @@ import Footer from '../components/footer/Footer';
 
 import * as CouncilCommon from '../views/council/CouncilCommon'
 import RouteChangeTracker from '../components/common/RouteChangeTracker';
-
-
-import CouncilMain1 from '../views/hipass/CouncilMain';
-
-
 
 import {
     ApolloProvider
@@ -80,8 +77,6 @@ const Public = () => {
 
                     <Route exact path='/intro'>
                         <Route exact path='introduction' element={<Introduction />}></Route>
-                        <Route exact path='propel' element={<Propel />}></Route>
-                        <Route exact path='history' element={<History />}></Route>
                     </Route>
 
                     <Route exact path='/program'>
@@ -94,6 +89,12 @@ const Public = () => {
                         <Route path='innopick' element={<InnoPick />}></Route>
                         <Route path='innopick/detail/:id' element={<Detail />}></Route>
                         <Route path='contest' element={<Contest />}></Route>
+                    </Route>
+
+                    <Route exact path='/solutions' >
+                        <Route path='hipass' element={<HipassIntro />}></Route>
+                        <Route path='idp' element={<IdpIntro />}></Route>
+                        <Route path='hcs' element={<HcsIntro />}></Route>
                     </Route>
 
                     <Route exact path='/contact'>
@@ -115,14 +116,6 @@ const Public = () => {
                         <Route exact path='onemorepass' element={<OnemorePassLogin />}></Route>
                         <Route exact path='setting' element={<OnemorePassSetting />}></Route>
                     </Route>
-
-                    <Route exact path='/hipass'>
-                        <Route exact path='main' element={<CouncilMain1 />}> </Route>
-                        <Route exact path='announce' element={<CouncilAnnounce />}> </Route>
-                        <Route exact path='announce/detail/:bno' element={<AnnouceDetail />}> </Route>
-                    </Route>
-
-                    {/* <Route exact path='/login' element={<Login />}></Route> */}
 
                     <Route path="/*" element={<ErrorPage />} />
 
