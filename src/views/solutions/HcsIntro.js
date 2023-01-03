@@ -17,12 +17,12 @@ const HcsIntro = () => {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
-                                <h1><span style={{ color: 'rgb(253, 142, 77)' }}>팀 전체의 성공을 함께 보장하는 신개념 협업툴</span></h1>
+                                <h1><span style={{ color: 'rgb(253, 142, 77)' }}>기업의 성공적인 Digital Transformation을 달성하기 위한 글로벌 No.1 Work OS</span></h1>
                                 <h2 style={{ marginTop: '15px' }}>
                                 미래형 WorkOS를 통해 보다 업무에 최적화되고 쾌적한 업무 공간을 제공하여 협업의 새로운 패러다임을 제시합니다
                                 </h2>
                                 <div className='d-flex justify-content-center justify-content-lg-start'>
-                                    <DownloadButton lang='다운로드' filename='협업툴 Swit 소개.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/Swit_(%EC%82%AC%EC%9A%A9%EC%9E%90)Swit%EC%86%8C%EA%B0%9C+%EB%B0%8F+%EA%B8%B0%EB%B3%B8+%EC%82%AC%EC%9A%A9%EC%95%88%EB%82%B4.pdf' />
+                                    <DownloadButton lang='다운로드' filename='협업툴 SWIT 상품 소개서.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/221230_SWIT_%EC%83%81%ED%92%88+%EC%86%8C%EA%B0%9C%EC%84%9C_V0.2.pdf' />
                                 </div>
                             </div>
                             <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
@@ -163,10 +163,10 @@ const HcsIntro = () => {
                                 <div className="testimonial-item2">
                                     <div className="profile my-auto">
                                         <img src={require('../../assets/img/solutions/hcs/function2.png').default} className="testimonial-img" alt=""></img>
-                                        <h3>채팅·게시판</h3>
+                                        <h3>업무도구 연동</h3>
                                     </div>
                                     <p>
-                                        다양한 토픽별로 구분된 소통 공간에서 효율적으로 대화합니다. 원하는 대화방으로 이동과 대화 내용 검색이 간편하고, 파일과 업무를 쉽게 공유할 수 있습니다
+                                        Google WorkSpace, Microsoft 365 등 다양한 업무도구를 연동하여 효율적으로 소통 및 활용이 가능합니다.
                                     </p>
                                 </div>
                             </div>
