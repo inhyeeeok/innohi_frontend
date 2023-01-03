@@ -11,9 +11,9 @@ const HipassIntro = () => {
                         <div className='row'>
                             <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
                                 <h1><span style={{ color: 'rgb(253, 142, 77)' }}>차세대 통합 인증 솔루션</span></h1>
-                                <h2 style={{ marginTop: '15px' }}>지문,음성,얼굴인식 등 다양한 생체인증 방식을 통해 보다 편리하고 안전한 Passwordless 방식의 로그인 서비스를 만나보세요</h2>
+                                <h2 style={{ marginTop: '15px' }}>지문, 음성, 얼굴 인식 등 다양한 생체인증 방식을 통해, 보다 편리하고 안전한 Passwordless방식의 로그인 서비스를 만나보세요.</h2>
                                 <div className='d-flex justify-content-center justify-content-lg-start'>
-                                    <DownloadButton lang='다운로드' filename='차세대 통합 인증 솔루션 표준 제안서.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/HIST+%E1%84%8C%E1%85%A1%E1%84%8E%E1%85%A6+%E1%84%89%E1%85%A9%E1%86%AF%E1%84%85%E1%85%AE%E1%84%89%E1%85%A7%E1%86%AB+HiPass+%E1%84%91%E1%85%AD%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A5.pdf' />
+                                    <DownloadButton lang='다운로드' filename='차세대 통합 인증 솔루션 상품 소개서.pdf' url='https://innohifront.s3.ap-northeast-2.amazonaws.com/WebContent/views/HIST+%E1%84%8C%E1%85%A1%E1%84%8E%E1%85%A6+%E1%84%89%E1%85%A9%E1%86%AF%E1%84%85%E1%85%AE%E1%84%89%E1%85%A7%E1%86%AB+HiPass+%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%89%E1%85%A5.pdf' />
                                 </div>
                             </div>
                             <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos="zoom-in" data-aos-delay="200">
@@ -105,7 +105,7 @@ const HipassIntro = () => {
                             <div className="icon-box" style={{ textAlign: 'center' }}>
                                 <img src={require('../../assets/img/solutions/hipass/7.png').default} className="img-fluid" style={{ width: '70%' }} alt=""></img>
                                 <h4 style={{ textAlign: 'center', fontSize: '22px', fontWeight: 'bold', marginTop: '10px' }}>고객중심의 유연성</h4>
-                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>다양한 인증수단 적용 및 통합된 인증 관리가 가능합니다</p>
+                                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '5px' }}>다양한 인증수단 적용 및 통합 인증관리 기능을 제공합니다</p>
                             </div>
                         </div>
 
