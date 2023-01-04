@@ -17,7 +17,7 @@ const HcsIntro = () => {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1' data-aos="fade-up" data-aos-delay="200">
-                                <h1><span style={{ color: 'rgb(253, 142, 77)' }}>기업의 성공적인 Digital Transformation을 달성하기 위한 글로벌 No.1 Work OS</span></h1>
+                                <h1><span style={{ color: 'rgb(253, 142, 77)' }}>기업의 성공적인 DT를 달성하기 위한 글로벌 No.1 Work OS</span></h1>
                                 <h2 style={{ marginTop: '15px' }}>
                                 미래형 WorkOS를 통해 보다 업무에 최적화되고 쾌적한 업무 공간을 제공하여 협업의 새로운 패러다임을 제시합니다
                                 </h2>
@@ -46,39 +46,30 @@ const HcsIntro = () => {
                             <p style={{ fontSize: '18px', textAlign: 'center' }}>직관적이면서도, 팀이 함께 일을 해내는 데 필요한 모든 기능을 갖추고 있습니다</p>
                         </div>
                         <div className="row">
-                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box">
-                                    <img src={require('../../assets/img/solutions/hcs/collaboration.png').default} className="img-fluid" alt=""></img>
+                                    <img src={require('../../assets/img/solutions/hcs/connectivity.png').default} className="img-fluid" alt=""></img>
                                     <br />
-                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>올인원 협업툴</a></h4>
-                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>모든 조직 규모와 형태에 맞는 유연한 협업 도구를 제공합니다</p>
+                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>확장성</a></h4>
+                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>중소기업부터 대기업까지 조직의 규모와 형태를 고려하여, Swit 상에서 구현 및 확장 가능합니다</p>
                                 </div>
                             </div>
 
-                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box">
-                                    <img src={require('../../assets/img/solutions/hcs/customizable.png').default} className="img-fluid" alt=""></img>
+                                    <img src={require('../../assets/img/solutions/hcs/interoperability.png').default} className="img-fluid" alt=""></img>
                                     <br />
-                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>사용자 최적화 솔루션</a></h4>
-                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>사용자 별로 최적화된 맞춤형 기능을 제공합니다</p>
+                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>상호연동성</a></h4>
+                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>이메일, 화상회의, 캘린더, 문서 관리 등, 업무에 필요한 다양한 도구에 대한 완벽한 연동을 제공합니다</p>
                                 </div>
                             </div>
 
-                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div className="icon-box">
-                                    <img src={require('../../assets/img/solutions/hcs/integration.png').default} className="img-fluid" alt=""></img>
+                                    <img src={require('../../assets/img/solutions/hcs/functionality.png').default} className="img-fluid" alt=""></img>
                                     <br />
-                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>다양한 업무 툴과 연동</a></h4>
-                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>업무에 사용되는 다양한 기능들의 온전한 통합을 보장합니다</p>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box">
-                                    <img src={require('../../assets/img/solutions/hcs/multiplatform.png').default} className="img-fluid" alt=""></img>
-                                    <br />
-                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>전사 사용 가능한 확장성</a></h4>
-                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>업무에서 사용하는 모든 디바이스에서 활용 가능합니다</p>
+                                    <h4 style={{ fontSize: '22px', fontWeight: 'bold', marginTop: ' 5px' }}><a href="#!" onClick={preventClick}>기능성</a></h4>
+                                    <p style={{ fontSize: '16px', marginTop: ' 5px' }}>업무 관리부터 채팅까지, 조직원의 협업에 꼭 필요한 기능을 한 공간에 구현 가능합니다</p>
                                 </div>
                             </div>
                         </div>
