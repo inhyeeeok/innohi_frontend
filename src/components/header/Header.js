@@ -30,13 +30,13 @@ const Header = () => {
                 <li><a href='/insight/contest'>Event</a></li>
               </ul>
             </li>
-            {/* <li className='dropdown'><a href='/solutions/hipass'>Solutions<i className='bi bi-chevron-down'></i></a>
+            <li className='dropdown'><a href='/solutions/hipass'>Solutions<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/solutions/hipass'>HiPass</a></li>
                 <li><a href='/solutions/idp'>IDP</a></li>
                 <li><a href='/solutions/hcs'>협업툴</a></li>
               </ul>
-            </li> */}
+            </li>
             <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/contact/member'>구성원 소개</a></li>
