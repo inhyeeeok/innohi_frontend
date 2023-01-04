@@ -33,13 +33,13 @@ const Member = () => {
                                 <div className="icon-box">
                                     <img src={require('../../assets/img/contact/member/tbd.png').default} className="img-fluid" alt=""></img>
                                     <p><br /></p>
-                                    <h4>TBD</h4>
-                                    <p>Facilitator</p>
-                                    <p>솔루션사업그룹</p>
-                                    <p>스타트업 협업 담당</p>
+                                    <h4>인재를 찾습니다</h4>
+                                    <p>신사업 투자 제안 및 제휴</p>
                                     <p><br /></p>
                                     <p><br /></p>
-                                    <h5>TBD</h5>
+                                    <p><br /></p>
+                                    <p><br /></p>
+                                    <h5>job opening</h5>
                                 </div>
                             </div>
 
