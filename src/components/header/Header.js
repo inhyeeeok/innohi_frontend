@@ -39,7 +39,7 @@ const Header = () => {
             </li>
             <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
               <ul>
-                <li><a href='/contact/member'>구성원 소개</a></li>
+                {/*<li><a href='/contact/member'>구성원 소개</a></li>*/}
                 <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform' target="_blank" rel="noopener noreferrer">문의하기</a></li>
               </ul>
             </li>
