@@ -30,21 +30,21 @@ const Header = () => {
                 <li><a href='/insight/contest'>Event</a></li>
               </ul>
             </li>
-            <li className='dropdown'><a href='/solutions/hipass'>Solutions<i className='bi bi-chevron-down'></i></a>
+            {/* <li className='dropdown'><a href='/solutions/hipass'>Solutions<i className='bi bi-chevron-down'></i></a>
               <ul>
                 <li><a href='/solutions/hipass'>HiPass</a></li>
                 <li><a href='/solutions/idp'>IDP</a></li>
                 <li><a href='/solutions/hcs'>협업툴</a></li>
               </ul>
-            </li>
+            </li> */}
             <li className='dropdown'><a href='/contact/member'>Contact<i className='bi bi-chevron-down'></i></a>
               <ul>
                 {/*<li><a href='/contact/member'>구성원 소개</a></li>*/}
                 <li><a href='https://docs.google.com/forms/d/e/1FAIpQLScB_r-XIOR0H9I6HxdrwIE4MFqWmP7ho1lOsT_ijsAOmCcMlQ/viewform' target="_blank" rel="noopener noreferrer">문의하기</a></li>
               </ul>
             </li>
-            <li onClick={() => { uafCall() }} className='getstarted'>그룹사공간
-            </li>
+            {/* <li onClick={() => { uafCall() }} className='getstarted'>그룹사공간
+            </li> */}
             <li className='dropdown'><a href='/program/introduceEn'>English</a>
             </li>
           </ul>
