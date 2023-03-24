@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import * as CouncilCommon from '../council/CouncilCommon'
-import Modal from '../../components/modal/Modal'
 
 const OnemorePassLogin = () => {
     // const [show, setShow] = useState(false);
@@ -9,18 +8,8 @@ const OnemorePassLogin = () => {
 
    
 
-    const MemberElements = () => {
-        return (
-            <>
-              
-            </>
-        )
-    }
-
     const test = () => {
 
-        const popupWidth = '';
-        const popupHeight = '';
 
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "Bearer ac1567183e29b245dfe49e28e0862c388d4df2c6a98d23a78246fe877a39580e");

@@ -2,14 +2,6 @@ import React, { useEffect } from 'react';
 
 const OnemorePassSetting = () => {
 
-    const MemberElements = () => {
-        return (
-            <>
-              
-            </>
-        )
-    }
-
     useEffect(() => {});
 
     return (
